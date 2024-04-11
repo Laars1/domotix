@@ -1,3 +1,7 @@
 {
-    "Test": "Test Message"
+    "Test": "Test Message",
+    "feature":{
+        "translation": "EN: Übersetzungs Feature",
+        "navigation": "EN: Navigations Feature"
+    }
 }
