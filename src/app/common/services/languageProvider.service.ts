@@ -18,6 +18,7 @@ export class LanguageProviderService {
         language = 'de';
     }
     this.translateService.setDefaultLang(language);
+    this.translateService.currentLang = language;
   }
 
   /**
@@ -30,6 +31,14 @@ export class LanguageProviderService {
     }
 
     this.translateService.use(language);
+    this.translateService.currentLang = language;
+  }
+
+  /**
+   * Get current language
+   */
+  getCurrentLanguage(){
+    return this.translateService.currentLang;
   }
 
   /**

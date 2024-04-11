@@ -1,3 +1,7 @@
 {
-    "Test": "Test nouvelles"
+    "Test": "Test nouvelles",
+    "feature":{
+        "translation": "FR: Übersetzungs Feature",
+        "navigation": "FR: Navigations Feature"
+    }
 }

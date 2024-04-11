@@ -228,7 +228,10 @@
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
       <p>{{ 'Test' | translate }}</p>
-      <app-languageSwitcher></app-languageSwitcher>
+      <p>{{'feature.navigation' | translate}}</p>
+      <app-navigation></app-navigation>
+      <p>{{'feature.translation' | translate}}</p>
+      <app-language-switcher></app-language-switcher>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
