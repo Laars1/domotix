@@ -33,11 +33,19 @@ export class LanguageProviderService {
   }
 
   /**
+   * Get supported languages from environments
+   * @returns string array of supported languages
+   */
+  getSupportedLanguages() : string[] {
+    return environment.providedLanguages;
+  }
+
+  /**
    * Check if input language is provided by the system
    * @param language language you want to check
    * @returns true if language is provided, otherwise false
    */
-  private isLanguageProvided(language: string){
+  private isLanguageProvided(language: string) : boolean {
     return environment.providedLanguages.includes(language)
   }
 }

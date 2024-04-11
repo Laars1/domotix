@@ -1,6 +1,10 @@
 <div class="btn-group" role="group" aria-label="Language switcher">
-  <button type="button" class="btn btn-outline-dark" (click)="switchLanguage('de')">DE</button>
-  <button type="button" class="btn btn-outline-dark" (click)="switchLanguage('en')">EN</button>
-  <button type="button" class="btn btn-outline-dark" (click)="switchLanguage('fr')">FR</button>
-  <button type="button" class="btn btn-outline-dark" (click)="switchLanguage('it')">IT</button>
+  <button
+    *ngFor="let language of supportedLanguages"
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="switchLanguage(language)"
+  >
+    {{ language.toUpperCase() }}
+  </button>
 </div>
