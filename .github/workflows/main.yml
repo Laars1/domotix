@@ -3,7 +3,7 @@ name: Github Pages CI/CD
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   ci:
     runs-on: ubuntu-latest
