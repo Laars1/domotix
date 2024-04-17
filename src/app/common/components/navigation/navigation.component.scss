@@ -1,55 +1,75 @@
-.btn-navigation{
-    background: none;
-    border: none;
-    color: white;
+.header{
+  position: absolute;
+  top: 50%;
 }
 
-/* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: var(--navbar-width);
-    position: fixed; /* Stay in place */
+    height: 100%;
+    width: var(--navigation-width);
+    position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    background-color: var(--navigation-background-color);
+    overflow-x: hidden;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    vertical-align: middle;
+  }
+
+  .sidenav:hover{
+    --navigation-width: 17em;
+    width: var(--navigation-width);
   }
   
-  /* The navigation menu links */
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 0.3em;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: var(--navigation-font-size);
+    color: var(--navigation-font-color);
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+  .sidenav div:hover > a {
+    color: var(--navigation-font-color-hover);
   }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .btn-navigation {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-right: 50px;
+
+  .sidenav div:hover > span {
+    background-color: var(--navigation-font-color-hover);
   }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
+
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {font-size: var( --navigation-font-size-responsive);}
+  }
+
+  .dot {
+    height: 1.2em;
+    width: 1.2em;
+    background-color: var(--navigation-dot-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+  .header > div{
+    padding-left: 0.4em;
+    width: 200%;
+  }
+
+  .header > div:hover{
+    width: 100%;
+  }
+
+  .header > div > a{
+    display: inline-block;
+  }
+
+  .languange-switcher{
+    width: 100%;
+    text-align: center;
+    padding: 2em;
   }

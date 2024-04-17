@@ -1,0 +1,14 @@
+.btn-language{
+    color: var(--navigation-font-color);
+    text-decoration: underline 0.08em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.btn-language:hover{
+    color: var(--navigation-font-color-hover);
+    text-decoration-color: var(--navigation-font-color-hover);
+}
+
+.btn-language:focus{
+    box-shadow: none;
+}

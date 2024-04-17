@@ -3,5 +3,11 @@
     "feature":{
         "translation": "EN: Übersetzungs Feature",
         "navigation": "EN: Navigations Feature"
+    },
+    "navigation": {
+        "home": "EN: Home",
+        "competences": "EN: Kompetenzen",
+        "about": "EN: Über uns",
+        "contact": "EN: Kontakt"
     }
 }
