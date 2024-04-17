@@ -1,0 +1,16 @@
+body,
+html {
+  min-height: 100vh;
+}
+
+.parallax {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,80) 10%, rgba(4,12,14,0) 100%),
+    url("../../../../assets/images/header.jpg");
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
