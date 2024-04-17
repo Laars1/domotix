@@ -10,7 +10,7 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: var(--navigation-background-color);
+    background-color: rgba($color: #fff, $alpha: 0);
     overflow-x: hidden;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     vertical-align: middle;
@@ -19,6 +19,7 @@
   .sidenav:hover{
     --navigation-width: 17em;
     width: var(--navigation-width);
+    background-color: var(--navigation-background-color);
   }
   
   .sidenav a {
