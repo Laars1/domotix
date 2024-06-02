@@ -9,5 +9,13 @@
         "competences": "IT: Kompetenzen",
         "about": "IT: Über uns",
         "contact": "IT: Kontakt"
+    },
+    "vision": {
+        "title": "IT: vision",
+        "text": "IT: Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optmieren und den Alltag zu vereinfachen. Dies umfasst die Automatsierung von Beleuchtung, Heizung, Klimatsierung, Sicherheit und anderen Alltagsaspekten.",
+        "contact": "IT: Get in touch!"
+    },
+    "light": {
+        "text": "IT: Erschaffen Sie im Handumdrehen Ihre persönliche Lichtatmosphäre – unsere einfache Lösung ermöglicht eine individuelle Anpassung der Lichtszenen."
     }
 }
