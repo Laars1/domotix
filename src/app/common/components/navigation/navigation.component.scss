@@ -1,76 +1,108 @@
-.header{
+.header {
   position: absolute;
   top: 50%;
 }
 
 .sidenav {
-    height: 100%;
-    width: var(--navigation-width);
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgba($color: #fff, $alpha: 0);
-    overflow-x: hidden;
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    vertical-align: middle;
-  }
+  height: 100%;
+  width: var(--navigation-width);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba($color: #fff, $alpha: 0);
+  overflow-x: hidden;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  vertical-align: middle;
+}
 
-  .sidenav:hover{
-    --navigation-width: 17em;
-    width: var(--navigation-width);
-    background-color: var(--navigation-background-color);
+.sidenav:hover {
+  --navigation-width: 17em;
+  width: var(--navigation-width);
+  background-color: var(--navigation-background-color);
+}
+
+.sidenav a {
+  padding: 0.3em;
+  text-decoration: none;
+  font-size: var(--navigation-font-size);
+  color: var(--navigation-font-color);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav div:hover > a {
+  color: var(--navigation-font-color-hover);
+}
+
+.sidenav div:hover > span {
+  background-color: var(--navigation-font-color-hover);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  
   .sidenav a {
-    padding: 0.3em;
-    text-decoration: none;
-    font-size: var(--navigation-font-size);
-    color: var(--navigation-font-color);
-    display: block;
-    transition: 0.3s;
+    font-size: var(--navigation-font-size-responsive);
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav div:hover > a {
-    color: var(--navigation-font-color-hover);
-  }
+}
 
-  .sidenav div:hover > span {
-    background-color: var(--navigation-font-color-hover);
-  }
+.dot {
+  height: 1.2em;
+  width: 1.2em;
+  background-color: var(--navigation-dot-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
 
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: var( --navigation-font-size-responsive);}
-  }
+.header > div {
+  padding-left: 0.4em;
+  width: 200%;
+}
 
-  .dot {
-    height: 1.2em;
-    width: 1.2em;
-    background-color: var(--navigation-dot-color);
-    border-radius: 50%;
-    display: inline-block;
-    transition: 0.3s;
-  }
+.header > div:hover {
+  width: 100%;
+}
 
-  .header > div{
-    padding-left: 0.4em;
-    width: 200%;
-  }
+.header > div > a {
+  display: inline-block;
+}
 
-  .header > div:hover{
-    width: 100%;
-  }
+.languange-switcher {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
 
-  .header > div > a{
-    display: inline-block;
-  }
+.navbar {
+  background-color: #fff;
+  visibility: var(--show-navbar);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
 
-  .languange-switcher{
-    width: 100%;
-    text-align: center;
-    padding: 2em;
-  }
+  // Transition animation
+  transition: all 1s;
+  opacity: var(--opacity-navbar);
+}
+
+.navbar:before {
+  content: "";
+  position: absolute;
+  left: 1%;
+  bottom: 0;
+  height: 2px;
+  width: 98%; /* or 100px */
+  border-bottom: 2px solid;
+}
+
+.navbar-img {
+  width: 12em;
+  height: auto;
+}

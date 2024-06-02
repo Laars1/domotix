@@ -1,5 +1,8 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+$primary: #a69885;
+$btn-border-radius: 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 :root {
   --navigation-width: 2em;
@@ -9,19 +12,11 @@
   --navigation-dot-color: #bbb;
   --navigation-font-color: #000;
   --navigation-font-color-hover: #a69885;
+  --show-navbar: hidden; 
+  --opacity-navbar: 0;
 }
 
 body, html{
     min-width: 100vh;
-}
-
-.parallax-effect {
-  /* Set a specific height */
-  height: 100vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    font-size: 22px;
 }

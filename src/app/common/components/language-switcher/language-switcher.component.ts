@@ -13,16 +13,16 @@ import { CommonModule } from '@angular/common';
 })
 export class LanguageSwitcherComponent implements OnInit {
   supportedLanguages: string[] = [];
-  currentLanguage: string = "";
+  currentLanguage: string = '';
 
-  constructor(private languageProvider: LanguageProviderService) { }
+  constructor(private languageProvider: LanguageProviderService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.supportedLanguages = this.languageProvider.getSupportedLanguages();
     this.currentLanguage = this.languageProvider.getCurrentLanguage();
   }
 
-  switchLanguage(language: string){
+  switchLanguage(language: string): void {
     this.languageProvider.useLanguage(language);
     this.currentLanguage = this.languageProvider.getCurrentLanguage();
   }

@@ -1,16 +1,3 @@
-<div class="parallax">
-  <div class="row vh-100 m-0 p-0">
-    <div class="col-12 bg-left p-0">
-      <div class="overlay row gx-0 h-100 w-100">
-        <div class="content p-0 ms-0 me-0 my-auto text-center">
-          <a href="mailto:info@domotix.ch">
-            <img src="../../../../assets/images/Logo_512.png" class="img-fluid" alt="domotix" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="parallax" [ngStyle]="setBackground()">
+  <ng-content></ng-content>
 </div>
-
-<div class="parallax-effect">test</div>

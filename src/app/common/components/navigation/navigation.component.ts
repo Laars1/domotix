@@ -12,5 +12,17 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
 })
 export class NavigationComponent implements OnInit {
   ngOnInit(): void {
+    window.addEventListener('scroll', this.scroll, true)
+  }
+
+  scroll = (): void => {
+    if(window.scrollY > 900){
+      document.body.style.setProperty('--show-navbar', "visible");
+      document.body.style.setProperty('--opacity-navbar', "1");
+    }else{
+      document.body.style.setProperty('--show-navbar', "hidden");
+      document.body.style.setProperty('--opacity-navbar', "0");
+
+    }
   }
 }
