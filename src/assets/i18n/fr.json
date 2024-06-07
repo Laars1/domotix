@@ -16,6 +16,19 @@
         "contact": "FR: Get in touch!"
     },
     "light": {
+        "title": "FR: Licht",
         "text": "FR: Erschaffen Sie im Handumdrehen Ihre persönliche Lichtatmosphäre – unsere einfache Lösung ermöglicht eine individuelle Anpassung der Lichtszenen."
+    },
+    "heating":{
+        "title": "FR: Heizung",
+        "text": "FR: Revolutionieren Sie Ihr Raumklima mit intelligenter Automatisierung – Ihre Heizungs-, Klima- und Lüftungsgeräte arbeiten Hand in Hand ohne Ihre Aufmerksamkeit."
+    },
+    "shutter":{
+        "title": "FR: Jalusien",
+        "text": "FR: Intelligente Jalousien, die sich automatisch an Ihre Bedürfnisse und den Stand der Sonne anpassen – erleben Sie den Komfort einer selbstständigen Steuerung für das perfekte Raumklima."
+    },
+    "multimedia":{
+        "title": "FR: Multimedia",
+        "text": "FR: Mit Multiraum-Audio schaffen Sie sofort die perfekte Stimmung in jedem Raum."
     }
 }

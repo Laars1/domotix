@@ -7,18 +7,32 @@ import { ParallaxWrapperComponent } from './common/components/parallax-wrapper/p
 import { HomeComponent } from './common/components/home/home.component';
 import { VisionComponent } from './common/components/vision/vision.component';
 import { LightComponent } from './common/components/light/light.component';
+import { HeatingComponent } from './common/components/heating/heating.component';
+import { ShutterComponent } from './common/components/shutter/shutter.component';
+import { MultimediaComponent } from './common/components/multimedia/multimedia.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TranslateModule, ParallaxWrapperComponent, NavigationComponent, HomeComponent, VisionComponent, LightComponent],
+  imports: [
+    RouterOutlet,
+    TranslateModule,
+    ParallaxWrapperComponent,
+    NavigationComponent,
+    HomeComponent,
+    VisionComponent,
+    LightComponent,
+    HeatingComponent,
+    ShutterComponent,
+    MultimediaComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'domotix';
 
-  constructor(languageProvider: LanguageProviderService){
+  constructor(languageProvider: LanguageProviderService) {
     languageProvider.useDefaultLanguage();
   }
 }
