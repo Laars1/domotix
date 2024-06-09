@@ -30,5 +30,23 @@
     "multimedia":{
         "title": "Multimedia",
         "text": "Mit Multiraum-Audio schaffen Sie sofort die perfekte Stimmung in jedem Raum."
+    },
+    "energy": {
+        "title": "Energieeffizienz",
+        "text": "Steigern Sie Ihren Eigenverbrauch, indem Sie Ihre selbst produzierte Energie effizient nutzen. Entdecken Sie eine effiziente Lösung für eine nachhaltige Energiezukunft."
+    },
+    "security": {
+        "title": "Sicherheit",
+        "access-system": "Unser zentralisiertes Zutrittssystem bietet eine effiziente Lösung für sicheren Zugang.",
+        "reliability": "Zuverlässiger Schutz für Ihr Zuhause oder Geschäft, damit Sie ihr Gebäude unbeschwert verlassen können.",
+        "no-cloud": "Unser Ansatz gewährleistet Unabhängigkeit von einer Cloud und Ihre Daten werden lokal verwaltet."
+    },
+    "about":{
+        "title": "Über uns",
+        "sindu": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
+        "joel": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+    },
+    "contact": {
+        "title": "Kontakt"
     }
 }
