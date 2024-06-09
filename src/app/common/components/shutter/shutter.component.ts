@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -8,11 +8,8 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule]
 })
-export class ShutterComponent implements OnInit {
+export class ShutterComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

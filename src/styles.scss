@@ -3,6 +3,7 @@ $primary: #a69885;
 $btn-border-radius: 0;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/";
 
 :root {
   --navigation-width: 2em;

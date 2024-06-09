@@ -18,6 +18,10 @@ export class LanguageSwitcherComponent implements OnInit {
   constructor(private languageProvider: LanguageProviderService) {}
 
   ngOnInit(): void {
+    this.loadLanguages();
+  }
+
+  loadLanguages(): void {
     this.supportedLanguages = this.languageProvider.getSupportedLanguages();
     this.currentLanguage = this.languageProvider.getCurrentLanguage();
   }
