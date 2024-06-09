@@ -14,6 +14,7 @@ export class ParallaxWrapperComponent implements OnInit {
 
   @Input() imgSrc: string | undefined;
   @Input() linearGradient: boolean = false;
+  @Input() customCss: string | undefined
   constructor() { }
 
   ngOnInit() {

@@ -10,6 +10,10 @@ import { LightComponent } from './common/components/light/light.component';
 import { HeatingComponent } from './common/components/heating/heating.component';
 import { ShutterComponent } from './common/components/shutter/shutter.component';
 import { MultimediaComponent } from './common/components/multimedia/multimedia.component';
+import { EnergyComponent } from './common/components/energy/energy.component';
+import { SecurityComponent } from './common/components/security/security.component';
+import { AboutComponent } from './common/components/about/about.component';
+import { ContactComponent } from './common/components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +28,11 @@ import { MultimediaComponent } from './common/components/multimedia/multimedia.c
     LightComponent,
     HeatingComponent,
     ShutterComponent,
-    MultimediaComponent
+    MultimediaComponent,
+    EnergyComponent,
+    SecurityComponent,
+    AboutComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
