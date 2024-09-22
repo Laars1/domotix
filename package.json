@@ -7,7 +7,7 @@
     "build": "ng lint && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href https://laars1.github.io/domotix/ --no-silent",
+    "deploy": "ng deploy --base-href https://laars1.github.io/domotix/ --no-silent --repo=https://github.com/Laars1/domotix.git --name=Laars1",
     "lint": "ng lint"
   },
   "private": true,
