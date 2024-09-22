@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../environments/environment.development';

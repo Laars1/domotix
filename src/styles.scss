@@ -1,5 +1,7 @@
 
 $primary: #a69885;
+$secondary: #403A2D;
+$tertiary: #e3e3e36e;
 $btn-border-radius: 0;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -24,4 +26,8 @@ body, html{
 
 .text-justify{
   text-align: justify;
+}
+
+.bg-tertiary{
+  background-color: $tertiary;
 }

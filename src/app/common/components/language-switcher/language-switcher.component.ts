@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';

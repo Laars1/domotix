@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
@@ -14,10 +15,10 @@ import { Reference } from '../../models/reference';
 })
 export class ReferencesComponent implements OnInit {
   entries: Reference[] = []
-
-  constructor(private referneceService: ReferencesService) { }
   
+  constructor(private referenceService: ReferencesService) { }
+
   ngOnInit(): void {
-    this.entries = this.referneceService.getReferences();
+    this.entries = this.referenceService.getReferences();
   }
 }

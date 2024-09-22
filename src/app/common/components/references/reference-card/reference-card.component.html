@@ -1,4 +1,4 @@
-<div class="card mx-auto w-100 border-0" style="width: 18rem">
+<div tabindex="0" class="card mx-auto w-100 border-0" style="width: 18rem" (click)="getDetail()" (keydown.enter)="getDetail()" (keydown.space)="getDetail()">
   <div class="shrink-wrapper">
     <img
       [src]="entry.headerImg"
