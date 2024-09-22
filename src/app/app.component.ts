@@ -14,6 +14,7 @@ import { EnergyComponent } from './common/components/energy/energy.component';
 import { SecurityComponent } from './common/components/security/security.component';
 import { AboutComponent } from './common/components/about/about.component';
 import { ContactComponent } from './common/components/contact/contact.component';
+import { ReferencesComponent } from './common/components/references/references.component';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +33,8 @@ import { ContactComponent } from './common/components/contact/contact.component'
     EnergyComponent,
     SecurityComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ReferencesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

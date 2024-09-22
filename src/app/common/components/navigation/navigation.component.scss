@@ -79,6 +79,7 @@
 }
 
 .navbar {
+  z-index: 1;
   background-color: #fff;
   visibility: var(--show-navbar);
   overflow: hidden;

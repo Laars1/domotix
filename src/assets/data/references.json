@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "headerImg": "https://placehold.co/600x400",
+        "content": {
+            "date": "R/GA / 2023 (1 Month)",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "tags": ["UX Design", "UX Research", "User Flows", "Service Design", "Product Design"],
+            "images": [
+                "https://placehold.co/600x400/000000/FFFFFF.png",
+                "https://placehold.co/600x400/111/FFFFFF.png",
+                "https://placehold.co/600x400/222/FFFFFF.png",
+                "https://placehold.co/600x400/333/FFFFFF.png",
+                "https://placehold.co/600x400/444/FFFFFF.png"
+            ]
+        }
+    },
+    {
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "headerImg": "https://placehold.co/600x400",
+        "content": {
+            "date": "R/GA / 2023 (1 Month)",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "tags": ["UX Design", "UX Research", "User Flows", "Service Design", "Product Design"],
+            "images": [
+                "https://placehold.co/600x400/000000/FFFFFF.png",
+                "https://placehold.co/600x400/111/FFFFFF.png",
+                "https://placehold.co/600x400/222/FFFFFF.png",
+                "https://placehold.co/600x400/333/FFFFFF.png",
+                "https://placehold.co/600x400/444/FFFFFF.png"
+            ]
+        }
+    }
+]
