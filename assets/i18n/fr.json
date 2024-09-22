@@ -50,6 +50,9 @@
         "title": "FR: Kontakt"
     },
     "references": {
-        "title": "FR: Referenzen"
+        "title": "FR: Referenzen",
+        "modal": {
+            "responsibilities": "FR: Responsibilities"
+        }
     }
 }
