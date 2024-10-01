@@ -1,11 +1,10 @@
-# Adapted Pipeline from here: https://medium.com/rupesh-tiwari/how-to-deploy-angular-apps-to-github-pages-gh-pages-setup-ci-cd-for-angular-app-with-github-714c1e555de5
 name: Github Pages CI/CD
 on:
   push:
     branches:
       - master
 jobs:
-  ci:
+  cicd:
     runs-on: ubuntu-latest
     env:
       BRANCH_NAME: "refs/heads/master"
@@ -13,11 +12,12 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup and Install Node 💫
+        uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install and Build 🔧
+      - name: Install dependencies & Build 🔧
         run: |
           npm ci
           npm run build
@@ -27,7 +27,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           output-file: "false"
 
       - name: Create release 🔖
@@ -43,7 +43,7 @@ jobs:
 
       - name: Deploy 🚀
         if: ${{ success() && github.ref == env.BRANCH_NAME }}
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist/domotix
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run deploy
