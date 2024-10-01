@@ -1,45 +1,49 @@
-# Adapted Pipeline from here: https://medium.com/rupesh-tiwari/how-to-deploy-angular-apps-to-github-pages-gh-pages-setup-ci-cd-for-angular-app-with-github-714c1e555de5
 name: Github Pages CI/CD
 on:
   push:
     branches:
+      - feature/*
+      - fix/*
       - master
 jobs:
   ci:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20]
-
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+          with:
+            node-version: 20
 
       - name: Install and Build 🔧
         run: |
           npm ci
           npm run build
+  cd:
+    runs-on: ubuntu-latest
 
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
-        with:
-          github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
-          output-file: "false"
+    steps:
+      - name: Conventional Changelog Action 📝
+          id: changelog
+          uses: TriPSs/conventional-changelog-action@v3
+          with:
+            github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+            output-file: "false"
 
-      - name: Create release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.changelog.outputs.tag }}
-        run: |
-          gh release create "$tag" \
-              --repo="$GITHUB_REPOSITORY" \
-              --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
-              --generate-notes
+        - name: Create release 🔖
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            tag: ${{ steps.changelog.outputs.tag }}
+          run: |
+            gh release create "$tag" \
+                --repo="$GITHUB_REPOSITORY" \
+                --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
+                --generate-notes
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist
+        - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            branch: gh-pages
+            folder: dist
