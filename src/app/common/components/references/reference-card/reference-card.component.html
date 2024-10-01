@@ -1,0 +1,15 @@
+<div tabindex="0" class="card mx-auto w-100 border-0" style="width: 18rem" (click)="getDetail()" (keydown.enter)="getDetail()" (keydown.space)="getDetail()">
+  <div class="shrink-wrapper">
+    <img
+      [src]="entry.headerImg"
+      class="card-img-top rounded-0"
+      [alt]="entry.title"
+    />
+  </div>
+  <div class="card-body ps-0 pt-1">
+    <p class="card-text m-0">
+      <small class="text-uppercase text-primary">{{ entry.subtitle }}</small>
+    </p>
+    <h5 class="card-title">{{ entry.title }}</h5>
+  </div>
+</div>

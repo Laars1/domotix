@@ -1,0 +1,12 @@
+<div class="btn-group" role="group" aria-label="Language switcher">
+  <ng-container *ngFor="let language of supportedLanguages">
+    <button
+      *ngIf="language !== currentLanguage"
+      type="button"
+      class="btn btn-language"
+      (click)="switchLanguage(language)"
+    >
+      {{ language.toUpperCase() }}
+    </button>
+  </ng-container>
+</div>

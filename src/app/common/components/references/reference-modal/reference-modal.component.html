@@ -1,0 +1,49 @@
+<div class="modal-header">
+  <h2 class="modal-title text-primary text-uppercase">{{ entry.title }}</h2>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="modal"
+    aria-label="Close"
+    (click)="dismiss()"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-6">
+      <ngb-carousel class="carousel has-caption" [showNavigationArrows]="false">
+        <ng-template ngbSlide *ngFor="let image of entry.content.images">
+          <img class="img-fluid" [src]="image" alt="" />
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="col-6">
+      <h4 class="text-uppercase">{{ entry.subtitle }}</h4>
+      <h6 class="text-primary text-uppercase">
+        <small>{{ entry.content.date }}</small>
+      </h6>
+      <p class="text-justify text-secondary">
+        <small>
+          {{ entry.content.description }}
+        </small>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="modal-footer" *ngIf="entry.content.tags">
+  <div class="row w-100">
+    <div class="col-12 bg-tertiary tag-wrapper">
+      <h4 class="text-secondary text-uppercase my-2">{{ 'references.modal.responsibilities' | translate }}</h4>
+      <p class="text-secondary">
+        <ng-container *ngFor="let tag of entry.content.tags">
+          {{ tag }}
+          {{
+            entry.content.tags.indexOf(tag) !== entry.content.tags.length - 1
+              ? "/"
+              : ""
+          }}
+        </ng-container>
+      </p>
+    </div>
+  </div>
+</div>
