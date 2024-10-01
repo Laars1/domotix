@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "R/GA UX & SERVICE DESIGN",
         "subtitle": "UX & Service Design",
         "headerImg": "https://placehold.co/600x400",
@@ -17,6 +18,7 @@
         }
     },
     {
+        "id": 2,
         "title": "Title",
         "subtitle": "Subtitle",
         "headerImg": "https://placehold.co/600x400",
