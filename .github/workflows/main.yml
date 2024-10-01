@@ -23,6 +23,7 @@ jobs:
           npm run build
 
       - name: Conventional Changelog Action 📝
+        if: ${{ success() && github.ref == env.BRANCH_NAME }}
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -30,7 +31,7 @@ jobs:
           output-file: "false"
 
       - name: Create release 🔖
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        if: ${{ steps.changelog.outputs.skipped == 'false' && success() && github.ref == env.BRANCH_NAME }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ steps.changelog.outputs.tag }}
@@ -41,6 +42,7 @@ jobs:
               --generate-notes
 
       - name: Deploy 🚀
+        if: ${{ success() && github.ref == env.BRANCH_NAME }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
