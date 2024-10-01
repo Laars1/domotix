@@ -54,5 +54,8 @@
         "modal": {
             "responsibilities": "EN: Responsibilities"
         }
+    },
+    "partner": {
+        "title": "EN: Partner"
     }
 }

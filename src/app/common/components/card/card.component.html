@@ -1,0 +1,15 @@
+<div tabindex="0" class="card mx-auto w-100 border-0 rounded-0 bg-transparent" (click)="performCallback()" (keydown.enter)="performCallback()" (keydown.space)="performCallback()">
+  <div class="shrink-wrapper">
+    <img
+      [src]="imgSrc"
+      class="card-img-top rounded-0"
+      [alt]="title"
+    />
+  </div>
+  <div class="card-body ps-0 pt-1">
+    <p class="card-text m-0">
+      <small class="text-uppercase text-primary">{{ subtitle }}</small>
+    </p>
+    <h5 class="card-title" [ngClass]="customTitleCss">{{ title }}</h5>
+  </div>
+</div>

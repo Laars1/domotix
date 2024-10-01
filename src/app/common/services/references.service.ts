@@ -10,7 +10,7 @@ export class ReferencesService {
 
   constructor() {}
 
-  public getReferences(): Reference[] {
+  public get(): Reference[] {
     return this.data;
   }
 }
