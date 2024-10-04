@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-navigation',
@@ -11,6 +12,10 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
   imports: [TranslateModule, LanguageSwitcherComponent]
 })
 export class NavigationComponent implements OnInit {
+
+  constructor(private readonly scroller: ViewportScroller){
+  }
+
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true)
   }
@@ -24,5 +29,9 @@ export class NavigationComponent implements OnInit {
       document.body.style.setProperty('--opacity-navbar', "0");
 
     }
+  }
+
+  scrollToSection(fragment: string) {
+    this.scroller.scrollToAnchor(fragment);
   }
 }
