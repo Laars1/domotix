@@ -6,8 +6,10 @@
     },
     "navigation": {
         "home": "IT: Home",
-        "competences": "IT: Kompetenzen",
+        "vision": "IT: Vision",
         "about": "IT: Über uns",
+        "references": "IT: Referenzen",
+        "partners": "IT: Partner",
         "contact": "IT: Kontakt"
     },
     "vision": {

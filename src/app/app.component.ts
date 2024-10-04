@@ -16,6 +16,7 @@ import { AboutComponent } from './common/components/about/about.component';
 import { ContactComponent } from './common/components/contact/contact.component';
 import { ReferencesComponent } from './common/components/references/references.component';
 import { PartnerComponent } from './common/components/partner/partner.component';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -44,7 +45,8 @@ import { PartnerComponent } from './common/components/partner/partner.component'
 export class AppComponent {
   title = 'domotix';
 
-  constructor(languageProvider: LanguageProviderService) {
+  constructor(languageProvider: LanguageProviderService, private readonly scroller: ViewportScroller) {
     languageProvider.useDefaultLanguage();
+    scroller.setOffset([0, 100])
   }
 }

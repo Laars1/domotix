@@ -8,19 +8,27 @@
   <div class="header">
     <div>
       <span class="dot"></span>
-      <a href="#">{{ "navigation.home" | translate }}</a>
+      <a routerLink="." (click)="scrollToSection('home')">{{ "navigation.home" | translate }}</a>
     </div>
     <div>
       <span class="dot"></span>
-      <a href="#">{{ "navigation.competences" | translate }}</a>
+      <a routerLink="." (click)="scrollToSection('vision')">{{ "navigation.vision" | translate }}</a>
     </div>
     <div>
       <span class="dot"></span>
-      <a href="#">{{ "navigation.about" | translate }}</a>
+      <a routerLink="." (click)="scrollToSection('about')">{{ "navigation.about" | translate }}</a>
     </div>
     <div>
       <span class="dot"></span>
-      <a href="#">{{ "navigation.contact" | translate }}</a>
+      <a routerLink="." (click)="scrollToSection('references')">{{ "navigation.references" | translate }}</a>
+    </div>
+    <div>
+      <span class="dot"></span>
+      <a routerLink="." (click)="scrollToSection('partners')">{{ "navigation.partners" | translate }}</a>
+    </div>
+    <div>
+      <span class="dot"></span>
+      <a routerLink="." (click)="scrollToSection('contact')">{{ "navigation.contact" | translate }}</a>
     </div>
   </div>
 </div>
