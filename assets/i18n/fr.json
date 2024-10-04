@@ -6,9 +6,11 @@
     },
     "navigation": {
         "home": "FR: Home",
-        "competences": "FR: Kompetenzen",
+        "vision": "FR: Vision",
         "about": "FR: Über uns",
-        "contact": "FR: Kontakt"
+        "references": "FR: Referenzen",
+        "partners": "FR: Partner",
+        "contact": "EN: Kontakt"
     },
     "vision": {
         "title": "FR: vision",
