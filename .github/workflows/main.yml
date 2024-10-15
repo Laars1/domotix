@@ -5,6 +5,7 @@ on:
       - master
       - feature/*
       - fix/*
+      - chore/*
 jobs:
   cicd:
     runs-on: ubuntu-latest
