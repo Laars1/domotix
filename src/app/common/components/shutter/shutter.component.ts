@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -6,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './shutter.component.html',
   styleUrls: ['./shutter.component.scss'],
   standalone: true,
-  imports: [TranslateModule]
+  imports: [TranslateModule, NgOptimizedImage]
 })
 export class ShutterComponent {
 
