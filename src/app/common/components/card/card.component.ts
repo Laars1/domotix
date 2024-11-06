@@ -15,6 +15,8 @@ export class CardComponent {
   @Input() subtitle: string | undefined;
   @Input() imgSrc: string | undefined;
   @Input() customTitleCss: string | undefined;
+  @Input() hasText = true;
+  @Input() largePadding = false;
   @Output() action = new EventEmitter<number>();
 
   constructor() { }

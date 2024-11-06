@@ -3,10 +3,11 @@
     <img
       [src]="imgSrc"
       class="card-img-top rounded-0"
+      [ngClass]="largePadding ? 'p-5' : ''"
       [alt]="title"
     />
   </div>
-  <div class="card-body ps-0 pt-1">
+  <div class="card-body ps-0 pt-1" *ngIf="hasText">
     <p class="card-text m-0">
       <small class="text-uppercase text-primary">{{ subtitle }}</small>
     </p>

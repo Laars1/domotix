@@ -14,28 +14,28 @@
     },
     "vision": {
         "title": "vision",
-        "text": "Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optmieren und den Alltag zu vereinfachen. Dies umfasst die Automatsierung von Beleuchtung, Heizung, Klimatsierung, Sicherheit und anderen Alltagsaspekten.",
+        "text": "Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optimieren und den Alltag zu vereinfachen. Dies umfasst die Automatisierung von Beleuchtung, Heizung, Klimatisierung, Sicherheit und anderen Alltagsaspekten.",
         "contact": "Get in touch!"
     },
     "light": {
         "title": "Licht",
-        "text": "Erschaffen Sie im Handumdrehen Ihre persönliche Lichtatmosphäre – unsere einfache Lösung ermöglicht eine individuelle Anpassung der Lichtszenen."
+        "text": "Mit unserer benutzerfreundlichen Lösung kreieren Sie im Handumdrehen Ihre individuelle Lichtstimmung. Passen Sie Lichtszenen ganz nach Ihren Wünschen an und schaffen Sie jederzeit die perfekte Atmosphäre."
     },
     "heating":{
         "title": "Heizung",
-        "text": "Revolutionieren Sie Ihr Raumklima mit intelligenter Automatisierung – Ihre Heizungs-, Klima- und Lüftungsgeräte arbeiten Hand in Hand ohne Ihre Aufmerksamkeit."
+        "text": "Erleben Sie ein revolutionäres Raumklima – Ihre Heizung, Klimaanlage und Lüftung kommunizieren miteinander und schaffen automatisch die ideale Wohlfühlatmosphäre, ohne dass Sie eingreifen müssen."
     },
     "shutter":{
         "title": "Jalusien",
-        "text": "Intelligente Jalousien, die sich automatisch an Ihre Bedürfnisse und den Stand der Sonne anpassen – erleben Sie den Komfort einer selbstständigen Steuerung für das perfekte Raumklima."
+        "text": "Intelligente Jalousien, die sich automatisch an Ihre Bedürfnisse und den Sonnenstand anpassen, sorgen für den Komfort, den Sie brauchen, um das perfekte Raumklima zu schaffen."
     },
     "multimedia":{
         "title": "Multimedia",
-        "text": "Mit Multiraum-Audio schaffen Sie sofort die perfekte Stimmung in jedem Raum."
+        "text": "Geniessen Sie grenzenlose Freiheit mit unserer Multiroom-Audio-Lösung! Lassen Sie in jedem Raum Ihre persönliche Playlist laufen – ob ruhige Musik für entspannte Stunden oder energiegeladene Klänge für unvergessliche Partynächte."
     },
     "energy": {
         "title": "Energieeffizienz",
-        "text": "Steigern Sie Ihren Eigenverbrauch, indem Sie Ihre selbst produzierte Energie effizient nutzen. Entdecken Sie eine effiziente Lösung für eine nachhaltige Energiezukunft."
+        "text": "Maximieren Sie Ihren Eigenverbrauch und profitieren Sie von Ihrer selbst erzeugten Energie. Mit unserer effizienten Lösung machen Sie einen Schritt in eine nachhaltige Energiezukunft und nutzen Ihre Ressourcen optimal."
     },
     "security": {
         "title": "Sicherheit",
@@ -45,8 +45,8 @@
     },
     "about":{
         "title": "Über uns",
-        "sindu": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-        "joel": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        "contact": "Wir bieten professionelle Fachplanung für Gebäudeautomation, speziell für Privatpersonen und KMU. Unser Team plant und programmiert massgeschneiderte Hausleitsysteme, die perfekt auf Ihre individuellen Bedürfnisse abgestimmt sind. Von der ersten Beratung bis zur Umsetzung begleiten wir Sie mit technischem Know-how und persönlichem Engagement – für eine intelligente, effiziente und komfortable Steuerung Ihrer Gebäude. Gerne dürfen Sie sich mit uns in Kontakt setzten, um ein Unverbindliches Angebot zu erhalten.",
+        "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
     },
     "contact": {
         "title": "Kontakt"

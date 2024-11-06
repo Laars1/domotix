@@ -6,6 +6,22 @@ $btn-border-radius: 0;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../node_modules/bootstrap-icons/";
 
+@font-face {
+  font-family: 'avenir_next_lt_proregular';
+  src: url('avenirnextltpro-regular-webfont.woff2') format('woff2'),
+       url('avenirnextltpro-regular-webfont.woff') format('woff');
+  font-style: normal;
+}
+
+p{
+    font-family: 'avenir_next_lt_proregular', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'avenir_next_lt_proregular', Arial, sans-serif;
+  font-weight: bold;
+}
+
 :root {
   --navigation-width: 2em;
   --navigation-font-size: 1.2rem;
@@ -14,7 +30,7 @@ $btn-border-radius: 0;
   --navigation-dot-color: #bbb;
   --navigation-font-color: #000;
   --navigation-font-color-hover: #a69885;
-  --show-navbar: hidden; 
+  --show-navbar: hidden;
   --opacity-navbar: 0;
 }
 

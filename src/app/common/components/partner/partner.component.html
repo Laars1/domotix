@@ -1,14 +1,7 @@
-<div class="container">
-  <div class="row vh-100 m-0 p-0">
-    <div class="col-12">
-      <div class="row gx-0 h-100 w-100">
-        <div class="mt-auto">
-          <h2 class="text-primary text-uppercase">{{'partner.title' | translate}}</h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-3" *ngFor="let item of entries">
-      <app-card [id]="item.id" [title]="item.title" [subtitle]="item.subtitle" [imgSrc]="item.headerImg" customTitleCss="text-white" (action)="getDetail($event)"></app-card>
+<div class="container pt-5">
+  <div class="row vh-100 gx-0 m-0 p-0">
+    <div class="col-4" *ngFor="let item of entries">
+      <app-card [id]="item.id"  [hasText]="false" [imgSrc]="item.headerImg" [largePadding]="true" customTitleCss="text-white" (action)="getDetail($event)"></app-card>
     </div>
   </div>
 </div>
