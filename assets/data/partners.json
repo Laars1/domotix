@@ -1,34 +1,17 @@
 [
     {
         "id": 1,
-        "title": "Infinity Arc Technologies",
-        "subtitle": "Bla bla bla",
-        "headerImg": "https://placehold.co/600x400",
-        "url": "https://www.google.com/maps"
+        "headerImg": "../../../assets/images/partners/Loxone.svg",
+        "url": "https://loxone.ch/"
     },
     {
         "id": 2,
-        "title": "EchoForge Enterprises",
-        "headerImg": "https://placehold.co/600x400",
-        "url": "https://www.google.com/"
+        "headerImg": "../../../assets/images/partners/knx.svg",
+        "url": "https://knx.org/"
     },
     {
         "id": 3,
-        "title": "Velox Innovations",
-        "subtitle": "Bla bla bla",
-        "headerImg": "https://placehold.co/600x400",
-        "url": "https://www.google.com/maps"
-    },
-    {
-        "id": 4,
-        "title": "Aurora Industries",
-        "headerImg": "https://placehold.co/600x400",
-        "url": "https://www.google.com/maps"
-    },
-    {
-        "id": 5,
-        "title": "Nimbus Innovators",
-        "headerImg": "https://placehold.co/600x400",
-        "url": "https://www.google.com/maps"
+        "headerImg": "../../../assets/images/partners/Control4.svg",
+        "url": "https://control4.com/"
     }
 ]

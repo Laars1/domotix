@@ -13,40 +13,40 @@
         "contact": "EN: Kontakt"
     },
     "vision": {
-        "title": "EN: vision",
-        "text": "EN: Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optmieren und den Alltag zu vereinfachen. Dies umfasst die Automatsierung von Beleuchtung, Heizung, Klimatsierung, Sicherheit und anderen Alltagsaspekten.",
-        "contact": "EN: Get in touch!"
+        "title": "Vision",
+        "text": "Domotix stands for the intelligent integration of technology in residential and commercial environments to increase living comfort, optimise energy efficiency and simplify everyday life. This includes the automation of lighting, heating, air conditioning, security and other aspects of everyday life.",
+        "contact": "Get in touch!"
     },
     "light": {
-        "title": "EN: Licht",
-        "text": "EN: Erschaffen Sie im Handumdrehen Ihre persönliche Lichtatmosphäre – unsere einfache Lösung ermöglicht eine individuelle Anpassung der Lichtszenen."
+        "title": "Light",
+        "text": "With our user-friendly solution, you can create your own personalised lighting mood in no time at all. Customise lighting scenes as you wish and create the perfect atmosphere at any time."
     },
     "heating":{
-        "title": "EN: Heizung",
-        "text": "EN: Revolutionieren Sie Ihr Raumklima mit intelligenter Automatisierung – Ihre Heizungs-, Klima- und Lüftungsgeräte arbeiten Hand in Hand ohne Ihre Aufmerksamkeit."
+        "title": "Heating",
+        "text": "Experience a revolutionary indoor climate - your heating, air conditioning and ventilation communicate with each other and automatically create the ideal feel-good atmosphere without you having to intervene."
     },
     "shutter":{
-        "title": "EN: Jalusien",
-        "text": "EN: Intelligente Jalousien, die sich automatisch an Ihre Bedürfnisse und den Stand der Sonne anpassen – erleben Sie den Komfort einer selbstständigen Steuerung für das perfekte Raumklima."
+        "title": "Blinds",
+        "text": "Intelligent blinds that automatically adjust to your needs and the position of the sun provide the comfort you need to create the perfect indoor climate."
     },
     "multimedia":{
-        "title": "EN: Multimedia",
-        "text": "EN: Mit Multiraum-Audio schaffen Sie sofort die perfekte Stimmung in jedem Raum."
+        "title": "Multimedia",
+        "text": "Enjoy unlimited freedom with our multiroom audio solution! Play your personal playlist in every room – whether it's quiet music for relaxing hours or energetic sounds for unforgettable party nights."
     },
     "energy": {
-        "title": "EN: Energieeffizienz",
-        "text": "EN: Steigern Sie Ihren Eigenverbrauch, indem Sie Ihre selbst produzierte Energie effizient nutzen. Entdecken Sie eine effiziente Lösung für eine nachhaltige Energiezukunft."
+        "title": "Energy efficiency",
+        "text": "Maximise your own consumption and benefit from your self-generated energy. With our efficient solution, you are taking a step towards a sustainable energy future and making optimum use of your resources."
     },
     "security": {
-        "title": "EN: Sicherheit",
-        "access-system": "EN: Unser zentralisiertes Zutrittssystem bietet eine effiziente Lösung für sicheren Zugang.",
-        "reliability": "EN: Zuverlässiger Schutz für Ihr Zuhause oder Geschäft, damit Sie ihr Gebäude unbeschwert verlassen können.",
-        "no-cloud": "EN: Unser Ansatz gewährleistet Unabhängigkeit von einer Cloud und Ihre Daten werden lokal verwaltet."
+        "title": "Security",
+        "access-system": "Our centralised access system offers an efficient solution for secure access.",
+        "reliability": "Reliable protection for your home or business, so you can leave your building with peace of mind.",
+        "no-cloud": "Reliable protection for your home or business, so you can leave your building with peace of mind."
     },
     "about":{
-        "title": "Über uns",
-        "sindu": "EN: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-        "joel": "EN: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        "title": "About us",
+        "contact": "We offer professional specialised planning for building automation, especially for private individuals and SMEs. Our team plans and programmes customised building management systems that are perfectly tailored to your individual needs. From the initial consultation through to implementation, we support you with technical expertise and personal commitment - for intelligent, efficient and convenient control of your buildings. You are welcome to contact us for a non-binding offer.",
+        "info": "EN: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
     },
     "contact": {
         "title": "EN: Kontakt"
