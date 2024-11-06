@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "headerImg": "../../../assets/images/partners/Loxone.svg",
+        "headerImg": "assets/images/partners/Loxone.svg",
         "url": "https://loxone.ch/"
     },
     {
         "id": 2,
-        "headerImg": "../../../assets/images/partners/knx.svg",
+        "headerImg": "assets/images/partners/knx.svg",
         "url": "https://knx.org/"
     },
     {
         "id": 3,
-        "headerImg": "../../../assets/images/partners/Control4.svg",
+        "headerImg": "assets/images/partners/Control4.svg",
         "url": "https://control4.com/"
     }
 ]
