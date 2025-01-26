@@ -1,0 +1,39 @@
+<div class="modal-header">
+  <h2 class="modal-title text-primary text-uppercase">{{ "footer.policies.title" | translate }}</h2>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="modal"
+    aria-label="Close"
+    (click)="dismiss()"
+  ></button>
+</div>
+<div class="modal-body">
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">{{ "footer.policies.data-protection.title" | translate }}</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">{{ "footer.policies.imprint.title" | translate }}</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="mt-3">
+        {{ "footer.policies.data-protection.content" | translate }}
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="mt-3">
+        <p class="fw-bold">
+          {{ "footer.policies.imprint.contact" | translate }}
+        </p>
+        <p>
+          {{ "footer.policies.imprint.company" | translate }}<br>
+          {{ "footer.policies.imprint.street" | translate }}<br>
+          {{ "footer.policies.imprint.city" | translate }}<br>
+          {{ "footer.policies.imprint.email" | translate }}<br>
+          {{ "footer.policies.imprint.registration-number" | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

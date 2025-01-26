@@ -17,6 +17,7 @@ export class CardComponent {
   @Input() customTitleCss: string | undefined;
   @Input() hasText = true;
   @Input() largePadding = false;
+  @Input() blur = true;
   @Output() action = new EventEmitter<number>();
 
   constructor() { }

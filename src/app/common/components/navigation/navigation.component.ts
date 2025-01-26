@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';

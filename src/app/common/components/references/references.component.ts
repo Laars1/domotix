@@ -7,6 +7,7 @@ import { Reference } from '../../models/reference';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ReferenceModalComponent } from './reference-modal/reference-modal.component';
 import { CardComponent } from '../card/card.component';
+import { LanguageProviderService } from '../../services/languageProvider.service';
 
 @Component({
   selector: 'app-references',
@@ -19,10 +20,14 @@ export class ReferencesComponent implements OnInit, OnDestroy {
   entries: Reference[] = []
   private modalReference: NgbModalRef | undefined;
   
-  constructor(private referenceService: ReferencesService, private modalService: NgbModal) { }
-
+  constructor(private referenceService: ReferencesService, private modalService: NgbModal, private languageProvider: LanguageProviderService) { }
+  
   ngOnInit(): void {
-    this.entries = this.referenceService.get();
+    this.languageProvider.language$.subscribe({
+      next: () => {
+        this.entries = this.referenceService.get();
+      },
+    });
   }
 
   ngOnDestroy(): void {
@@ -30,7 +35,6 @@ export class ReferencesComponent implements OnInit, OnDestroy {
   }
 
   getDetail(id: number){
-    console.log(this.entries.find(x => x.id == id))
     if(this.modalReference){
       this.modalReference.dismiss()
     }

@@ -1,5 +1,5 @@
 <div tabindex="0" class="card mx-auto w-100 border-0 rounded-0 bg-transparent" (click)="performCallback()" (keydown.enter)="performCallback()" (keydown.space)="performCallback()">
-  <div class="shrink-wrapper">
+  <div [ngClass]="blur ? 'shrink-blur-wrapper' : 'shrink-wrapper'">
     <img
       [src]="imgSrc"
       class="card-img-top rounded-0"

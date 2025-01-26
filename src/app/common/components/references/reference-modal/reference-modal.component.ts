@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA, Input, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
 import { Reference } from '../../../models/reference';
 import { NgbActiveModal, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
@@ -13,15 +13,11 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [CommonModule, NgbCarouselModule, TranslateModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class ReferenceModalComponent implements OnInit {
+export class ReferenceModalComponent {
   @Input() entry!: Reference
   constructor(private activeModal: NgbActiveModal) { }
 
   dismiss(): void{
     this.activeModal.dismiss()
-  }
-
-  ngOnInit(): void {
-    console.log(this.entry)
   }
 }

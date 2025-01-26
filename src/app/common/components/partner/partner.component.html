@@ -1,7 +1,15 @@
 <div class="container pt-5">
   <div class="row vh-100 gx-0 m-0 p-0">
     <div class="col-4" *ngFor="let item of entries">
-      <app-card [id]="item.id"  [hasText]="false" [imgSrc]="item.headerImg" [largePadding]="true" customTitleCss="text-white" (action)="getDetail($event)"></app-card>
+      <app-card
+        [id]="item.id"
+        [hasText]="false"
+        [imgSrc]="item.headerImg"
+        [largePadding]="true"
+        [blur]="false"
+        customTitleCss="text-white"
+        (action)="getDetail($event)"
+      ></app-card>
     </div>
   </div>
 </div>

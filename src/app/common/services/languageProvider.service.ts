@@ -2,12 +2,16 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../environments/environment.development';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 
 export class LanguageProviderService {
+  // Behavior subject in order to detect language changes, which can be used to update static services
+  language$ = new BehaviorSubject('de');
+
   constructor(private translateService: TranslateService) {}
 
   /**
@@ -20,6 +24,7 @@ export class LanguageProviderService {
     }
     this.translateService.setDefaultLang(language);
     this.translateService.currentLang = language;
+    this.language$.next(language);
   }
 
   /**
@@ -33,6 +38,7 @@ export class LanguageProviderService {
 
     this.translateService.use(language);
     this.translateService.currentLang = language;
+    this.language$.next(language);
   }
 
   /**
@@ -40,6 +46,10 @@ export class LanguageProviderService {
    */
   getCurrentLanguage(){
     return this.translateService.currentLang;
+  }
+
+  getCurrentLanguageAsObservable(){
+    return this.language$.asObservable();
   }
 
   /**

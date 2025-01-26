@@ -17,6 +17,7 @@ import { ContactComponent } from './common/components/contact/contact.component'
 import { ReferencesComponent } from './common/components/references/references.component';
 import { PartnerComponent } from './common/components/partner/partner.component';
 import { ViewportScroller } from '@angular/common';
+import { FooterComponent } from './common/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -37,7 +38,8 @@ import { ViewportScroller } from '@angular/common';
     AboutComponent,
     ContactComponent,
     ReferencesComponent,
-    PartnerComponent
+    PartnerComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
