@@ -59,5 +59,23 @@
     },
     "partner": {
         "title": "EN: Partner"
+    },
+    "footer": {
+        "policies": {
+            "title": "EN: Datenschutzerklärung & Impressum",
+            "data-protection": {
+                "title": "EN: Datenschutzerklärung",
+                "content": "EN: Datenschutz Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein. Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben. In enger Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen."
+            },
+            "imprint":{
+                "title": "EN: Impressum",
+                "contact": "EN: Kontaktinformationen",
+                "company": "EN: Domitix GmbH",
+                "street": "EN: Muesmattstrasse 37",
+                "city": "EN: 3012 Bern",
+                "email": "EN: info(at)domotix.ch",
+                "registration-number": "EN: Registrationsnummer: CHE-317.880.883"
+            }
+        }
     }
 }
