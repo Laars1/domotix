@@ -20,17 +20,32 @@ html{
   vertical-align: middle;
 }
 
-.sidenav:hover {
-  --navigation-width: 17em;
-  width: var(--navigation-width);
-  background-color: var(--navigation-background-color);
+/* Hover to expand - only on devices that support hover */
+@media (hover: hover) {
+  .sidenav:hover {
+    --navigation-width: 17rem;
+    width: var(--navigation-width);
+    background-color: var(--navigation-background-color);
+  }
 }
 
+/* Mobile-specific styles: Hide when clicking a menu item */
+@media (hover: none) {
+  .sidenav {
+    --navigation-width: 2rem;
+    width: var(--navigation-width);
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .sidenav.open {
+    --navigation-width: 17rem;
+    width: var(--navigation-width);
+    background-color: var(--navigation-background-color);
+  }
+}
 
 .sidenav a {
-  padding: 0.3em;
   text-decoration: none;
-  font-size: var(--navigation-font-size);
   color: var(--navigation-font-color);
   display: block;
   transition: 0.3s;
@@ -45,19 +60,13 @@ html{
   background-color: var(--navigation-font-color-hover);
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: var(--navigation-font-size-responsive);
-  }
+.sidenav > div > div {
+  padding-top: 0.8rem;
 }
 
 .dot {
-  height: 1.2em;
-  width: 1.2em;
+  height: 1.2rem;
+  width: 1.2rem;
   background-color: var(--navigation-dot-color);
   border-radius: 50%;
   display: inline-block;
@@ -66,7 +75,7 @@ html{
 }
 
 .header > div {
-  padding-left: 0.4em;
+  padding-left: 0.4rem;
   width: 200%;
 }
 
