@@ -10,7 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   selector: 'app-partner',
   templateUrl: './partner.component.html',
-  styleUrls: ['./partner.component.scss'],
   imports: [CommonModule, CardComponent, TranslateModule],
 })
 export class PartnerComponent implements OnInit {

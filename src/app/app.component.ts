@@ -18,6 +18,7 @@ import { ReferencesComponent } from './common/components/references/references.c
 import { PartnerComponent } from './common/components/partner/partner.component';
 import { ViewportScroller } from '@angular/common';
 import { FooterComponent } from './common/components/footer/footer.component';
+import { ContainerComponent } from "./common/components/container/container.component";
 
 @Component({
   selector: 'app-root',
@@ -39,8 +40,9 @@ import { FooterComponent } from './common/components/footer/footer.component';
     ContactComponent,
     ReferencesComponent,
     PartnerComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    ContainerComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

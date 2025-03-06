@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageProviderService } from '../../services/languageProvider.service';
 import { CommonModule } from '@angular/common';
@@ -9,7 +8,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-language-switcher',
   templateUrl: './language-switcher.component.html',
   styleUrls: ['./language-switcher.component.scss'],
-  imports: [RouterOutlet, TranslateModule, CommonModule],
+  imports: [TranslateModule, CommonModule],
   standalone: true
 })
 export class LanguageSwitcherComponent implements OnInit {

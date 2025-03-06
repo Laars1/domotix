@@ -12,7 +12,6 @@ import { LanguageProviderService } from '../../services/languageProvider.service
 @Component({
   selector: 'app-references',
   templateUrl: './references.component.html',
-  styleUrls: ['./references.component.scss'],
   standalone: true,
   imports: [CommonModule, TranslateModule, CardComponent]
 })

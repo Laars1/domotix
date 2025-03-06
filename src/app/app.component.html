@@ -2,38 +2,38 @@
 <app-parallax-wrapper imgSrc="assets/images/header.jpg" [linearGradient]="true" id="home">
     <app-home></app-home>
 </app-parallax-wrapper>
-<app-parallax-wrapper id="vision">
-    <app-vision></app-vision>
-</app-parallax-wrapper>
-<app-parallax-wrapper>
+<app-container>
+    <app-vision id="vision"></app-vision>
+</app-container>
+<app-container>
     <app-light></app-light>
-</app-parallax-wrapper>
-<app-parallax-wrapper>
+</app-container>
+<app-container>
     <app-heating></app-heating>
-</app-parallax-wrapper>
-<app-parallax-wrapper>
+</app-container>
+<app-container>
     <app-shutter></app-shutter>
-</app-parallax-wrapper>
-<app-parallax-wrapper>
+</app-container>
+<app-container>
     <app-multimedia></app-multimedia>
-</app-parallax-wrapper>
-<app-parallax-wrapper>
+</app-container>
+<app-container>
     <app-energy></app-energy>
-</app-parallax-wrapper>
-<app-parallax-wrapper>
+</app-container>
+<app-container>
     <app-security></app-security>
-</app-parallax-wrapper>
-<app-parallax-wrapper customCss="bg-black" id="about">
+</app-container>
+<app-container customCss="bg-black" id="about">
     <app-about></app-about>
-</app-parallax-wrapper>
-<app-parallax-wrapper customCss="bg-black" id="partners">
+</app-container>
+<app-container customCss="bg-black" id="partners">
     <app-partner></app-partner>
-</app-parallax-wrapper>
-<app-parallax-wrapper id="references">
+</app-container>
+<app-container id="references">
     <app-references></app-references>
-</app-parallax-wrapper>
-<app-parallax-wrapper id="contact">
+</app-container>
+<app-container id="contact">
     <app-contact></app-contact>
-</app-parallax-wrapper>
+</app-container>
 <app-footer></app-footer>
 <router-outlet />

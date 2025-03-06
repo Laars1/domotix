@@ -1,4 +1,3 @@
-import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -7,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './security.component.html',
   styleUrls: ['./security.component.scss'],
   standalone: true,
-  imports: [TranslateModule, NgOptimizedImage]
+  imports: [TranslateModule]
 })
 export class SecurityComponent {
 
