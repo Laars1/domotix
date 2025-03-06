@@ -10,14 +10,14 @@
 </div>
 <div class="modal-body">
   <div class="row">
-    <div class="col-6">
+    <div class="col-12 order-2 col-md-6 order-md-1">
       <ngb-carousel class="carousel has-caption" [showNavigationArrows]="false">
         <ng-template ngbSlide *ngFor="let image of entry.content.images">
           <img class="img-fluid" [src]="image" alt="" />
         </ng-template>
       </ngb-carousel>
     </div>
-    <div class="col-6">
+    <div class="col-12 order-1 col-md-6 order-md-2">
       <h4 class="text-uppercase">{{ entry.subtitle }}</h4>
       <h6 class="text-primary text-uppercase">
         <small>{{ entry.content.date }}</small>

@@ -16,7 +16,7 @@ import { AboutComponent } from './common/components/about/about.component';
 import { ContactComponent } from './common/components/contact/contact.component';
 import { ReferencesComponent } from './common/components/references/references.component';
 import { PartnerComponent } from './common/components/partner/partner.component';
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { FooterComponent } from './common/components/footer/footer.component';
 import { ContainerComponent } from "./common/components/container/container.component";
 
@@ -41,7 +41,8 @@ import { ContainerComponent } from "./common/components/container/container.comp
     ReferencesComponent,
     PartnerComponent,
     FooterComponent,
-    ContainerComponent
+    ContainerComponent,
+    CommonModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
