@@ -1,80 +1,74 @@
 {
-    "Test": "Test notizia",
-    "feature":{
-        "translation": "IT: Übersetzungs Feature",
-        "navigation": "IT: Navigations Feature"
-    },
     "navigation": {
-        "home": "IT: Home",
-        "vision": "IT: Vision",
-        "about": "IT: Über uns",
-        "references": "IT: Referenzen",
-        "partners": "IT: Partner",
-        "contact": "IT: Kontakt"
+        "home": "Home",
+        "vision": "Visione",
+        "about": "Chi siamo",
+        "references": "Riferimenti",
+        "partners": "Partner",
+        "contact": "Contattateci"
     },
     "vision": {
-        "title": "IT: vision",
-        "text": "IT: Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optmieren und den Alltag zu vereinfachen. Dies umfasst die Automatsierung von Beleuchtung, Heizung, Klimatsierung, Sicherheit und anderen Alltagsaspekten.",
-        "contact": "IT: Get in touch!"
+        "title": "Visione",
+        "text": "Domotix è sinonimo di integrazione intelligente della tecnologia negli ambienti residenziali e commerciali per aumentare il comfort abitativo, ottimizzare l'efficienza energetica e semplificare la vita quotidiana. Ciò include l'automazione di illuminazione, riscaldamento, climatizzazione, sicurezza e altri aspetti della vita quotidiana.",
+        "contact": "Get in touch!"
     },
     "light": {
-        "title": "IT: Licht",
-        "text": "IT: Erschaffen Sie im Handumdrehen Ihre persönliche Lichtatmosphäre – unsere einfache Lösung ermöglicht eine individuelle Anpassung der Lichtszenen."
+        "title": "Luce",
+        "text": "Create la vostra atmosfera di luce personale in un batter d'occhio: la nostra semplice soluzione vi permette di personalizzare le scene di luce."
     },
     "heating":{
-        "title": "IT: Heizung",
-        "text": "IT: Revolutionieren Sie Ihr Raumklima mit intelligenter Automatisierung – Ihre Heizungs-, Klima- und Lüftungsgeräte arbeiten Hand in Hand ohne Ihre Aufmerksamkeit."
+        "title": "Riscaldamento",
+        "text": "Rivoluzionate il vostro clima interno con un'automazione intelligente: le vostre unità di riscaldamento, condizionamento e ventilazione lavorano fianco a fianco senza la vostra attenzione."
     },
     "shutter":{
-        "title": "IT: Jalusien",
-        "text": "IT: Intelligente Jalousien, die sich automatisch an Ihre Bedürfnisse und den Stand der Sonne anpassen – erleben Sie den Komfort einer selbstständigen Steuerung für das perfekte Raumklima."
+        "title": "Jalusia",
+        "text": "Tende intelligenti che si regolano automaticamente in base alle vostre esigenze e alla posizione del sole: provate la comodità di un controllo indipendente per un clima interno perfetto."
     },
     "multimedia":{
-        "title": "IT: Multimedia",
-        "text": "IT: Mit Multiraum-Audio schaffen Sie sofort die perfekte Stimmung in jedem Raum."
+        "title": "Multimedia",
+        "text": "Con l'audio multiroom è possibile creare istantaneamente l'atmosfera perfetta in qualsiasi stanza."
     },
     "energy": {
-        "title": "IT: Energieeffizienz",
-        "text": "IT: Steigern Sie Ihren Eigenverbrauch, indem Sie Ihre selbst produzierte Energie effizient nutzen. Entdecken Sie eine effiziente Lösung für eine nachhaltige Energiezukunft."
+        "title": "Efficienza energetica",
+        "text": "Aumentate il vostro autoconsumo utilizzando in modo efficiente l'energia che producete voi stessi. Scoprite una soluzione efficiente per un futuro energetico sostenibile."
     },
     "security": {
-        "title": "IT: Sicherheit",
-        "access-system": "IT: Unser zentralisiertes Zutrittssystem bietet eine effiziente Lösung für sicheren Zugang.",
-        "reliability": "IT: Zuverlässiger Schutz für Ihr Zuhause oder Geschäft, damit Sie ihr Gebäude unbeschwert verlassen können.",
-        "no-cloud": "IT: Unser Ansatz gewährleistet Unabhängigkeit von einer Cloud und Ihre Daten werden lokal verwaltet."
+        "title": "Sicurezza",
+        "access-system": "Il nostro sistema di accesso centralizzato offre una soluzione efficiente per un accesso sicuro.",
+        "reliability": "Una protezione affidabile per la vostra casa o la vostra azienda, in modo che possiate lasciare il vostro edificio in tutta tranquillità.",
+        "no-cloud": "Il nostro approccio garantisce l'indipendenza dal cloud e la gestione dei dati a livello locale.."
     },
     "about":{
-        "title": "Über uns",
-        "sindu": "IT: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam",
-        "joel": "IT: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        "title": "Chi siamo",
+        "contact": "Offriamo una progettazione professionale specializzata per l'automazione degli edifici, in particolare per privati e PMI. Il nostro team progetta e programma sistemi di gestione degli edifici su misura, perfettamente adattati alle vostre esigenze individuali. Dalla consulenza iniziale fino all'implementazione, vi supportiamo con competenza tecnica e impegno personale, per un controllo intelligente, efficiente e conveniente dei vostri edifici. Siete invitati a contattarci per un'offerta non vincolante."
     },
     "contact": {
-        "title": "IT: Kontakt"
+        "title": "Contattateci"
     },
     "references": {
-        "title": "IT: Referenzen",
+        "title": "Riferimenti",
         "modal": {
-            "responsibilities": "IT: Responsibilities"
+            "responsibilities": "Responsabilità"
         }
     },
     "partner": {
-        "title": "IT: Partner"
+        "title": "Partner"
     },
     "footer": {
         "policies": {
-            "title": "IT: Datenschutzerklärung & Impressum",
+            "title": "Informativa sulla privacy e impronta",
             "data-protection": {
-                "title": "IT: Datenschutzerklärung",
-                "content": "IT: Datenschutz Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein. Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben. In enger Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen."
+                "title": "Informativa sulla privacy",
+                "content": "Protezione dei dati Sulla base dell'articolo 13 della Costituzione federale svizzera e delle disposizioni della Confederazione svizzera in materia di protezione dei dati (legge sulla protezione dei dati, DSG), ogni persona ha diritto alla tutela della propria privacy e alla protezione dall'uso improprio dei propri dati personali. Noi ci atteniamo a queste disposizioni. I dati personali sono trattati in modo strettamente confidenziale e non vengono venduti o ceduti a terzi. In stretta collaborazione con i nostri fornitori di hosting, cerchiamo di proteggere al meglio i database da accessi non autorizzati, perdita, uso improprio o falsificazione."
             },
             "imprint":{
-                "title": "IT: Impressum",
-                "contact": "IT: Kontaktinformationen",
-                "company": "IT: Domitix GmbH",
-                "street": "IT: Muesmattstrasse 37",
-                "city": "IT: 3012 Bern",
-                "email": "IT: info(at)domotix.ch",
-                "registration-number": "IT: Registrationsnummer: CHE-317.880.883"
+                "title": "Impronta",
+                "contact": "Informazioni di contatto",
+                "company": "Domitix GmbH",
+                "street": "Muesmattstrasse 37",
+                "city": "3012 Berna",
+                "email": "info(at)domotix.ch",
+                "registration-number": "Numero di registrazione: CHE-317.880.883"
             }
         }
     }

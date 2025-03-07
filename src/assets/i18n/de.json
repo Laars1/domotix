@@ -1,9 +1,4 @@
 {
-    "Test": "Test Nachricht",
-    "feature":{
-        "translation": "Übersetzungs Feature",
-        "navigation": "Navigations Feature"
-    },
     "navigation": {
         "home": "Home",
         "vision": "Vision",
@@ -45,8 +40,7 @@
     },
     "about":{
         "title": "Über uns",
-        "contact": "Wir bieten professionelle Fachplanung für Gebäudeautomation, speziell für Privatpersonen und KMU. Unser Team plant und programmiert massgeschneiderte Hausleitsysteme, die perfekt auf Ihre individuellen Bedürfnisse abgestimmt sind. Von der ersten Beratung bis zur Umsetzung begleiten wir Sie mit technischem Know-how und persönlichem Engagement – für eine intelligente, effiziente und komfortable Steuerung Ihrer Gebäude. Gerne dürfen Sie sich mit uns in Kontakt setzten, um ein Unverbindliches Angebot zu erhalten.",
-        "info": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        "contact": "Wir bieten professionelle Fachplanung für Gebäudeautomation, speziell für Privatpersonen und KMU. Unser Team plant und programmiert massgeschneiderte Hausleitsysteme, die perfekt auf Ihre individuellen Bedürfnisse abgestimmt sind. Von der ersten Beratung bis zur Umsetzung begleiten wir Sie mit technischem Know-how und persönlichem Engagement – für eine intelligente, effiziente und komfortable Steuerung Ihrer Gebäude. Gerne dürfen Sie sich mit uns in Kontakt setzten, um ein Unverbindliches Angebot zu erhalten."
     },
     "contact": {
         "title": "Kontakt"

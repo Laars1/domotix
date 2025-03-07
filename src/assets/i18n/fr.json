@@ -1,16 +1,11 @@
 {
-    "Test": "Test nouvelles",
-    "feature":{
-        "translation": "FR: Übersetzungs Feature",
-        "navigation": "FR: Navigations Feature"
-    },
     "navigation": {
-        "home": "FR: Home",
-        "vision": "FR: Vision",
-        "about": "FR: Über uns",
-        "references": "FR: Referenzen",
-        "partners": "FR: Partner",
-        "contact": "FR: Kontakt"
+        "home": "Home",
+        "vision": "Vision",
+        "about": "Sur nous",
+        "references": "Références",
+        "partners": "Partenaire",
+        "contact": "Contact"
     },
     "vision": {
         "title": "Vision",
@@ -45,36 +40,35 @@
     },
     "about":{
         "title": "sur nous",
-        "contact": "Nous proposons une planification professionnelle spécialisée en domotique, spécialement pour les particuliers et les PME. Notre équipe planifie et programme des systèmes de gestion domotique sur mesure, parfaitement adaptés à vos besoins individuels. Du premier conseil à la mise en œuvre, nous vous accompagnons avec un savoir-faire technique et un engagement personnel - pour une commande intelligente, efficace et confortable de vos bâtiments. N'hésitez pas à nous contacter pour recevoir une offre sans engagement.",
-        "info": "FR: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        "contact": "Nous proposons une planification professionnelle spécialisée en domotique, spécialement pour les particuliers et les PME. Notre équipe planifie et programme des systèmes de gestion domotique sur mesure, parfaitement adaptés à vos besoins individuels. Du premier conseil à la mise en œuvre, nous vous accompagnons avec un savoir-faire technique et un engagement personnel - pour une commande intelligente, efficace et confortable de vos bâtiments. N'hésitez pas à nous contacter pour recevoir une offre sans engagement."
     },
     "contact": {
-        "title": "FR: Kontakt"
+        "title": "Contact"
     },
     "references": {
-        "title": "FR: Referenzen",
+        "title": "Références",
         "modal": {
-            "responsibilities": "FR: Responsibilities"
+            "responsibilities": "Responsabilités"
         }
     },
     "partner": {
-        "title": "FR: Partner"
+        "title": "Partenaire"
     },
     "footer": {
         "policies": {
-            "title": "FR: Datenschutzerklärung & Impressum",
+            "title": "Déclaration de confidentialité & mentions légales",
             "data-protection": {
-                "title": "FR: Datenschutzerklärung",
-                "content": "FR: Datenschutz Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein. Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben. In enger Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen."
+                "title": "Déclaration de confidentialité",
+                "content": "Protection des données En vertu de l'article 13 de la Constitution fédérale suisse et des dispositions fédérales relatives à la protection des données (loi sur la protection des données, LPD), toute personne a droit à la protection de sa sphère privée ainsi qu'à la protection contre l'emploi abusif de ses données personnelles. Nous respectons ces dispositions. Les données personnelles sont traitées de manière strictement confidentielle et ne sont ni vendues ni transmises à des tiers. En étroite collaboration avec nos fournisseurs d'hébergement, nous nous efforçons de protéger autant que possible les bases de données contre les accès étrangers, les pertes, les abus ou les falsifications."
             },
             "imprint":{
-                "title": "FR: Impressum",
-                "contact": "FR: Kontaktinformationen",
-                "company": "FR: Domitix GmbH",
-                "street": "FR: Muesmattstrasse 37",
-                "city": "FR: 3012 Bern",
-                "email": "FR: info(at)domotix.ch",
-                "registration-number": "FR: Registrationsnummer: CHE-317.880.883"
+                "title": "Mentions légales",
+                "contact": "Informations de contact",
+                "company": "Domitix GmbH",
+                "street": "Muesmattstrasse 37",
+                "city": "3012 Berne",
+                "email": "info(at)domotix.ch",
+                "registration-number": "Numéro d'enregistrement: CHE-317.880.883"
             }
         }
     }
