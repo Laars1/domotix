@@ -1,16 +1,11 @@
 {
-    "Test": "Test Message",
-    "feature":{
-        "translation": "EN: Übersetzungs Feature",
-        "navigation": "EN: Navigations Feature"
-    },
     "navigation": {
-        "home": "EN: Home",
-        "vision": "EN: Vision",
-        "about": "EN: Über uns",
-        "references": "EN: Referenzen",
-        "partners": "EN: Partner",
-        "contact": "EN: Kontakt"
+        "home": "Home",
+        "vision": "Vision",
+        "about": "About us",
+        "references": "References",
+        "partners": "Parter",
+        "contact": "Contact"
     },
     "vision": {
         "title": "Vision",
@@ -45,36 +40,35 @@
     },
     "about":{
         "title": "About us",
-        "contact": "We offer professional specialised planning for building automation, especially for private individuals and SMEs. Our team plans and programmes customised building management systems that are perfectly tailored to your individual needs. From the initial consultation through to implementation, we support you with technical expertise and personal commitment - for intelligent, efficient and convenient control of your buildings. You are welcome to contact us for a non-binding offer.",
-        "info": "EN: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+        "contact": "We offer professional specialised planning for building automation, especially for private individuals and SMEs. Our team plans and programmes customised building management systems that are perfectly tailored to your individual needs. From the initial consultation through to implementation, we support you with technical expertise and personal commitment - for intelligent, efficient and convenient control of your buildings. You are welcome to contact us for a non-binding offer."
     },
     "contact": {
-        "title": "EN: Kontakt"
+        "title": "Contact"
     },
     "references": {
-        "title": "EN: Referenzen",
+        "title": "References",
         "modal": {
-            "responsibilities": "EN: Responsibilities"
+            "responsibilities": "Responsibilities"
         }
     },
     "partner": {
-        "title": "EN: Partner"
+        "title": "Partner"
     },
     "footer": {
         "policies": {
-            "title": "EN: Datenschutzerklärung & Impressum",
+            "title": "Privacy Policy & Imprint",
             "data-protection": {
-                "title": "EN: Datenschutzerklärung",
-                "content": "EN: Datenschutz Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein. Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben. In enger Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen."
+                "title": "Privacy Policy",
+                "content": "ata protection Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation (Data Protection Act, DSG), every person is entitled to protection of their privacy and protection against misuse of their personal data. We comply with these provisions. Personal data is treated as strictly confidential and is neither sold nor passed on to third parties. In close cooperation with our hosting providers, we endeavour to protect the databases as well as possible against unauthorised access, loss, misuse or falsification."
             },
             "imprint":{
-                "title": "EN: Impressum",
-                "contact": "EN: Kontaktinformationen",
-                "company": "EN: Domitix GmbH",
-                "street": "EN: Muesmattstrasse 37",
-                "city": "EN: 3012 Bern",
-                "email": "EN: info(at)domotix.ch",
-                "registration-number": "EN: Registrationsnummer: CHE-317.880.883"
+                "title": "Imprint",
+                "contact": "Contact information",
+                "company": "Domitix GmbH",
+                "street": "Muesmattstrasse 37",
+                "city": "3012 Bern",
+                "email": "info(at)domotix.ch",
+                "registration-number": "Registration number: CHE-317.880.883"
             }
         }
     }
