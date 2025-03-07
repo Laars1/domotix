@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "title": "IT: Tennis Club Neufeld",
-        "subtitle": "IT: Anbindung der Sportplatzbeleuchtung an das Reservierungssystem",
+        "title": "Tennis Club Neufeld",
+        "subtitle": "Collegamento dell'illuminazione del campo sportivo al sistema di prenotazione",
         "headerImg": "https://placehold.co/600x400",
         "content": {
-            "date": "IT: 2024",
-            "description": "IT: Die Beleuchtung des Tennisclubs sollte sich automatisch an den Reservierungen orientieren. Ziel ist es, den Energieverbrauch durch automatische Abschaltung zu senken und gleichzeitig die Lichtemissionen für die Nachbarschaft zu minimieren. \n ",
-            "solution": "IT: Im Zuge des Neubaus der Schwimmhalle und der Neugestaltung des Tennisclubs wurde die gesamte Elektroinstallation auf KNX-Basis realisiert. Mithilfe der API des GotCourts-Reservierungssystems kann Loxone die Beleuchtung abhängig von den Reservierungen steuern. So schaltet sich das Licht nur bei Bedarf und unter Berücksichtigung der Umgebungshelligkeit ein.",
-            "tags": ["IT: Kompatible Lösung mit Bestands Anlage", "IT: GotCourts API Schnittstelle bauen", "IT: UI für den Vorstand erstellen"],
+            "date": "2024",
+            "description": "L'illuminazione del tennis club dovrebbe essere orientata automaticamente verso le riserve. L'obiettivo è quello di ridurre il consumo energetico attraverso lo spegnimento automatico e allo stesso tempo ridurre al minimo le emissioni luminose per il quartiere. \n ",
+            "solution": "L'intero impianto elettrico è stato realizzato su base KNX come parte della nuova costruzione della piscina coperta e della riprogettazione del tennis club. Utilizzando l'API del sistema di prenotazione GotCourts, Loxone può controllare l'illuminazione in base alle prenotazioni. Ciò significa che l'illuminazione si accende solo quando è necessario, tenendo conto della luminosità ambientale.",
+            "tags": ["Soluzione compatibile con il sistema esistente", "Creare l'interfaccia API di GotCourt", "Creare l'interfaccia utente per il Comitato esecutivo"],
             "images": [
                 "https://placehold.co/600x400/000000/FFFFFF.png",
                 "https://placehold.co/600x400/111/FFFFFF.png",

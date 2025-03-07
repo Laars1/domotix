@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "title": "IT: Tennis Club Neufeld",
-        "subtitle": "IT: Anbindung der Sportplatzbeleuchtung an das Reservierungssystem",
+        "title": "Tennis Club Neufeld",
+        "subtitle": "Connection of the sports field lighting to the reservation system",
         "headerImg": "https://placehold.co/600x400",
         "content": {
-            "date": "IT: 2024",
-            "description": "IT: Die Beleuchtung des Tennisclubs sollte sich automatisch an den Reservierungen orientieren. Ziel ist es, den Energieverbrauch durch automatische Abschaltung zu senken und gleichzeitig die Lichtemissionen für die Nachbarschaft zu minimieren. \n ",
-            "solution": "IT: Im Zuge des Neubaus der Schwimmhalle und der Neugestaltung des Tennisclubs wurde die gesamte Elektroinstallation auf KNX-Basis realisiert. Mithilfe der API des GotCourts-Reservierungssystems kann Loxone die Beleuchtung abhängig von den Reservierungen steuern. So schaltet sich das Licht nur bei Bedarf und unter Berücksichtigung der Umgebungshelligkeit ein.",
-            "tags": ["IT: Kompatible Lösung mit Bestands Anlage", "IT: GotCourts API Schnittstelle bauen", "IT: UI für den Vorstand erstellen"],
+            "date": "2024",
+            "description": "The tennis club's lighting should be automatically based on reservations. The aim is to reduce energy consumption through automatic switch-off and at the same time minimize light emissions for the neighbourhood. \n ",
+            "solution": "As part of the new construction of the indoor swimming pool and the redesign of the tennis club, the entire electrical installation was implemented on a KNX basis. Using the API of the GotCourts reservation system, Loxone can control the lighting depending on the reservations. This means that the lights are only switched on when required, taking into account the ambient brightness.",
+            "tags": ["Compatible solution with existing system", "Build GotCourt's API interface", "Create UI for the Management Board"],
             "images": [
                 "https://placehold.co/600x400/000000/FFFFFF.png",
                 "https://placehold.co/600x400/111/FFFFFF.png",
