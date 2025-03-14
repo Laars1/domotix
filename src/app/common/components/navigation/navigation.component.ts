@@ -14,6 +14,7 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 })
 export class NavigationComponent implements OnInit {
   isNavbarOpen = false;
+  showText = false;
   
   constructor(private readonly scroller: ViewportScroller){
   }
