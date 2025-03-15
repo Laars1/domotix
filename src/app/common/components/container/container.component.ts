@@ -9,7 +9,4 @@ import { Component, Input } from '@angular/core';
 })
 export class ContainerComponent  {
   @Input() customCss: string | undefined
-
-  constructor() { } 
-
 }

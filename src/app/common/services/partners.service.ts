@@ -8,8 +8,6 @@ import { Partner } from '../models/partner';
 export class PartnersService {
   private data: Partner[] = (jsonData as unknown as { default: Partner[] }).default;
 
-  constructor() {}
-
   public get(): Partner[] {
     return this.data;
   }

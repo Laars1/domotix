@@ -48,10 +48,6 @@ export class LanguageProviderService {
     return this.translateService.currentLang;
   }
 
-  getCurrentLanguageAsObservable(){
-    return this.language$.asObservable();
-  }
-
   /**
    * Get supported languages from environments
    * @returns string array of supported languages

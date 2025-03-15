@@ -8,7 +8,4 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule]
 })
-export class AboutComponent {
-
-  constructor() { }
-}
+export class AboutComponent {}

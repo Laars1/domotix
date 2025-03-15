@@ -7,7 +7,4 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule]
 })
-export class ContactComponent {
-
-  constructor() { }
-}
+export class ContactComponent {}

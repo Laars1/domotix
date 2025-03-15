@@ -20,8 +20,6 @@ export class CardComponent {
   @Input() blur = true;
   @Output() action = new EventEmitter<number>();
 
-  constructor() { }
-
   performCallback(){
     this.action.emit(this.id);
   }

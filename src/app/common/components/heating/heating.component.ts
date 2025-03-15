@@ -7,8 +7,4 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule]
 })
-export class HeatingComponent {
-
-  constructor() { }
-
-}
+export class HeatingComponent {}
