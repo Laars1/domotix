@@ -3,18 +3,17 @@
         "id": 1,
         "title": "Tennis Club Neufeld",
         "subtitle": "Connection of the sports field lighting to the reservation system",
-        "headerImg": "https://placehold.co/600x400",
+        "headerImg": "assets/images/references/tcn/TCN_1.png",
         "content": {
             "date": "2024",
             "description": "The tennis club's lighting should be automatically based on reservations. The aim is to reduce energy consumption through automatic switch-off and at the same time minimize light emissions for the neighbourhood. \n ",
             "solution": "As part of the new construction of the indoor swimming pool and the redesign of the tennis club, the entire electrical installation was implemented on a KNX basis. Using the API of the GotCourts reservation system, Loxone can control the lighting depending on the reservations. This means that the lights are only switched on when required, taking into account the ambient brightness.",
             "tags": ["Compatible solution with existing system", "Build GotCourt's API interface", "Create UI for the Management Board"],
             "images": [
-                "https://placehold.co/600x400/000000/FFFFFF.png",
-                "https://placehold.co/600x400/111/FFFFFF.png",
-                "https://placehold.co/600x400/222/FFFFFF.png",
-                "https://placehold.co/600x400/333/FFFFFF.png",
-                "https://placehold.co/600x400/444/FFFFFF.png"
+                "assets/images/references/tcn/TCN_1.png",
+                "assets/images/references/tcn/TCN_2.png",
+                "assets/images/references/tcn/TCN_3.png",
+                "assets/images/references/tcn/TCN_4.png"
             ]
         }
     }
