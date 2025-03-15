@@ -1,0 +1,16 @@
+$breakpoint: 768px;
+
+@media screen and (max-width: 767px) {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center!important;
+    }
+
+    p{
+        text-align: unset!important;
+        text-align: center!important;
+    }
+
+    a.btn-primary {
+        margin: 0 auto;
+    }
+  }
