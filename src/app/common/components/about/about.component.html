@@ -31,7 +31,7 @@
             {{ "footer.policies.imprint.company" | translate }}<br>
             {{ "footer.policies.imprint.street" | translate }}<br>
             {{ "footer.policies.imprint.city" | translate }}<br>
-            <a href="mailto:info@domotix.ch">{{ "footer.policies.imprint.email" | translate }}</a><br />
+            <a [href]="'mailto:'+email">{{ "common.email" | translate }}</a><br />
           </p>
         </div>
       </div>

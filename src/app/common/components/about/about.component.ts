@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { CONFIGURATION_CONSTANT } from '../../../shared/constants/configuration.constants';
 
 @Component({
   selector: 'app-about',
@@ -8,4 +9,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule]
 })
-export class AboutComponent {}
+export class AboutComponent {
+  protected readonly email: string = CONFIGURATION_CONSTANT.email;
+}
