@@ -67,9 +67,12 @@
                 "company": "Domotix GmbH",
                 "street": "Muesmattstrasse 37",
                 "city": "3012 Bern",
-                "email": "info(at)domotix.ch",
+                "email": "getintouch(at)domotix.ch",
                 "registration-number": "Registration number: CHE-317.880.883"
             }
         }
+    },
+    "common": {
+        "email": "Mail address"
     }
 }
