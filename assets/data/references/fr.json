@@ -16,5 +16,22 @@
                 "assets/images/references/tcn/TCN_4.png"
             ]
         }
+    },
+        {
+        "id": 2,
+        "title": "Mise à jour du système de simulateur de golf",
+        "subtitle": "Modernisation d'une installation existante",
+        "headerImg": "assets/images/references/go4golf/1.JPG",
+        "content": {
+            "date": "2025",
+            "description": "Le simulateur de golf existant devait être entièrement remanié. Le projet comprenait principalement une mise à niveau technique ainsi que des adaptations de l’espace (renouvellement de l’écran et habillage du plafond).La faible hauteur sous plafond a entraîné deux contraintes majeures: 1. Le projecteur devait être installé en biais, en dehors de la zone de frappe. 2. Le plafond devait être protégé contre les coups accidentels de club.",
+            "solution": "Le simulateur a été modernisé sur le plan technique et adapté aux contraintes du local. L’électronique a été renouvelée, un écran sur mesure a été installé et le plafond a été habillé de manière à le protéger tout en intégrant la technique de façon discrète et propre dans le concept de la pièce.",
+            "tags": ["Refonte complète de l’électronique", "Fabrication sur mesure et montage d’un nouvel écran", "Coordination de chantier (montage, coordination des corps de métier, mise en œuvre sur site)"],
+            "images": [
+                "assets/images/references/go4golf/1.JPG",
+                "assets/images/references/go4golf/2.JPG",
+                "assets/images/references/go4golf/3.jpg"
+            ]
+        }
     }
 ]

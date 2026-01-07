@@ -16,5 +16,22 @@
                 "assets/images/references/tcn/TCN_4.png"
             ]
         }
+    },
+    {
+        "id": 2,
+        "title": "Golfsimulator Systemupdate",
+        "subtitle": "Modernisierung einer Bestandsanlage",
+        "headerImg": "assets/images/references/go4golf/1.JPG",
+        "content": {
+            "date": "2025",
+            "description": "Der bestehende Golfsimulator sollte umfassend überarbeitet werden. Im Fokus standen ein technisches Update sowie bauliche Anpassungen im Raum (Erneuerung der Leinwand und Verkleidung der Decke).Die geringe Deckenhöhe brachte zwei zentrale Herausforderungen mit sich: 1. Der Projektor musste schräg und ausserhalb des Abschlagbereichs montiert werden. \n 2. Die Decke musste gegen versehentliche Treffer durch Golfschläger geschützt werden.",
+            "solution": "Der Golfsimulator wurde technisch vollständig modernisiert und an die räumlichen Gegebenheiten angepasst. Dazu wurden die Elektronik erneuert, eine neue massgefertigte Leinwand installiert und die Decke baulich so verkleidet, dass sie vor versehentlichen Treffern geschützt ist und die Technik unauffällig sowie sauber ins Raumkonzept integriert werden konnte.",
+            "tags": ["Komplette Überarbeitung der Elektronik", "Massanfertigung und Montage einer neuen Leinwand", "Baukoordination (Montage, Abstimmung der Gewerke, Umsetzung vor Ort)"],
+            "images": [
+                "assets/images/references/go4golf/1.JPG",
+                "assets/images/references/go4golf/2.JPG",
+                "assets/images/references/go4golf/3.jpg"
+            ]
+        }
     }
 ]
