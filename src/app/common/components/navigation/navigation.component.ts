@@ -1,45 +1,49 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable @angular-eslint/no-empty-lifecycle-method */
-import { Component, OnInit } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
-import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
+import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+
+const NAV_HEIGHT = 64;
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
   standalone: true,
-  imports: [TranslateModule, LanguageSwitcherComponent, CommonModule]
+  imports: [TranslateModule, LanguageSwitcherComponent, CommonModule, RouterLink],
 })
-export class NavigationComponent implements OnInit {
-  isNavbarOpen = false;
-  showText = false;
-  
-  constructor(private readonly scroller: ViewportScroller){
-  }
+export class NavigationComponent implements OnInit, OnDestroy {
+  scrolled = false;
+  overDark = false;
+  mobileOpen = false;
+
+  constructor(private readonly scroller: ViewportScroller) {}
 
   ngOnInit(): void {
-    window.addEventListener('scroll', this.scroll, true)
+    window.addEventListener('scroll', this.onScroll, { passive: true });
   }
 
-  scroll = (): void => {
-    if(window.scrollY > 900){
-      document.body.style.setProperty('--show-navbar', "visible");
-      document.body.style.setProperty('--opacity-navbar', "1");
-    }else{
-      document.body.style.setProperty('--show-navbar', "hidden");
-      document.body.style.setProperty('--opacity-navbar', "0");
+  ngOnDestroy(): void {
+    window.removeEventListener('scroll', this.onScroll);
+  }
 
+  private onScroll = (): void => {
+    this.scrolled = window.scrollY > 200;
+
+    const aboutEl = document.getElementById('about');
+    if (aboutEl) {
+      const rect = aboutEl.getBoundingClientRect();
+      this.overDark = rect.top <= NAV_HEIGHT && rect.bottom > NAV_HEIGHT;
     }
-  }
+  };
 
   scrollToSection(fragment: string) {
     this.scroller.scrollToAnchor(fragment);
-    this.toggleSidenav()
+    this.mobileOpen = false;
   }
 
-  toggleSidenav() {
-      this.isNavbarOpen = !this.isNavbarOpen;
+  toggleNav() {
+    this.mobileOpen = !this.mobileOpen;
   }
 }

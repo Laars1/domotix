@@ -1,40 +1,39 @@
-<div class="container">
-  <div class="row min-vh-100">
-    <div class="col-12 order-1 order-md-1">
-      <h2 class="text-primary text-uppercase pt-5">{{'about.title' | translate}}</h2>
-    </div>
-    <div class="col-12 col-md-6 order-2 order-md-2">
-      <div class="row gx-0 h-100 w-100 text-center">
-        <div class="my-auto">
-          <img class="img-fluid w-50" src="assets/images/portraits/Easwararanjan_Shenthujan.png" alt=""/>
+<section class="about-section section-pad">
+  <div class="container">
+
+    <span class="section-label-light">{{ 'about.title' | translate }}</span>
+    <div class="hairline" style="background-color: rgba(242,242,242,0.15);"></div>
+
+    <div class="about-grid">
+
+      <!-- Statement -->
+      <div class="about-statement">
+        <p class="about-text">{{ 'about.contact' | translate }}</p>
+
+        <p class="about-address">
+          {{ 'footer.policies.imprint.company' | translate }}<br />
+          {{ 'footer.policies.imprint.street' | translate }}<br />
+          {{ 'footer.policies.imprint.city' | translate }}<br />
+          {{ 'footer.policies.imprint.phone' | translate }}<br />
+          <a [href]="'mailto:' + email" class="about-email">{{ 'common.write-us' | translate }}</a>
+        </p>
+      </div>
+
+      <!-- Team portraits -->
+      <div class="about-team">
+        <div class="team-member" *ngFor="let member of employees">
+          <div class="team-portrait-wrap">
+            <img
+              [src]="member.img"
+              [alt]="member.firstName + ' ' + member.lastName + ', Domotix GmbH'"
+              class="team-portrait"
+              loading="lazy"
+            />
+          </div>
+          <span class="team-name">{{ member.firstName }}<br>{{ member.lastName }}</span>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-md-6 order-4 order-md-3">
-      <div class="row gx-0 h-100 w-100">
-        <div class="my-auto">
-          <p class="w-100">{{'about.contact' | translate}}</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 order-3 order-md-4">
-      <div class="row gx-0 h-100 w-100 text-center">
-        <div class="my-auto">
-          <img class="img-fluid w-50" src="assets/images/portraits/Pulfer_Joel.png" alt=""/>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 order-5 order-md-5">
-      <div class="row gx-0 h-100 w-100">
-        <div class="my-auto">
-          <p class="text-justify">
-            {{ "footer.policies.imprint.company" | translate }}<br>
-            {{ "footer.policies.imprint.street" | translate }}<br>
-            {{ "footer.policies.imprint.city" | translate }}<br>
-            <a [href]="'mailto:'+email">{{ "common.email" | translate }}</a><br />
-          </p>
-        </div>
-      </div>
+
     </div>
   </div>
-</div>
+</section>

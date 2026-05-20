@@ -1,28 +1,29 @@
-/* eslint-disable no-unused-vars */
-import { Component, OnDestroy } from '@angular/core';
-import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { PoliciesModalComponent } from './policies-modal/policies-modal.component';
+import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
 })
-export class FooterComponent implements OnDestroy{
-  private modalReference: NgbModalRef | undefined;
+export class FooterComponent {
+  modalOpen = false;
+  activeTab: 'privacy' | 'imprint' = 'privacy';
 
-  constructor(private modalService: NgbModal) { }
-
-  ngOnDestroy(): void {
-    this.modalService.dismissAll()
+  open(): void {
+    this.modalOpen = true;
+    this.activeTab = 'privacy';
+    document.body.style.overflow = 'hidden';
   }
 
-  getModal(){
-    if(this.modalReference){
-      this.modalReference.dismiss()
-    }
-
-    this.modalReference = this.modalService.open(PoliciesModalComponent, {centered: true, size: 'xl'})
+  close(): void {
+    this.modalOpen = false;
+    document.body.style.overflow = '';
   }
+
+  @HostListener('document:keydown.escape')
+  onEscape(): void { this.close(); }
 }

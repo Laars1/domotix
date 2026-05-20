@@ -1,15 +1,23 @@
-<div class="container pt-5">
-  <div class="row min-vh-100 gx-0 m-0 p-0">
-    <div class="col-6 col-md-4 my-auto" *ngFor="let item of entries">
-      <app-card
-        [id]="item.id"
-        [hasText]="false"
-        [imgSrc]="item.headerImg"
-        [largePadding]="false"
-        [blur]="false"
-        customTitleCss="text-white"
-        (action)="getDetail($event)"
-      ></app-card>
+<section class="partners-section section-pad-sm">
+  <div class="container">
+
+    <div class="partners-strip">
+      <a
+        *ngFor="let item of entries"
+        [href]="item.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="partner-logo-link"
+      >
+        <img
+          [src]="item.headerImg"
+          [alt]="item.title"
+          class="partner-logo"
+          loading="lazy"
+          [class]="'partner-logo partner-logo--' + item.title.toLowerCase()"
+        />
+      </a>
     </div>
+
   </div>
-</div>
+</section>

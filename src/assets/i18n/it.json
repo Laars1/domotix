@@ -7,6 +7,12 @@
         "partners": "Partner",
         "contact": "Contattateci"
     },
+    "hero": {
+        "headline": "Edifici intelligenti.",
+        "headline2": "Realizzati con precisione.",
+        "subheadline": "Domotica per abitazioni e PMI – a Berna, Soletta e in tutta la Svizzera.",
+        "cta": "Contattaci"
+    },
     "vision": {
         "title": "Visione",
         "text": "Domotix è sinonimo di integrazione intelligente della tecnologia negli ambienti residenziali e commerciali per aumentare il comfort abitativo, ottimizzare l'efficienza energetica e semplificare la vita quotidiana. Ciò include l'automazione di illuminazione, riscaldamento, climatizzazione, sicurezza e altri aspetti della vita quotidiana.",
@@ -14,31 +20,39 @@
     },
     "light": {
         "title": "Luce",
-        "text": "Create la vostra atmosfera di luce personale in un batter d'occhio: la nostra semplice soluzione vi permette di personalizzare le scene di luce."
+        "tagline": "Atmosfere luminose personalizzate, regolate automaticamente.",
+        "text": "I sistemi di illuminazione intelligenti creano l'atmosfera perfetta per ogni momento e ogni attività. Le scene possono essere regolate con un solo tocco o automaticamente in base all'ora del giorno e alla presenza. Che si tratti di una luce calda la sera o di un'illuminazione vivace al mattino, tutto è accessibile con un clic. Sensori di presenza e di luminosità garantiscono che la luce sia accesa solo quando necessario. Sistemi LED ad alta efficienza energetica vengono integrati perfettamente nella rete di controllo. Comfort, estetica ed efficienza si uniscono in un'esperienza luminosa intelligente."
     },
-    "heating":{
-        "title": "Riscaldamento",
-        "text": "Rivoluzionate il vostro clima interno con un'automazione intelligente: le vostre unità di riscaldamento, condizionamento e ventilazione lavorano fianco a fianco senza la vostra attenzione."
+    "heating": {
+        "title": "Comfort",
+        "tagline": "Riscaldamento, clima, ventilazione e oscuramento perfettamente coordinati.",
+        "text": "Un clima interno perfetto nasce dall'interazione armoniosa di riscaldamento, climatizzazione, ventilazione e oscuramento. Controlli intelligenti regolano automaticamente temperatura e qualità dell'aria in base alle esigenze e alla presenza. I sistemi di oscuramento vengono integrati nel controllo climatico per ridurre attivamente gli apporti di calore. La temperatura degli ambienti si adatta alla vostra routine quotidiana per il massimo comfort in ogni momento. Efficienza energetica e comfort non si escludono, ma si completano a vicenda. Il risultato è un clima abitativo piacevole con un consumo energetico minimizzato."
     },
-    "shutter":{
-        "title": "Jalusia",
-        "text": "Tende intelligenti che si regolano automaticamente in base alle vostre esigenze e alla posizione del sole: provate la comodità di un controllo indipendente per un clima interno perfetto."
+    "shutter": {
+        "title": "Innovazione",
+        "tagline": "Soluzioni intelligenti che crescono con il vostro ambiente.",
+        "text": "L'innovazione significa per noi lo sviluppo continuo di soluzioni intelligenti per gli edifici nella vita quotidiana. Puntiamo sulle tecnologie e i protocolli più moderni come KNX e Loxone per la massima flessibilità. I nuovi sistemi vengono integrati perfettamente nelle installazioni esistenti, senza interventi strutturali inutili. Le interfacce con servizi esterni – come sistemi di prenotazione o piattaforme meteo – aprono possibilità di applicazione completamente nuove. Aggiornamenti continui e adattamenti individuali mantengono il vostro impianto sempre all'avanguardia. Il vostro edificio rimane intelligente, flessibile e a prova di futuro."
     },
-    "multimedia":{
+    "multimedia": {
         "title": "Multimedia",
-        "text": "Con l'audio multiroom è possibile creare istantaneamente l'atmosfera perfetta in qualsiasi stanza."
+        "tagline": "Audio multiroom per ogni stanza, in qualsiasi momento.",
+        "text": "I sistemi audio multiroom consentono un intrattenimento illimitato in ogni stanza della vostra casa. Musica, podcast o radio possono essere controllati centralmente e distribuiti in zone individuali. L'integrazione nel sistema domotico permette scenari combinati, come la musica che parte automaticamente all'accensione delle luci. Altoparlanti di alta qualità vengono integrati discretamente in soffitti e pareti. Il controllo avviene in modo intuitivo tramite touch panel, smartphone o controllo vocale. Il piacere audio e il comfort domotico si fondono in un'esperienza senza interruzioni."
     },
     "energy": {
         "title": "Efficienza energetica",
-        "text": "Aumentate il vostro autoconsumo utilizzando in modo efficiente l'energia che producete voi stessi. Scoprite una soluzione efficiente per un futuro energetico sostenibile."
+        "tagline": "Massimizzare l'autoconsumo, ottimizzare le risorse.",
+        "text": "La gestione intelligente dell'energia massimizza l'autoconsumo del vostro impianto fotovoltaico. I dati di consumo vengono registrati e visualizzati in tempo reale per identificare in modo trasparente il potenziale di risparmio. Carichi come pompe di calore, lavatrici o stazioni di ricarica vengono controllati automaticamente in base alla disponibilità energetica. L'energia in eccesso viene utilizzata in modo ottimale invece di essere immessa inutilizzata nella rete. Nel lungo termine, i sistemi energetici intelligenti riducono notevolmente i costi operativi. Sostenibilità ed efficienza economica vanno di pari passo."
     },
+    "services": { "label": "Prestazioni", "more": "Scopri di più" },
     "security": {
         "title": "Sicurezza",
+        "tagline": "Accesso sicuro, gestione locale dei dati, senza dipendenza dal cloud.",
+        "text": "Un sistema di sicurezza centralizzato protegge il vostro edificio in modo affidabile 24 ore su 24. Controllo degli accessi, videosorveglianza e sistemi di allarme vengono riuniti in un'unica piattaforma. Tutti i dati vengono archiviati localmente – senza dipendenza dal cloud e con la massima sicurezza dei dati. Le autorizzazioni possono essere assegnate in modo flessibile e modificate o revocate in qualsiasi momento. Gli accessi e gli eventi vengono registrati e sono consultabili in qualsiasi momento. In questo modo mantenete sempre il pieno controllo sull'accesso al vostro edificio.",
         "access-system": "Il nostro sistema di accesso centralizzato offre una soluzione efficiente per un accesso sicuro.",
         "reliability": "Una protezione affidabile per la vostra casa o la vostra azienda, in modo che possiate lasciare il vostro edificio in tutta tranquillità.",
-        "no-cloud": "Il nostro approccio garantisce l'indipendenza dal cloud e la gestione dei dati a livello locale.."
+        "no-cloud": "Il nostro approccio garantisce l'indipendenza dal cloud e la gestione dei dati a livello locale."
     },
-    "about":{
+    "about": {
         "title": "Chi siamo",
         "contact": "Offriamo una progettazione professionale specializzata per l'automazione degli edifici, in particolare per privati e PMI. Il nostro team progetta e programma sistemi di gestione degli edifici su misura, perfettamente adattati alle vostre esigenze individuali. Dalla consulenza iniziale fino all'implementazione, vi supportiamo con competenza tecnica e impegno personale, per un controllo intelligente, efficiente e conveniente dei vostri edifici. Siete invitati a contattarci per un'offerta non vincolante."
     },
@@ -47,6 +61,7 @@
     },
     "references": {
         "title": "Riferimenti",
+        "cta": "Scopri di più",
         "modal": {
             "responsibilities": "Responsabilità"
         }
@@ -61,18 +76,20 @@
                 "title": "Informativa sulla privacy",
                 "content": "Protezione dei dati Sulla base dell'articolo 13 della Costituzione federale svizzera e delle disposizioni della Confederazione svizzera in materia di protezione dei dati (legge sulla protezione dei dati, DSG), ogni persona ha diritto alla tutela della propria privacy e alla protezione dall'uso improprio dei propri dati personali. Noi ci atteniamo a queste disposizioni. I dati personali sono trattati in modo strettamente confidenziale e non vengono venduti o ceduti a terzi. In stretta collaborazione con i nostri fornitori di hosting, cerchiamo di proteggere al meglio i database da accessi non autorizzati, perdita, uso improprio o falsificazione."
             },
-            "imprint":{
+            "imprint": {
                 "title": "Impronta",
                 "contact": "Informazioni di contatto",
                 "company": "Domotix GmbH",
                 "street": "Muesmattstrasse 37",
                 "city": "3012 Berna",
+                "phone": "031 512 50 05",
                 "email": "getintouch(at)domotix.ch",
                 "registration-number": "Numero di registrazione: CHE-317.880.883"
             }
         }
     },
     "common": {
-        "email": "Indirizzo e-mail"
+        "email": "Indirizzo e-mail",
+        "write-us": "Scriveteci"
     }
 }

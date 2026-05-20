@@ -1,3 +1,153 @@
-p{
-    color: #fff;
+$color-light:    #F2F2F2;
+$color-dark:     #0D0D0D;
+$color-tan:      #A69885;
+$color-bluegrey: #8599A6;
+
+.about-section {
+  background-color: $color-dark;
+  color: $color-light;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+  margin: 0 0.5rem;
+
+  @media (max-width: 960px) {
+    border-radius: 2rem;
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 640px) {
+    border-radius: 1.25rem;
+    margin: 0 0.5rem;
+  }
+}
+
+// ─── Section heading ──────────────────────────────────────────────────────────
+.about-heading {
+  color: $color-light;
+  margin-bottom: 2rem;
+}
+
+// ─── Two-column grid ──────────────────────────────────────────────────────────
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+// ─── Statement column ─────────────────────────────────────────────────────────
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba($color-light, 0.82);
+  margin-bottom: 2.5rem;
+  text-align: left;
+  border-left: 2px solid $color-tan;
+  padding-left: 1.5rem;
+}
+
+.about-address {
+  font-size: 0.88rem;
+  line-height: 2;
+  color: rgba($color-light, 0.4);
+  margin-bottom: 0;
+  text-align: left;
+
+  @media (max-width: 900px) {
+    font-size: 0.82rem;
+  }
+}
+
+.about-email {
+  color: $color-tan;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: lighten($color-tan, 12%);
+  }
+}
+
+// ─── Team column ──────────────────────────────────────────────────────────────
+.about-team {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: nowrap;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.5rem;
+  }
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+// ─── Portrait ─────────────────────────────────────────────────────────────────
+.team-portrait-wrap {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  @media (max-width: 900px) {
+    width: 140px;
+    height: 140px;
+  }
+
+  @media (max-width: 480px) {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.team-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  filter: grayscale(15%);
+  transition: filter 0.35s ease;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+// ─── Name label ───────────────────────────────────────────────────────────────
+.team-name {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba($color-light, 0.45);
+  text-align: center;
 }

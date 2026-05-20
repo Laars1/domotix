@@ -4,42 +4,58 @@
         "vision": "Vision",
         "about": "About us",
         "references": "References",
-        "partners": "Parter",
+        "partners": "Partners",
         "contact": "Contact"
+    },
+    "hero": {
+        "headline": "Intelligent buildings.",
+        "headline2": "Precisely realised.",
+        "subheadline": "Building automation for homes and SMEs – in Bern, Solothurn, and across Switzerland.",
+        "cta": "Get in touch"
     },
     "vision": {
         "title": "Vision",
+        "heading": "Your Smart Home",
         "text": "Domotix stands for the intelligent integration of technology in residential and commercial environments to increase living comfort, optimise energy efficiency and simplify everyday life. This includes the automation of lighting, heating, air conditioning, security and other aspects of everyday life.",
         "contact": "Get in touch!"
     },
     "light": {
         "title": "Light",
-        "text": "With our user-friendly solution, you can create your own personalised lighting mood in no time at all. Customise lighting scenes as you wish and create the perfect atmosphere at any time."
+        "tagline": "Custom lighting scenes, automatically adjusted.",
+        "text": "Lighting shapes spaces, creates atmosphere and influences wellbeing, focus and relaxation. Modern lighting design combines architecture, usage, time of day and individual needs with intelligent control. The light automatically adapts to presence, ambient brightness and personal habits. It supports the natural rhythm of the day, from waking up to working and relaxing in the evening. With general, accent and functional lighting, flexible scenes can be created and controlled with ease. The result is an intuitive lighting environment that does more than react, it actively shapes the room."
     },
-    "heating":{
-        "title": "Heating",
-        "text": "Experience a revolutionary indoor climate - your heating, air conditioning and ventilation communicate with each other and automatically create the ideal feel-good atmosphere without you having to intervene."
+    "heating": {
+        "title": "Comfort",
+        "tagline": "Heating, climate, ventilation and shading in perfect harmony.",
+        "text": "A comfortable indoor climate is created when temperature, air and light are in balance. Modern room control automatically provides pleasant warmth or cooler conditions depending on use and time of day. The technology works quietly in the background, detects presence, window status and weather data, and adjusts the settings proactively. Individual profiles and schedules ensure comfort during everyday life, weekends or holidays. At the same time, energy consumption is reduced during absence without compromising comfort. The result is an efficient indoor climate that adapts to the rhythm of life."
     },
-    "shutter":{
-        "title": "Blinds",
-        "text": "Intelligent blinds that automatically adjust to your needs and the position of the sun provide the comfort you need to create the perfect indoor climate."
+    "shutter": {
+        "title": "Innovation",
+        "tagline": "Smart solutions that grow with your environment.",
+        "text": "Innovation is not defined by technology itself, but by how it makes spaces more comfortable, simple and pleasant to use. Good solutions integrate discreetly into the interior and only become visible when needed. Light, sound, displays and controls support architecture and everyday life without drawing attention. Intelligent systems optimise themselves and remain flexible for changing needs or future technologies. This creates a seamless unity of design, function and technology. The result is a home that feels natural and ready for tomorrow."
     },
-    "multimedia":{
+    "multimedia": {
         "title": "Multimedia",
-        "text": "Enjoy unlimited freedom with our multiroom audio solution! Play your personal playlist in every room – whether it's quiet music for relaxing hours or energetic sounds for unforgettable party nights."
+        "tagline": "Multiroom audio for every room, at any time.",
+        "text": "Sound discreetly accompanies everyday life and shapes the atmosphere of a room. Intelligent audio systems adapt to the space, its use and the time of day. Multiroom solutions provide the right acoustic experience in every area, either centrally controlled or automated. Beyond music, doorbell sounds, voice announcements and alerts can be used in a targeted way. Control is simple via app, wall switch or voice command. High-quality integrated speakers deliver room-filling sound without disturbing the design."
     },
     "energy": {
         "title": "Energy efficiency",
-        "text": "Maximise your own consumption and benefit from your self-generated energy. With our efficient solution, you are taking a step towards a sustainable energy future and making optimum use of your resources."
+        "tagline": "Maximise self-consumption, optimise every resource.",
+        "text": "Intelligent energy management helps use self-generated electricity efficiently and sustainably. Energy is controlled automatically according to demand, time of day, consumption and availability. Surplus photovoltaic energy can be directed to battery storage, hot water, cooling, a heat pump or electric vehicle charging. This increases self-consumption and reduces grid dependency without manual intervention. At the same time, visualisation makes all energy flows transparent and highlights active consumers or irregularities early. The result is an efficient system that manages energy precisely and makes it clearly understandable."
     },
+    "services": { "label": "Services", "more": "Learn more" },
     "security": {
         "title": "Security",
+        "tagline": "Secure access, local data management, no cloud dependency.",
+        "text": "Building security is more than protection against burglary. Modern technology brings new risks, especially through connected systems and cloud dependencies. Our solutions operate exclusively locally and do not rely on an external cloud. Internet connectivity is only implemented on request. This keeps control, data and functionality within the building. The result is a secure system designed for today and the future.",
         "access-system": "Our centralised access system offers an efficient solution for secure access.",
         "reliability": "Reliable protection for your home or business, so you can leave your building with peace of mind.",
-        "no-cloud": "Reliable protection for your home or business, so you can leave your building with peace of mind."
+        "no-cloud": "Our approach guarantees independence from the cloud and your data is managed locally."
     },
-    "about":{
+    "about": {
         "title": "About us",
+        "heading": "The Team",
         "contact": "We offer professional specialised planning for building automation, especially for private individuals and SMEs. Our team plans and programmes customised building management systems that are perfectly tailored to your individual needs. From the initial consultation through to implementation, we support you with technical expertise and personal commitment - for intelligent, efficient and convenient control of your buildings. You are welcome to contact us for a non-binding offer."
     },
     "contact": {
@@ -47,32 +63,36 @@
     },
     "references": {
         "title": "References",
+        "cta": "View project",
         "modal": {
             "responsibilities": "Responsibilities"
         }
     },
     "partner": {
-        "title": "Partner"
+        "title": "Partners"
     },
     "footer": {
+        "copyright": "© 2026 Domotix GmbH",
         "policies": {
             "title": "Privacy Policy & Imprint",
             "data-protection": {
                 "title": "Privacy Policy",
-                "content": "ata protection Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation (Data Protection Act, DSG), every person is entitled to protection of their privacy and protection against misuse of their personal data. We comply with these provisions. Personal data is treated as strictly confidential and is neither sold nor passed on to third parties. In close cooperation with our hosting providers, we endeavour to protect the databases as well as possible against unauthorised access, loss, misuse or falsification."
+                "content": "Data protection Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation (Data Protection Act, DSG), every person is entitled to protection of their privacy and protection against misuse of their personal data. We comply with these provisions. Personal data is treated as strictly confidential and is neither sold nor passed on to third parties. In close cooperation with our hosting providers, we endeavour to protect the databases as well as possible against unauthorised access, loss, misuse or falsification."
             },
-            "imprint":{
+            "imprint": {
                 "title": "Imprint",
                 "contact": "Contact information",
                 "company": "Domotix GmbH",
                 "street": "Muesmattstrasse 37",
                 "city": "3012 Bern",
+                "phone": "031 512 50 05",
                 "email": "getintouch(at)domotix.ch",
                 "registration-number": "Registration number: CHE-317.880.883"
             }
         }
     },
     "common": {
-        "email": "Mail address"
+        "email": "Email address",
+        "write-us": "Write to us"
     }
 }

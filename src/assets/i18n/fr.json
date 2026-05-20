@@ -4,42 +4,58 @@
         "vision": "Vision",
         "about": "Sur nous",
         "references": "Références",
-        "partners": "Partenaire",
+        "partners": "Partenaires",
         "contact": "Contact"
+    },
+    "hero": {
+        "headline": "Des bâtiments intelligents.",
+        "headline2": "Réalisés avec précision.",
+        "subheadline": "Domotique pour résidences et PME – à Berne, Soleure et dans toute la Suisse.",
+        "cta": "Nous contacter"
     },
     "vision": {
         "title": "Vision",
+        "heading": "Votre maison intelligente",
         "text": "Domotix est synonyme d'intégration intelligente de la technologie dans les environnements résidentiels et commerciaux afin d'améliorer le confort de vie, d'optimiser l'efficacité énergétique et de simplifier la vie quotidienne. Cela comprend l'automatisation de l'éclairage, du chauffage, de la climatisation, de la sécurité et d'autres aspects de la vie quotidienne.",
         "contact": "Get in touch!"
     },
     "light": {
-        "title": "lumière",
-        "text": "Avec notre solution conviviale, vous créez votre propre ambiance lumineuse en un clin d'œil. Adaptez les scènes à vos souhaits et créez à tout moment l'ambiance parfaite"
+        "title": "Lumière",
+        "tagline": "Ambiances lumineuses personnalisées, ajustées automatiquement.",
+        "text": "L'éclairage structure les espaces, crée une atmosphère et influence le bien-être, la concentration et la détente. Une planification moderne de l'éclairage associe architecture, usage, moment de la journée et besoins individuels à une commande intelligente. La lumière s'adapte automatiquement à la présence, à la luminosité ambiante et aux habitudes. Elle accompagne le rythme de la journée, du réveil au travail jusqu'aux moments de détente le soir. Grâce à l'éclairage général, d'accentuation et fonctionnel, des scènes flexibles et simples à utiliser sont créées. Le résultat est un paysage lumineux intuitif, qui ne se contente pas de réagir, mais contribue activement à l'ambiance de l'espace."
     },
-    "heating":{
-        "title": "chauffage",
-        "text": "Découvrez un climat intérieur révolutionnaire - votre chauffage, votre climatisation et votre ventilation communiquent entre eux et créent automatiquement l'atmosphère de bien-être idéale, sans que vous ayez à intervenir."
+    "heating": {
+        "title": "Confort",
+        "tagline": "Chauffage, climatisation, ventilation et protection solaire parfaitement coordonnés.",
+        "text": "Un climat intérieur agréable naît de l'équilibre entre température, air et lumière. La régulation moderne des pièces assure automatiquement une chaleur agréable ou une fraîcheur adaptée à l'utilisation et au moment de la journée. La technologie fonctionne en arrière-plan, détecte la présence, l'état des fenêtres et les données météorologiques, puis adapte la régulation de manière anticipée. Des profils individuels et des horaires personnalisés garantissent le confort au quotidien, le week-end ou pendant les vacances. En cas d'absence, la consommation d'énergie est réduite sans compromettre le confort. Il en résulte un climat intérieur efficace, qui s'adapte au rythme de vie."
     },
-    "shutter":{
-        "title": "Jalusien",
-        "text": "Les stores intelligents, qui s'adaptent automatiquement à vos besoins et à la position du soleil, vous apportent le confort dont vous avez besoin pour créer un climat intérieur parfait."
+    "shutter": {
+        "title": "Innovation",
+        "tagline": "Des solutions intelligentes qui évoluent avec votre environnement.",
+        "text": "L'innovation ne se voit pas dans la technologie elle-même, mais dans la manière dont elle rend les espaces plus confortables, simples et agréables. Les bonnes solutions s'intègrent discrètement à l'intérieur et ne deviennent visibles que lorsqu'elles sont nécessaires. Lumière, son, écrans et commandes soutiennent l'architecture et le quotidien sans s'imposer. Les systèmes intelligents s'optimisent eux-mêmes et restent flexibles face aux nouveaux besoins ou aux futures technologies. Il en résulte une unité entre design, fonction et technique. Le résultat est un habitat naturel, pensé pour demain."
     },
-    "multimedia":{
-        "title": "Multimedia",
-        "text": "Profitez d'une liberté sans limites avec notre solution audio multiroom ! Faites tourner votre playlist personnelle dans chaque chambre – qu'il s'agisse de musique calme pour des heures de détente ou de sons énergiques pour des nuits de fête inoubliables."
+    "multimedia": {
+        "title": "Multimédia",
+        "tagline": "Audio multiroom dans chaque pièce, à tout moment.",
+        "text": "Le son accompagne le quotidien avec discrétion et influence l'atmosphère d'un espace. Les systèmes audio intelligents s'adaptent à la pièce, à l'usage et au moment de la journée. Les solutions multiroom offrent l'ambiance sonore adaptée à chaque zone, avec une commande centrale ou automatique. En plus de la musique, les sonneries, messages vocaux et alertes peuvent être utilisés de manière ciblée. La commande se fait simplement par application, interrupteur mural ou commande vocale. Des haut-parleurs intégrés de qualité assurent un son immersif sans perturber l'esthétique."
     },
     "energy": {
         "title": "Efficacité énergétique",
-        "text": "Maximisez votre propre consommation et profitez de l'énergie que vous produisez vous-même. Avec notre solution efficace, vous faites un pas vers un avenir énergétique durable et utilisez vos ressources de manière optimale."
+        "tagline": "Maximiser l'autoconsommation, optimiser les ressources.",
+        "text": "La gestion intelligente de l'énergie permet d'utiliser l'électricité produite soi-même de manière efficace et durable. L'énergie est pilotée automatiquement selon les besoins, le moment de la journée, la consommation et la disponibilité. Les surplus photovoltaïques peuvent être utilisés de façon ciblée pour le stockage, l'eau chaude, le refroidissement, la pompe à chaleur ou la recharge d'un véhicule électrique. Cela augmente l'autoconsommation et réduit l'énergie prélevée sur le réseau, sans intervention manuelle. La visualisation rend tous les flux d'énergie transparents et signale rapidement les consommateurs actifs ou les anomalies. Il en résulte un système efficace, qui pilote l'énergie de manière ciblée et compréhensible."
     },
+    "services": { "label": "Prestations", "more": "En savoir plus" },
     "security": {
         "title": "Sécurité",
+        "tagline": "Accès sécurisé, gestion locale des données, sans dépendance au cloud.",
+        "text": "La sécurité d'un bâtiment va au-delà de la simple protection contre les intrusions. Les technologies modernes apportent de nouveaux risques, notamment avec les systèmes connectés et les dépendances au cloud. Nos solutions fonctionnent exclusivement en local, sans cloud externe. Une connexion à Internet n'est mise en place que sur demande. Les données, les fonctions et le contrôle restent ainsi dans le bâtiment. Cela permet de créer des systèmes sûrs pour aujourd'hui et pour demain.",
         "access-system": "Notre système d'accès centralisé offre une solution efficace pour un accès sécurisé.",
         "reliability": "Une protection fiable pour votre domicile ou votre entreprise, afin que vous puissiez quitter votre bâtiment en toute tranquillité.",
         "no-cloud": "Notre approche garantit l'indépendance par rapport au cloud et vos données sont gérées localement."
     },
-    "about":{
-        "title": "sur nous",
+    "about": {
+        "title": "Sur nous",
+        "heading": "L'équipe",
         "contact": "Nous proposons une planification professionnelle spécialisée en domotique, spécialement pour les particuliers et les PME. Notre équipe planifie et programme des systèmes de gestion domotique sur mesure, parfaitement adaptés à vos besoins individuels. Du premier conseil à la mise en œuvre, nous vous accompagnons avec un savoir-faire technique et un engagement personnel - pour une commande intelligente, efficace et confortable de vos bâtiments. N'hésitez pas à nous contacter pour recevoir une offre sans engagement."
     },
     "contact": {
@@ -47,32 +63,36 @@
     },
     "references": {
         "title": "Références",
+        "cta": "En savoir plus",
         "modal": {
             "responsibilities": "Responsabilités"
         }
     },
     "partner": {
-        "title": "Partenaire"
+        "title": "Partenaires"
     },
     "footer": {
+        "copyright": "© 2026 Domotix GmbH",
         "policies": {
             "title": "Déclaration de confidentialité & mentions légales",
             "data-protection": {
                 "title": "Déclaration de confidentialité",
                 "content": "Protection des données En vertu de l'article 13 de la Constitution fédérale suisse et des dispositions fédérales relatives à la protection des données (loi sur la protection des données, LPD), toute personne a droit à la protection de sa sphère privée ainsi qu'à la protection contre l'emploi abusif de ses données personnelles. Nous respectons ces dispositions. Les données personnelles sont traitées de manière strictement confidentielle et ne sont ni vendues ni transmises à des tiers. En étroite collaboration avec nos fournisseurs d'hébergement, nous nous efforçons de protéger autant que possible les bases de données contre les accès étrangers, les pertes, les abus ou les falsifications."
             },
-            "imprint":{
+            "imprint": {
                 "title": "Mentions légales",
                 "contact": "Informations de contact",
                 "company": "Domotix GmbH",
                 "street": "Muesmattstrasse 37",
                 "city": "3012 Berne",
+                "phone": "031 512 50 05",
                 "email": "getintouch(at)domotix.ch",
                 "registration-number": "Numéro d'enregistrement: CHE-317.880.883"
             }
         }
     },
     "common": {
-        "email": "Adresse e-mail"
+        "email": "Adresse e-mail",
+        "write-us": "Écrivez-nous"
     }
 }

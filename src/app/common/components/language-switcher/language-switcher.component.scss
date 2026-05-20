@@ -1,14 +1,41 @@
-.btn-language{
-    color: var(--navigation-font-color);
-    text-decoration: underline 0.08em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 300ms;
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.btn-language:hover{
-    color: var(--navigation-font-color-hover);
-    text-decoration-color: var(--navigation-font-color-hover);
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 0.15rem 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--navigation-font-color, rgba(242, 242, 242, 0.7));
+  transition: color 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--navigation-font-color-hover, #F2F2F2);
+  }
+
+  &--active {
+    color: var(--navigation-font-color-hover, #F2F2F2);
+    font-weight: 400;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.btn-language:focus{
-    box-shadow: none;
+.lang-sep {
+  font-size: 0.65rem;
+  color: var(--navigation-font-color, rgba(242, 242, 242, 0.35));
+  user-select: none;
+  line-height: 1;
 }

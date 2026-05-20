@@ -1,7 +1,55 @@
-<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
-<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
-<footer>
-  <div class="m-0 mt-5 p-0 py-3 text-center">
-    <a id="policies" (click)="getModal()">Datenschutzerklärung & Impressum</a>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">{{ 'footer.copyright' | translate }}</span>
+    <button class="footer-policies-link" (click)="open()">
+      {{ 'footer.policies.title' | translate }}
+    </button>
   </div>
 </footer>
+
+<!-- Modal -->
+<div class="policy-backdrop" *ngIf="modalOpen" (click)="close()">
+  <div class="policy-modal" (click)="$event.stopPropagation()">
+
+    <button class="policy-modal__close" (click)="close()" aria-label="Close">
+      <i class="bi bi-x"></i>
+    </button>
+
+    <!-- Tabs -->
+    <div class="policy-modal__tabs">
+      <button
+        class="policy-modal__tab"
+        [class.policy-modal__tab--active]="activeTab === 'privacy'"
+        (click)="activeTab = 'privacy'"
+      >
+        {{ 'footer.policies.data-protection.title' | translate }}
+      </button>
+      <button
+        class="policy-modal__tab"
+        [class.policy-modal__tab--active]="activeTab === 'imprint'"
+        (click)="activeTab = 'imprint'"
+      >
+        {{ 'footer.policies.imprint.title' | translate }}
+      </button>
+    </div>
+
+    <!-- Privacy -->
+    <div class="policy-modal__body" *ngIf="activeTab === 'privacy'">
+      <p class="policy-modal__text">{{ 'footer.policies.data-protection.content' | translate }}</p>
+    </div>
+
+    <!-- Imprint -->
+    <div class="policy-modal__body" *ngIf="activeTab === 'imprint'">
+      <p class="policy-modal__label">{{ 'footer.policies.imprint.contact' | translate }}</p>
+      <p class="policy-modal__text">
+        {{ 'footer.policies.imprint.company' | translate }}<br>
+        {{ 'footer.policies.imprint.street' | translate }}<br>
+        {{ 'footer.policies.imprint.city' | translate }}<br>
+        {{ 'footer.policies.imprint.phone' | translate }}<br>
+        {{ 'footer.policies.imprint.email' | translate }}<br>
+        {{ 'footer.policies.imprint.registration-number' | translate }}
+      </p>
+    </div>
+
+  </div>
+</div>

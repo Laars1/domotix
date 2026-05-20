@@ -1,30 +1,22 @@
-/* eslint-disable no-unused-vars */
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { PartnersService } from '../../services/partners.service';
 import { Partner } from '../../models/partner';
-import { CommonModule } from '@angular/common';
-import { CardComponent } from '../card/card.component';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   standalone: true,
   selector: 'app-partner',
   templateUrl: './partner.component.html',
-  imports: [CommonModule, CardComponent, TranslateModule],
+  styleUrls: ['./partner.component.scss'],
+  imports: [CommonModule, TranslateModule],
 })
 export class PartnerComponent implements OnInit {
-  entries: Partner[] = []
+  entries: Partner[] = [];
 
-  constructor(private partnerService: PartnersService) { }
+  constructor(private partnerService: PartnersService) {}
 
   ngOnInit() {
     this.entries = this.partnerService.get();
-  }
-
-  getDetail(id: number){
-    const entry = this.entries.find(x => x.id == id);
-    if(entry != null){
-      window.open(entry.url, '_blank')
-    }
   }
 }

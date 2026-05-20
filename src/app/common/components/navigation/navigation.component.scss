@@ -1,132 +1,240 @@
-html{
+$color-light:    #F2F2F2;
+$color-dark:     #0D0D0D;
+$color-tan:      #A69885;
+$color-bluegrey: #8599A6;
+$nav-height:     64px;
+
+html {
   scroll-behavior: smooth;
 }
 
-.header {
-  position: absolute;
-  top: 50%;
+// ─── CSS custom property defaults (for language switcher inheritance) ─────────
+:root {
+  --navigation-font-color: rgba(242, 242, 242, 0.85);
+  --navigation-font-color-hover: #F2F2F2;
 }
 
-.sidenav {
-  height: 100%;
-  width: var(--navigation-width);
+// ─── Top bar ──────────────────────────────────────────────────────────────────
+.topbar {
   position: fixed;
-  z-index: 1;
+  // Expose CSS vars so child components (language-switcher) inherit them
+  --navigation-font-color: rgba(242, 242, 242, 0.85);
+  --navigation-font-color-hover: #F2F2F2;
   top: 0;
-  right: 0;
-  background-color: rgba($color: #fff, $alpha: 0);
-  overflow-x: hidden;
-  transition: 0.5s;
-  vertical-align: middle;
-}
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  height: $nav-height;
 
-/* Hover to expand - only on devices that support hover */
-@media (hover: hover) {
-  .sidenav:hover {
-    --navigation-width: 17rem;
-    width: var(--navigation-width);
-    background-color: var(--navigation-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  gap: 2rem;
+
+  // Start with subtle blur + gradient over hero, get solid after scroll
+  background: linear-gradient(to bottom, rgba($color-dark, 0.28) 0%, transparent 100%);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba($color-light, 0.15);
+  transition: background 0.35s ease, backdrop-filter 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+
+  &--scrolled {
+    background: $color-light;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom-color: transparent;
+    box-shadow: 0 1px 0 rgba($color-tan, 0.2);
+    --navigation-font-color: #0D0D0D;
+    --navigation-font-color-hover: #A69885;
+  }
+
+  &--dark {
+    background: $color-dark;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 1px solid rgba($color-light, 0.1);
+    box-shadow: none;
+    --navigation-font-color: rgba(242, 242, 242, 0.85);
+    --navigation-font-color-hover: #F2F2F2;
   }
 }
 
-/* Mobile-specific styles: Hide when clicking a menu item */
-@media (hover: none) {
-  .sidenav {
-    --navigation-width: 2rem;
-    width: var(--navigation-width);
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .sidenav.open {
-    --navigation-width: 17rem;
-    width: var(--navigation-width);
-    background-color: var(--navigation-background-color);
-  }
-}
-
-.sidenav a {
+// ─── Logo ─────────────────────────────────────────────────────────────────────
+.topbar__logo {
+  flex-shrink: 0;
   text-decoration: none;
-  color: var(--navigation-font-color);
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav div:hover > a {
-  color: var(--navigation-font-color-hover);
-}
-
-.sidenav div:hover > span {
-  background-color: var(--navigation-font-color-hover);
-}
-
-.sidenav > div > div {
-  padding-top: 0.8rem;
-}
-
-.dot {
-  height: 0.6rem;
-  width: 0.6rem;
-  background-color: var(--navigation-dot-color);
-  border-radius: 50%;
-  display: inline-block;
-  transition: 0.3s;
-  vertical-align: middle;
-}
-
-.header > div {
-  padding-left: 0.4rem;
-  width: 200%;
-}
-
-.header > div:hover {
-  width: 100%;
-}
-
-.header > div > a {
-  display: inline-block;
-}
-
-.languange-switcher {
-  width: 100%;
-  text-align: center;
-  padding: 2em;
-}
-
-.navbar {
-  z-index: 1;
-  background-color: #fff;
-  visibility: var(--show-navbar);
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0 auto;
-
-  // Transition animation
-  transition: all 1s;
-  opacity: var(--opacity-navbar);
-}
-
-.navbar:before {
-  content: "";
-  position: absolute;
-  left: 1%;
-  bottom: 0;
-  height: 2px;
-  width: 98%;
-  border-bottom: 2px solid;
-}
-
-.navbar-img {
-  width: 12em;
-  height: auto;
-}
-
-.header > div > a{
-  padding-left: 1rem;
-}
-
-.header > div:hover{
   cursor: pointer;
+}
+
+.topbar__logo-img {
+  height: 1.1rem;
+  width: auto;
+  max-width: 120px;
+  display: block;
+  filter: brightness(0) invert(1);
+  transition: filter 0.35s ease;
+
+  .topbar--scrolled & {
+    filter: none;
+  }
+
+  .topbar--dark & {
+    filter: brightness(0) invert(1);
+  }
+}
+
+// ─── Desktop nav links ────────────────────────────────────────────────────────
+.topbar__links {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  flex: 1;
+  justify-content: center;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  a {
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba($color-light, 0.85);
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-light;
+    }
+
+    // Once bar is solid
+    .topbar--scrolled & {
+      color: $color-dark;
+
+      &:hover {
+        color: $color-tan;
+      }
+    }
+  }
+}
+
+// ─── Right cluster ────────────────────────────────────────────────────────────
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  white-space: nowrap; // never wrap to 2 lines
+}
+
+// Language switcher in header: desktop only
+.topbar__lang-desktop {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    display: none; // hidden on mobile — lives in the drawer instead
+  }
+}
+
+// ─── Hamburger ────────────────────────────────────────────────────────────────
+.topbar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  @media (max-width: 900px) {
+    display: flex;
+  }
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: rgba($color-light, 0.9);
+    transition: background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+    transform-origin: center;
+
+    .topbar--scrolled & {
+      background-color: $color-dark;
+    }
+
+    &.active:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    &.active:nth-child(2) { opacity: 0; }
+    &.active:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  }
+}
+
+// ─── Mobile drawer ────────────────────────────────────────────────────────────
+.mobile-drawer {
+  position: fixed;
+  top: $nav-height;
+  left: 0;
+  width: 100%;
+  z-index: 199;
+  background-color: $color-light;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+
+  &--open {
+    max-height: 400px;
+    box-shadow: 0 4px 16px rgba($color-dark, 0.12);
+  }
+}
+
+.mobile-drawer__links {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem 0.5rem;
+  gap: 0;
+
+  a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-dark;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba($color-tan, 0.15);
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-tan;
+    }
+  }
+}
+
+// Language switcher at bottom of mobile drawer
+.mobile-drawer__lang {
+  padding: 1rem 2rem 1.5rem;
+  border-top: 1px solid rgba($color-tan, 0.12);
+
+  // Override CSS vars so buttons are dark inside the light drawer
+  --navigation-font-color: #{$color-dark};
+  --navigation-font-color-hover: #{$color-tan};
+}
+
+// ─── Language switcher colour override inside nav ─────────────────────────────
+// Makes button text white on transparent bar, dark on scrolled bar
+:host {
+  --navigation-font-color: rgba(#{$color-light}, 0.85);
+  --navigation-font-color-hover: #{$color-light};
+}
+
+.topbar--scrolled ~ * {
+  --navigation-font-color: #{$color-dark};
+  --navigation-font-color-hover: #{$color-tan};
 }
