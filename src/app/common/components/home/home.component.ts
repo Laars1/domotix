@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CONFIGURATION_CONSTANT } from '../../../shared/constants/configuration.constants';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  standalone: true
+  styleUrls: ['./home.component.scss'],
+  standalone: true,
+  imports: [TranslateModule],
 })
-export class HomeComponent{
-  protected readonly email: string = CONFIGURATION_CONSTANT.email
-}
+export class HomeComponent {}

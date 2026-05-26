@@ -1,14 +1,78 @@
-<div class="container">
-  <div class="row vh-100">
-    <div class="col-12">
-      <div class="row gx-0 h-100 w-100">
-        <div class="mt-auto">
-          <h2 class="text-primary text-uppercase">{{'references.title' | translate}}</h2>
+<section class="references-section section-pad">
+  <div class="container">
+
+    <span class="section-label">{{ 'references.title' | translate }}</span>
+    <div class="hairline"></div>
+
+    <div class="references-grid">
+      <div
+        class="reference-card"
+        *ngFor="let item of entries"
+        (click)="getDetail(item.id)"
+        (keydown.enter)="getDetail(item.id)"
+        (keydown.space)="getDetail(item.id)"
+        tabindex="0"
+        role="button"
+        [attr.aria-label]="item.title"
+      >
+        <div class="reference-card__image-wrap">
+          <img [src]="item.headerImg" [alt]="item.title" class="reference-card__image" loading="lazy" />
+        </div>
+        <div class="reference-card__body">
+          <h3 class="reference-card__title">{{ item.title }}</h3>
+          <p class="reference-card__subtitle">{{ item.subtitle }}</p>
+          <span class="link-cta">{{ 'references.cta' | translate }}</span>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6" *ngFor="let item of entries">
-      <app-card [id]="item.id" [title]="item.title" [subtitle]="item.subtitle" [imgSrc]="item.headerImg" (action)="getDetail($event)"></app-card>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="ref-backdrop" *ngIf="activeEntry" (click)="close()">
+  <div class="ref-modal" (click)="$event.stopPropagation()">
+
+    <button class="ref-modal__close" (click)="close()" aria-label="Close">
+      <i class="bi bi-x"></i>
+    </button>
+
+    <!-- Image gallery -->
+    <div class="ref-modal__gallery" *ngIf="activeEntry.content.images.length">
+      <img
+        [src]="activeEntry.content.images[activeImageIndex]"
+        [alt]="activeEntry.title"
+        class="ref-modal__img"
+      />
+      <div class="ref-modal__gallery-nav" *ngIf="activeEntry.content.images.length > 1">
+        <button class="ref-modal__nav-btn" (click)="prevImage()" aria-label="Previous">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <span class="ref-modal__gallery-count">
+          {{ activeImageIndex + 1 }} / {{ activeEntry.content.images.length }}
+        </span>
+        <button class="ref-modal__nav-btn" (click)="nextImage()" aria-label="Next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
     </div>
+
+    <!-- Content -->
+    <div class="ref-modal__body">
+      <span class="ref-modal__year">{{ activeEntry.content.date }}</span>
+      <h2 class="ref-modal__title">{{ activeEntry.title }}</h2>
+      <p class="ref-modal__subtitle">{{ activeEntry.subtitle }}</p>
+
+      <p class="ref-modal__text">{{ activeEntry.content.description }}</p>
+      <p class="ref-modal__text">{{ activeEntry.content.solution }}</p>
+
+      <div class="ref-modal__tags" *ngIf="activeEntry.content.tags.length">
+        <span class="ref-modal__tags-label">{{ 'references.modal.responsibilities' | translate }}</span>
+        <div class="ref-modal__tag-list">
+          <span class="ref-modal__tag" *ngFor="let tag of activeEntry.content.tags">{{ tag }}</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

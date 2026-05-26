@@ -1,15 +1,22 @@
-<div class="container">
-  <div class="row vh-100 m-0 p-0">
-    <div class="col-12 p-0">
-      <div class="row gx-0 h-100 w-100">
-        <div class="p-0 ms-0 me-0 my-auto text-justify d-flex flex-column align-items-center justify-content-center d-md-block">
-          <h2 class="text-primary text-uppercase">{{ 'vision.title' | translate }}</h2>
-          <p>{{ 'vision.text' | translate }}</p>
-          <a class="btn btn-primary text-uppercase justify-content-center" routerLink="." (click)="scrollToSection('about')">
-            {{ 'vision.contact' | translate }}
-          </a>
-        </div>
-      </div>
+<section class="vision-section">
+
+  <!-- Full-viewport-width grid — image bleeds to right edge on desktop -->
+  <div class="vision-grid">
+
+    <div class="vision-text-col">
+      <span class="section-label">{{ 'vision.title' | translate }}</span>
+      <p class="vision-body">{{ 'vision.text' | translate }}</p>
     </div>
+
+    <div class="vision-image-col">
+      <img
+        src="assets/images/vision.png"
+        alt="Modernes Wohnzimmer mit Domotix Gebäudeautomation"
+        class="vision-image"
+        loading="lazy"
+      />
+    </div>
+
   </div>
-</div>
+
+</section>

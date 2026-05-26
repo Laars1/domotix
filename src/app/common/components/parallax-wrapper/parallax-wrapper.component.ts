@@ -1,37 +1,47 @@
-/* eslint-disable @angular-eslint/no-empty-lifecycle-method */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-parallax-wrapper',
   templateUrl: './parallax-wrapper.component.html',
   styleUrls: ['./parallax-wrapper.component.scss'],
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule],
 })
-export class ParallaxWrapperComponent implements OnInit {
-
+export class ParallaxWrapperComponent implements OnInit, OnDestroy {
   @Input() imgSrc: string | undefined;
+  @Input() imgSrcs: string[] = [];
   @Input() linearGradient: boolean = false;
-  @Input() customCss: string | undefined
-  constructor() { }
+  @Input() customCss: string | undefined;
+
+  currentIndex = 0;
+
+  private randomStart(): void {
+    if (this.slides.length > 1) {
+      this.currentIndex = Math.floor(Math.random() * this.slides.length);
+    }
+  }
+  private interval: any;
+
+  get slides(): string[] {
+    return this.imgSrcs.length ? this.imgSrcs : (this.imgSrc ? [this.imgSrc] : []);
+  }
 
   ngOnInit() {
+    if (this.slides.length > 1) {
+      this.randomStart();
+      this.interval = setInterval(() => {
+        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+      }, 10000);
+    }
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.interval);
   }
 
   setBackground() {
-    if (!this.imgSrc) {
-      return;
-    }
-  
-    const backgroundImage = this.linearGradient 
-      ? `linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 10%, rgba(4,12,14,0) 100%), url("${this.imgSrc}")`
-      : `url("${this.imgSrc}")`;
-  
-    return {
-      'background-image': backgroundImage
-    };
+    if (!this.imgSrc) return {};
+    return { 'background-image': `url("${this.imgSrc}")` };
   }
-
 }

@@ -1,3 +1,168 @@
-#policies:hover{
-    cursor: pointer;
+$color-dark:  #0D0D0D;
+$color-light: #F2F2F2;
+$color-tan:   #A69885;
+
+.site-footer {
+  background-color: $color-dark;
+  border-top: 1px solid rgba($color-light, 0.07);
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba($color-light, 0.35);
+  letter-spacing: 0.04em;
+}
+
+.footer-policies-link {
+  font-size: 0.75rem;
+  color: rgba($color-light, 0.35);
+  letter-spacing: 0.04em;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba($color-light, 0.15);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+  &:hover {
+    color: $color-tan;
+    text-decoration-color: $color-tan;
+  }
+}
+
+// ─── Modal backdrop ───────────────────────────────────────────────────────────
+.policy-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background-color: rgba($color-dark, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: policy-fade 0.2s ease;
+}
+
+@keyframes policy-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// ─── Modal card ───────────────────────────────────────────────────────────────
+.policy-modal {
+  background-color: $color-light;
+  border-radius: 1.5rem;
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  animation: policy-slide 0.25s ease;
+
+  @media (max-width: 640px) {
+    border-radius: 1.25rem;
+    max-height: 92vh;
+  }
+}
+
+@keyframes policy-slide {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.policy-modal__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: rgba($color-dark, 0.4);
+  padding: 0.25rem;
+  transition: color 0.2s ease;
+
+  &:hover { color: $color-dark; }
+}
+
+// ─── Tabs ─────────────────────────────────────────────────────────────────────
+.policy-modal__tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid rgba($color-tan, 0.2);
+  padding: 1.75rem 2.5rem 0;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1.5rem 0;
+  }
+}
+
+.policy-modal__tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0 0 0.75rem;
+  margin-right: 2rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba($color-dark, 0.4);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &--active {
+    color: $color-dark;
+    border-bottom-color: $color-tan;
+  }
+
+  &:hover:not(&--active) {
+    color: rgba($color-dark, 0.7);
+  }
+}
+
+// ─── Body ─────────────────────────────────────────────────────────────────────
+.policy-modal__body {
+  padding: 2rem 2.5rem 2.5rem;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+  }
+}
+
+.policy-modal__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $color-tan;
+  margin-bottom: 0.75rem;
+}
+
+.policy-modal__text {
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: rgba($color-dark, 0.7);
+  margin-bottom: 0;
 }

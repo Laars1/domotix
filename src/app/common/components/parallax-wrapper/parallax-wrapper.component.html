@@ -1,3 +1,9 @@
-<div class="parallax" [ngStyle]="setBackground()" [ngClass]="customCss">
+<div class="parallax" [ngClass]="customCss">
+  <div
+    class="parallax__slide"
+    *ngFor="let src of slides; let i = index"
+    [style.background-image]="'url(' + src + ')'"
+    [class.parallax__slide--active]="i === currentIndex"
+  ></div>
   <ng-content></ng-content>
 </div>

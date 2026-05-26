@@ -1,58 +1,53 @@
-<div class="navbar">
-  <img src="assets/images/logo_nav.png" class="mx-auto navbar-img pt-2 pb-2" alt="domotix" />
-</div>
-<div class="sidenav" [class.open]="isNavbarOpen" (mouseleave)="toggleSidenav()" (mouseenter)="toggleSidenav()">
-  <div class="languange-switcher">
-    <app-language-switcher></app-language-switcher>
+<header class="topbar" [class.topbar--scrolled]="scrolled && !overDark" [class.topbar--dark]="overDark">
+
+  <!-- Logo (visible only after scroll) -->
+  <a class="topbar__logo" routerLink="." (click)="scrollToSection('home')">
+    <img src="assets/images/logo.svg" alt="Domotix" class="topbar__logo-img" />
+  </a>
+
+  <!-- Desktop nav links (hidden ≤900px) -->
+  <nav class="topbar__links" aria-label="Main navigation">
+    <a routerLink="." (click)="scrollToSection('home')">{{ 'navigation.home' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('vision')">{{ 'navigation.vision' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('about')">{{ 'navigation.about' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('partners')">{{ 'navigation.partners' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('references')">{{ 'navigation.references' | translate }}</a>
+  </nav>
+
+  <!-- Right cluster: language (desktop only) + hamburger (mobile only) -->
+  <div class="topbar__right">
+    <!-- Language switcher shown in header on desktop only -->
+    <div class="topbar__lang-desktop">
+      <app-language-switcher></app-language-switcher>
+    </div>
+
+    <!-- Hamburger — mobile only -->
+    <button
+      class="topbar__hamburger"
+      (click)="toggleNav()"
+      [attr.aria-expanded]="mobileOpen"
+      aria-label="Toggle navigation"
+    >
+      <span [class.active]="mobileOpen"></span>
+      <span [class.active]="mobileOpen"></span>
+      <span [class.active]="mobileOpen"></span>
+    </button>
   </div>
-  <div class="header">
-    <div>
-      <span class="dot"></span>
-      <a *ngIf="isNavbarOpen" routerLink="." (click)="scrollToSection('home')">
-        <span>
-          {{ "navigation.home" | translate }}
-        </span>
-      </a>
-    </div>
-    <div>
-      <span class="dot"></span>
-      <a *ngIf="isNavbarOpen" routerLink="." (click)="scrollToSection('vision')">
-        <span>
-          {{ "navigation.vision" | translate }}
-        </span>
-      </a>
-    </div>
-    <div>
-      <span class="dot"></span>
-      <a *ngIf="isNavbarOpen" routerLink="." (click)="scrollToSection('about')">
-        <span>
-          {{ "navigation.about" | translate }}
-        </span>
-      </a>
-    </div>
-    <div>
-      <span class="dot"></span>
-      <a *ngIf="isNavbarOpen" routerLink="." (click)="scrollToSection('partners')">
-        <span>
-          {{ "navigation.partners" | translate }}
-        </span>
-      </a>
-    </div>
-    <div>
-      <span class="dot"></span>
-      <a *ngIf="isNavbarOpen" routerLink="." (click)="scrollToSection('references')">
-        <span>
-          {{ "navigation.references" | translate }}
-        </span>
-      </a>
-    </div>
-    <div *ngIf="false">
-      <span class="dot"></span>
-      <a *ngIf="isNavbarOpen" routerLink="." (click)="scrollToSection('contact')">
-        <span>
-          {{ "navigation.contact" | translate }}
-        </span>
-      </a>
-    </div>
+
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" [class.mobile-drawer--open]="mobileOpen">
+  <nav class="mobile-drawer__links">
+    <a routerLink="." (click)="scrollToSection('home')">{{ 'navigation.home' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('vision')">{{ 'navigation.vision' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('about')">{{ 'navigation.about' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('partners')">{{ 'navigation.partners' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('references')">{{ 'navigation.references' | translate }}</a>
+  </nav>
+
+  <!-- Language switcher at bottom of drawer on mobile -->
+  <div class="mobile-drawer__lang">
+    <app-language-switcher></app-language-switcher>
   </div>
 </div>

@@ -1,5 +1,2 @@
-body{
-    background-color: #999;
-}
-
-
+// Body background is set globally in styles.scss via $body-bg.
+// Section-specific overrides live in each component's SCSS.

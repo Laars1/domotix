@@ -1,44 +1,56 @@
-/* eslint-disable no-unused-vars */
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReferencesService } from '../../services/references.service';
 import { Reference } from '../../models/reference';
-import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { ReferenceModalComponent } from './reference-modal/reference-modal.component';
-import { CardComponent } from '../card/card.component';
 import { LanguageProviderService } from '../../services/languageProvider.service';
 
 @Component({
   selector: 'app-references',
   templateUrl: './references.component.html',
+  styleUrls: ['./references.component.scss'],
   standalone: true,
-  imports: [CommonModule, TranslateModule, CardComponent]
+  imports: [CommonModule, TranslateModule],
 })
-export class ReferencesComponent implements OnInit, OnDestroy {
-  entries: Reference[] = []
-  private modalReference: NgbModalRef | undefined;
-  
-  constructor(private referenceService: ReferencesService, private modalService: NgbModal, private languageProvider: LanguageProviderService) { }
-  
+export class ReferencesComponent implements OnInit {
+  entries: Reference[] = [];
+  activeEntry: Reference | null = null;
+  activeImageIndex = 0;
+
+  constructor(
+    private referenceService: ReferencesService,
+    private languageProvider: LanguageProviderService,
+  ) {}
+
   ngOnInit(): void {
     this.languageProvider.language$.subscribe({
-      next: () => {
-        this.entries = this.referenceService.get();
-      },
+      next: () => { this.entries = this.referenceService.get(); },
     });
   }
 
-  ngOnDestroy(): void {
-    this.modalService.dismissAll()
+  getDetail(id: number): void {
+    this.activeEntry = this.entries.find(x => x.id === id) ?? null;
+    this.activeImageIndex = 0;
+    document.body.style.overflow = 'hidden';
   }
 
-  getDetail(id: number){
-    if(this.modalReference){
-      this.modalReference.dismiss()
-    }
-
-    this.modalReference = this.modalService.open(ReferenceModalComponent, {centered: true, size: 'xl', modalDialogClass: 'reference-modal'})
-    this.modalReference.componentInstance.entry = this.entries.find(x => x.id == id)
+  close(): void {
+    this.activeEntry = null;
+    document.body.style.overflow = '';
   }
+
+  prevImage(): void {
+    if (!this.activeEntry) return;
+    const len = this.activeEntry.content.images.length;
+    this.activeImageIndex = (this.activeImageIndex - 1 + len) % len;
+  }
+
+  nextImage(): void {
+    if (!this.activeEntry) return;
+    const len = this.activeEntry.content.images.length;
+    this.activeImageIndex = (this.activeImageIndex + 1) % len;
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape(): void { this.close(); }
 }
