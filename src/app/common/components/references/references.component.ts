@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReferencesService } from '../../services/references.service';
 import { Reference } from '../../models/reference';
@@ -17,10 +17,8 @@ export class ReferencesComponent implements OnInit {
   activeEntry: Reference | null = null;
   activeImageIndex = 0;
 
-  constructor(
-    private referenceService: ReferencesService,
-    private languageProvider: LanguageProviderService,
-  ) {}
+  private referenceService = inject(ReferencesService);
+  private languageProvider = inject(LanguageProviderService);
 
   ngOnInit(): void {
     this.languageProvider.language$.subscribe({

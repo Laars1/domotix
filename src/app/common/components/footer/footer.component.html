@@ -8,8 +8,8 @@
 </footer>
 
 <!-- Modal -->
-<div class="policy-backdrop" *ngIf="modalOpen" (click)="close()">
-  <div class="policy-modal" (click)="$event.stopPropagation()">
+<div class="policy-backdrop" *ngIf="modalOpen" (click)="close()" (keydown.escape)="close()" role="presentation" tabindex="0">
+  <div class="policy-modal" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()" role="dialog" aria-modal="true" tabindex="-1">
 
     <button class="policy-modal__close" (click)="close()" aria-label="Close">
       <i class="bi bi-x"></i>
