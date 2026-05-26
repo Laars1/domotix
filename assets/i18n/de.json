@@ -7,39 +7,55 @@
         "partners": "Partner",
         "contact": "Kontakt"
     },
+    "hero": {
+        "headline": "Intelligente Gebäude.",
+        "headline2": "Konsequent umgesetzt.",
+        "subheadline": "Gebäudeautomation für Wohnhäuser und KMU – in Bern, Solothurn und der ganzen Schweiz.",
+        "cta": "Get in touch"
+    },
     "vision": {
-        "title": "vision",
+        "title": "Vision",
+        "heading": "Ihr smartes Zuhause",
         "text": "Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optimieren und den Alltag zu vereinfachen. Dies umfasst die Automatisierung von Beleuchtung, Heizung, Klimatisierung, Sicherheit und anderen Alltagsaspekten.",
         "contact": "Get in touch!"
     },
     "light": {
         "title": "Licht",
-        "text": "Mit unserer benutzerfreundlichen Lösung kreieren Sie im Handumdrehen Ihre individuelle Lichtstimmung. Passen Sie Lichtszenen ganz nach Ihren Wünschen an und schaffen Sie jederzeit die perfekte Atmosphäre."
+        "tagline": "Individuelle Lichtstimmungen, automatisch angepasst.",
+        "text": "Beleuchtung gestaltet Räume, schafft Atmosphäre und beeinflusst Wohlbefinden, Konzentration und Entspannung. Moderne Lichtplanung verbindet Architektur, Nutzung, Tageszeit und individuelle Bedürfnisse mit intelligenter Steuerung. Licht passt sich automatisch an Präsenz, Umgebungslicht und Gewohnheiten an. Es unterstützt den Tagesrhythmus, etwa beim Aufwachen, Arbeiten oder Entspannen am Abend. Durch Grund-, Akzent- und Funktionslicht entstehen flexible Szenen, die sich einfach bedienen lassen. Das Ergebnis ist eine intuitive Lichtlandschaft, die nicht nur reagiert, sondern den Raum aktiv mitgestaltet."
     },
-    "heating":{
-        "title": "Heizung",
-        "text": "Erleben Sie ein revolutionäres Raumklima – Ihre Heizung, Klimaanlage und Lüftung kommunizieren miteinander und schaffen automatisch die ideale Wohlfühlatmosphäre, ohne dass Sie eingreifen müssen."
+    "heating": {
+        "title": "Behaglichkeit",
+        "tagline": "Heizung, Klima, Lüftung und Beschattung perfekt aufeinander abgestimmt.",
+        "text": "Ein gutes Raumklima entsteht, wenn Temperatur, Luft und Licht im Gleichgewicht sind. Moderne Raumregelung sorgt automatisch für angenehme Wärme oder kühlere Zonen, passend zur Nutzung und Tageszeit. Die Technik arbeitet im Hintergrund, erkennt Präsenz, Fensterzustände und Wetterdaten und passt die Regelung vorausschauend an. Individuelle Profile und Zeitpläne ermöglichen Komfort im Alltag, am Wochenende oder während Ferien. Gleichzeitig wird bei Abwesenheit Energie gespart, ohne den Wohnkomfort zu beeinträchtigen. So entsteht ein effizientes Raumklima, das sich dem Lebensrhythmus anpasst."
     },
-    "shutter":{
-        "title": "Jalusien",
-        "text": "Intelligente Jalousien, die sich automatisch an Ihre Bedürfnisse und den Sonnenstand anpassen, sorgen für den Komfort, den Sie brauchen, um das perfekte Raumklima zu schaffen."
+    "shutter": {
+        "title": "Innovation",
+        "tagline": "Smarte Lösungen, die mit Ihrer Umgebung wachsen.",
+        "text": "Innovation zeigt sich nicht in der Technik selbst, sondern darin, wie sie Räume komfortabler, einfacher und angenehmer macht. Gute Lösungen integrieren sich zurückhaltend ins Interieur und werden erst sichtbar, wenn sie gebraucht werden. Licht, Klang, Displays und Steuerungen unterstützen Architektur und Alltag, ohne sich aufzudrängen. Intelligente Systeme optimieren sich selbst und bleiben flexibel für neue Bedürfnisse oder Technologien. So entsteht eine Einheit aus Design, Funktion und Technik. Das Ergebnis ist ein Zuhause, das sich natürlich anfühlt und bereit für morgen ist."
     },
-    "multimedia":{
+    "multimedia": {
         "title": "Multimedia",
-        "text": "Geniessen Sie grenzenlose Freiheit mit unserer Multiroom-Audio-Lösung! Lassen Sie in jedem Raum Ihre persönliche Playlist laufen – ob ruhige Musik für entspannte Stunden oder energiegeladene Klänge für unvergessliche Partynächte."
+        "tagline": "Multiroom-Audio für jeden Raum, jederzeit.",
+        "text": "Klang begleitet den Alltag dezent und prägt die Atmosphäre eines Raumes. Intelligente Audiosysteme passen sich Raum, Nutzung und Tageszeit an. Multiroom-Lösungen ermöglichen in jedem Bereich die passende Akustik, zentral gesteuert oder automatisch geregelt. Neben Musik können auch Türklingeln, Sprachausgaben und Warnhinweise gezielt eingesetzt werden. Die Steuerung erfolgt einfach per App, Wandtaster oder Sprache. Hochwertig integrierte Lautsprecher sorgen für raumfüllenden Klang, ohne die Gestaltung zu stören."
     },
     "energy": {
         "title": "Energieeffizienz",
-        "text": "Maximieren Sie Ihren Eigenverbrauch und profitieren Sie von Ihrer selbst erzeugten Energie. Mit unserer effizienten Lösung machen Sie einen Schritt in eine nachhaltige Energiezukunft und nutzen Ihre Ressourcen optimal."
+        "tagline": "Eigenverbrauch maximieren, Ressourcen optimal nutzen.",
+        "text": "Intelligentes Energiemanagement hilft, selbst erzeugten Strom effizient und nachhaltig zu nutzen. Energie wird automatisch nach Bedarf, Tageszeit, Verbrauch und Verfügbarkeit gesteuert. Überschüsse aus Photovoltaik können gezielt für Speicher, Warmwasser, Kühlung, Wärmepumpe oder das Laden eines Elektroautos eingesetzt werden. Dadurch steigt der Eigenverbrauch und der Netzbezug sinkt, ohne manuelle Eingriffe. Gleichzeitig macht die Visualisierung alle Energieflüsse transparent und zeigt aktive Verbraucher sowie Auffälligkeiten frühzeitig an. So entsteht ein effizientes System, das Energie gezielt steuert und verständlich sichtbar macht."
     },
+    "services": { "label": "Leistungen", "more": "Mehr erfahren" },
     "security": {
         "title": "Sicherheit",
+        "tagline": "Sicherer Zugang, lokale Datenhaltung, kein Cloud-Zwang.",
+        "text": "Sicherheit in einem Gebäude bedeutet mehr als nur Schutz vor Einbruch. Moderne Technik bringt neue Risiken mit sich, besonders durch vernetzte Systeme und Cloud-Abhängigkeiten. Unsere Lösungen arbeiten ausschliesslich lokal und funktionieren ohne externe Cloud. Eine Internetanbindung wird nur auf Wunsch umgesetzt. Dadurch bleiben Kontrolle, Daten und Funktionen im Gebäude. So entstehen sichere Systeme für heute und die Zukunft.",
         "access-system": "Unser zentralisiertes Zutrittssystem bietet eine effiziente Lösung für sicheren Zugang.",
         "reliability": "Zuverlässiger Schutz für Ihr Zuhause oder Geschäft, damit Sie ihr Gebäude unbeschwert verlassen können.",
         "no-cloud": "Unser Ansatz gewährleistet Unabhängigkeit von einer Cloud und Ihre Daten werden lokal verwaltet."
     },
-    "about":{
+    "about": {
         "title": "Über uns",
+        "heading": "Das Team",
         "contact": "Wir bieten professionelle Fachplanung für Gebäudeautomation, speziell für Privatpersonen und KMU. Unser Team plant und programmiert massgeschneiderte Hausleitsysteme, die perfekt auf Ihre individuellen Bedürfnisse abgestimmt sind. Von der ersten Beratung bis zur Umsetzung begleiten wir Sie mit technischem Know-how und persönlichem Engagement – für eine intelligente, effiziente und komfortable Steuerung Ihrer Gebäude. Gerne dürfen Sie sich mit uns in Kontakt setzten, um ein Unverbindliches Angebot zu erhalten."
     },
     "contact": {
@@ -47,6 +63,7 @@
     },
     "references": {
         "title": "Referenzen",
+        "cta": "Mehr erfahren",
         "modal": {
             "responsibilities": "Aufgaben"
         }
@@ -55,24 +72,27 @@
         "title": "Partner"
     },
     "footer": {
+        "copyright": "© 2026 Domotix GmbH",
         "policies": {
             "title": "Datenschutzerklärung & Impressum",
             "data-protection": {
                 "title": "Datenschutzerklärung",
                 "content": "Datenschutz Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein. Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben. In enger Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen."
             },
-            "imprint":{
+            "imprint": {
                 "title": "Impressum",
                 "contact": "Kontaktinformationen",
                 "company": "Domotix GmbH",
                 "street": "Muesmattstrasse 37",
                 "city": "3012 Bern",
+                "phone": "031 512 50 05",
                 "email": "getintouch(at)domotix.ch",
                 "registration-number": "Registrationsnummer: CHE-317.880.883"
             }
         }
     },
     "common": {
-        "email": "E-Mail Adresse"
+        "email": "E-Mail Adresse",
+        "write-us": "Schreiben Sie uns"
     }
 }
