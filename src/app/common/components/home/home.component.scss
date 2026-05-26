@@ -61,4 +61,10 @@ $color-navy:  #011126;
     background-color: rgba($color-light, 0.85);
     border-color: rgba($color-light, 0.85);
   }
+
+  @media (max-width: 640px) {
+    margin-top: 1.25rem;
+    padding: 0.7rem 1.75rem;
+    font-size: 0.6rem;
+  }
 }

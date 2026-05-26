@@ -119,6 +119,12 @@ $color-bluegrey: #8599A6;
   justify-content: center;
   padding: 1.5rem;
   animation: ref-fade-in 0.2s ease;
+  overflow-y: auto;
+
+  @media (max-width: 640px) {
+    align-items: flex-start;
+    padding: 1rem;
+  }
 }
 
 @keyframes ref-fade-in {

@@ -140,6 +140,12 @@ $color-light:    #F2F2F2;
   justify-content: center;
   padding: 1.5rem;
   animation: fade-in 0.2s ease;
+  overflow-y: auto;
+
+  @media (max-width: 640px) {
+    align-items: flex-start;
+    padding: 1rem;
+  }
 }
 
 @keyframes fade-in {
@@ -154,12 +160,15 @@ $color-light:    #F2F2F2;
   padding: 3rem 3rem 2.5rem;
   max-width: 560px;
   width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   animation: slide-up 0.25s ease;
 
   @media (max-width: 640px) {
     padding: 2.5rem 1.75rem 2rem;
     border-radius: 1.25rem;
+    max-height: calc(100dvh - 2rem);
   }
 }
 
