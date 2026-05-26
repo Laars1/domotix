@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
@@ -18,7 +18,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
   overDark = false;
   mobileOpen = false;
 
-  constructor(private readonly scroller: ViewportScroller) {}
+  private readonly scroller = inject(ViewportScroller);
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.onScroll, { passive: true });

@@ -21,7 +21,7 @@ export class ParallaxWrapperComponent implements OnInit, OnDestroy {
       this.currentIndex = Math.floor(Math.random() * this.slides.length);
     }
   }
-  private interval: any;
+  private interval: ReturnType<typeof setInterval> | undefined;
 
   get slides(): string[] {
     return this.imgSrcs.length ? this.imgSrcs : (this.imgSrc ? [this.imgSrc] : []);

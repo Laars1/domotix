@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { PartnersService } from '../../services/partners.service';
@@ -14,7 +14,7 @@ import { Partner } from '../../models/partner';
 export class PartnerComponent implements OnInit {
   entries: Partner[] = [];
 
-  constructor(private partnerService: PartnersService) {}
+  private partnerService = inject(PartnersService);
 
   ngOnInit() {
     this.entries = this.partnerService.get();
