@@ -40,8 +40,4 @@ export class ParallaxWrapperComponent implements OnInit, OnDestroy {
     clearInterval(this.interval);
   }
 
-  setBackground() {
-    if (!this.imgSrc) return {};
-    return { 'background-image': `url("${this.imgSrc}")` };
-  }
 }

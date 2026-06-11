@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "multiroom-audio-lautsprecher",
+    "title": "Audio multiroom : pourquoi même les non-audiophiles devraient prévoir des haut-parleurs encastrés",
+    "description": "Les haut-parleurs encastrés ne sont pas un luxe – c'est une décision que l'on prend une fois lors de la construction ou de la rénovation. Nous expliquons pourquoi l'installation vaut la peine même sans exigences audiophiles.",
+    "date": "2026-01-15",
+    "category": "Multimédia",
+    "readingTime": 7,
+    "headerImg": "assets/images/artikel/Multiroom.avif"
+  },
+  {
+    "slug": "loxone-vs-knx",
+    "title": "Loxone ou KNX – quel système convient le mieux à l'automatisation moderne des bâtiments ?",
+    "description": "Loxone et KNX en comparaison directe : différences, points forts et quand quel système est le meilleur choix pour votre projet.",
+    "date": "2026-02-10",
+    "category": "Systèmes",
+    "readingTime": 10,
+    "headerImg": "assets/images/artikel/Loxone_vs_KNX.avif"
+  },
+  {
+    "slug": "lichtplanung-kein-luxusgut",
+    "title": "La planification de l'éclairage n'est pas un luxe",
+    "description": "Une bonne planification de l'éclairage ne coûte pas nécessairement plus cher – mais elle prévient les erreurs coûteuses et garantit que les espaces fonctionnent vraiment au quotidien. Pourquoi la lumière doit être pensée tôt.",
+    "date": "2026-05-08",
+    "category": "Bases",
+    "readingTime": 8,
+    "headerImg": "assets/images/artikel/Lichtplanung.avif"
+  },
+  {
+    "slug": "fruehe-smart-home-planung",
+    "title": "Pourquoi une planification précoce du smart home est si importante",
+    "description": "La domotique réussit mieux quand elle est intégrée dès le départ. Nous expliquons quelles décisions doivent être prises tôt et ce qui est difficilement réalisable après coup.",
+    "date": "2026-04-10",
+    "category": "Bases",
+    "readingTime": 8,
+    "headerImg": "assets/images/artikel/Planung.avif"
+  },
+  {
+    "slug": "control4-als-alternative",
+    "title": "Control4 comme alternative : quand la domotique pense davantage expérience, AV et confort",
+    "description": "Control4 vient du monde de l'audio, de la vidéo et du confort de commande. Nous expliquons ce qui rend ce système unique, ses limites et pourquoi la combinaison avec KNX est souvent la solution la plus puissante.",
+    "date": "2026-03-05",
+    "category": "Systèmes",
+    "readingTime": 12,
+    "headerImg": "assets/images/artikel/Control4.avif"
+  }
+]

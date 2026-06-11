@@ -10,8 +10,9 @@
     <a routerLink="." (click)="scrollToSection('home')">{{ 'navigation.home' | translate }}</a>
     <a routerLink="." (click)="scrollToSection('vision')">{{ 'navigation.vision' | translate }}</a>
     <a routerLink="." (click)="scrollToSection('about')">{{ 'navigation.about' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('partners')">{{ 'navigation.partners' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('services')">{{ 'services.label' | translate }}</a>
     <a routerLink="." (click)="scrollToSection('references')">{{ 'navigation.references' | translate }}</a>
+    <a routerLink="/artikel">{{ 'artikel.nav' | translate }}</a>
   </nav>
 
   <!-- Right cluster: language (desktop only) + hamburger (mobile only) -->
@@ -42,8 +43,9 @@
     <a routerLink="." (click)="scrollToSection('home')">{{ 'navigation.home' | translate }}</a>
     <a routerLink="." (click)="scrollToSection('vision')">{{ 'navigation.vision' | translate }}</a>
     <a routerLink="." (click)="scrollToSection('about')">{{ 'navigation.about' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('partners')">{{ 'navigation.partners' | translate }}</a>
+    <a routerLink="." (click)="scrollToSection('services')">{{ 'services.label' | translate }}</a>
     <a routerLink="." (click)="scrollToSection('references')">{{ 'navigation.references' | translate }}</a>
+    <a routerLink="/artikel" (click)="mobileOpen = false">{{ 'artikel.nav' | translate }}</a>
   </nav>
 
   <!-- Language switcher at bottom of drawer on mobile -->

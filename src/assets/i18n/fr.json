@@ -71,6 +71,14 @@
     "partner": {
         "title": "Partenaires"
     },
+    "artikel": {
+        "nav": "Savoir",
+        "pageTitle": "Savoir",
+        "back": "← Tous les articles",
+        "readingTime": "min de lecture",
+        "notFound": "Cet article est introuvable.",
+        "notFoundBack": "Retour à l'aperçu"
+    },
     "footer": {
         "copyright": "© 2026 Domotix GmbH",
         "policies": {

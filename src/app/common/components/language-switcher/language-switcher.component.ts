@@ -1,8 +1,8 @@
-/* eslint-disable no-unused-vars */
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageProviderService } from '../../services/languageProvider.service';
 import { CommonModule } from '@angular/common';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-language-switcher',
@@ -11,23 +11,25 @@ import { CommonModule } from '@angular/common';
   imports: [TranslateModule, CommonModule],
   standalone: true
 })
-export class LanguageSwitcherComponent implements OnInit {
+export class LanguageSwitcherComponent implements OnInit, OnDestroy {
+  private languageProvider = inject(LanguageProviderService);
+  private langSub?: Subscription;
+
   supportedLanguages: string[] = [];
   currentLanguage: string = '';
 
-  constructor(private languageProvider: LanguageProviderService) {}
-
   ngOnInit(): void {
-    this.loadLanguages();
+    this.supportedLanguages = this.languageProvider.getSupportedLanguages();
+    this.langSub = this.languageProvider.language$.subscribe(lang => {
+      this.currentLanguage = lang;
+    });
   }
 
-  loadLanguages(): void {
-    this.supportedLanguages = this.languageProvider.getSupportedLanguages();
-    this.currentLanguage = this.languageProvider.getCurrentLanguage();
+  ngOnDestroy(): void {
+    this.langSub?.unsubscribe();
   }
 
   switchLanguage(language: string): void {
     this.languageProvider.useLanguage(language);
-    this.currentLanguage = this.languageProvider.getCurrentLanguage();
   }
 }

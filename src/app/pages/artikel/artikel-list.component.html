@@ -1,0 +1,35 @@
+<app-navigation></app-navigation>
+
+<main class="artikel-list-page">
+  <div class="artikel-list-header">
+    <div class="container">
+      <span class="section-label">{{ 'artikel.pageTitle' | translate }}</span>
+      <div class="hairline"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="artikel-grid">
+      <a
+        class="artikel-card"
+        *ngFor="let item of artikel"
+        [routerLink]="['/artikel', item.slug]"
+      >
+        <div class="artikel-card__image-wrap">
+          <img [src]="item.headerImg" [alt]="item.title" class="artikel-card__image" loading="lazy" />
+        </div>
+        <div class="artikel-card__body">
+          <span class="artikel-card__category">{{ item.category }}</span>
+          <h2 class="artikel-card__title">{{ item.title }}</h2>
+          <p class="artikel-card__description">{{ item.description }}</p>
+          <div class="artikel-card__meta">
+            <span>{{ formatDate(item.date) }}</span>
+            <span>{{ item.readingTime }} {{ 'artikel.readingTime' | translate }}</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>

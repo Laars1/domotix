@@ -69,6 +69,14 @@
     "partner": {
         "title": "Partner"
     },
+    "artikel": {
+        "nav": "Sapere",
+        "pageTitle": "Sapere",
+        "back": "← Tutti gli articoli",
+        "readingTime": "min di lettura",
+        "notFound": "Questo articolo non è stato trovato.",
+        "notFoundBack": "Torna alla panoramica"
+    },
     "footer": {
         "policies": {
             "title": "Informativa sulla privacy e impronta",

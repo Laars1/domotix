@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "multiroom-audio-lautsprecher",
+    "title": "Multiroom Audio: Why Even Non-Audiophiles Should Plan for Built-In Speakers",
+    "description": "Built-in speakers are not a luxury – they are a decision made once during construction or renovation. We explain why installation is worthwhile even without audiophile requirements.",
+    "date": "2026-01-15",
+    "category": "Multimedia",
+    "readingTime": 7,
+    "headerImg": "assets/images/artikel/Multiroom.avif"
+  },
+  {
+    "slug": "loxone-vs-knx",
+    "title": "Loxone or KNX – Which System Is Better Suited to Modern Building Automation?",
+    "description": "Loxone and KNX compared directly: differences, strengths, and when each system is the better choice for your project.",
+    "date": "2026-02-10",
+    "category": "Systems",
+    "readingTime": 10,
+    "headerImg": "assets/images/artikel/Loxone_vs_KNX.avif"
+  },
+  {
+    "slug": "lichtplanung-kein-luxusgut",
+    "title": "Lighting Design Is Not a Luxury",
+    "description": "Good lighting design does not necessarily cost more – but it prevents costly mistakes and ensures that spaces function well in everyday life. Why light should be planned early.",
+    "date": "2026-05-08",
+    "category": "Fundamentals",
+    "readingTime": 8,
+    "headerImg": "assets/images/artikel/Lichtplanung.avif"
+  },
+  {
+    "slug": "fruehe-smart-home-planung",
+    "title": "Why Early Smart Home Planning Is So Important",
+    "description": "A smart home works best when it is planned from the start. We explain which decisions need to be made early and what is barely possible to add afterwards.",
+    "date": "2026-04-10",
+    "category": "Fundamentals",
+    "readingTime": 8,
+    "headerImg": "assets/images/artikel/Planung.avif"
+  },
+  {
+    "slug": "control4-als-alternative",
+    "title": "Control4 as an Alternative: When Smart Home Thinks More in Terms of Experience, AV and Comfort",
+    "description": "Control4 comes from the world of audio, video and ease of use. We explain what makes the system special, where its limits lie, and why combining it with KNX is often the strongest solution.",
+    "date": "2026-03-05",
+    "category": "Systems",
+    "readingTime": 12,
+    "headerImg": "assets/images/artikel/Control4.avif"
+  }
+]

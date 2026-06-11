@@ -71,6 +71,14 @@
     "partner": {
         "title": "Partner"
     },
+    "artikel": {
+        "nav": "Wissen",
+        "pageTitle": "Wissen",
+        "back": "← Alle Artikel",
+        "readingTime": "Min. Lesezeit",
+        "notFound": "Dieser Artikel wurde nicht gefunden.",
+        "notFoundBack": "Zurück zur Übersicht"
+    },
     "footer": {
         "copyright": "© 2026 Domotix GmbH",
         "policies": {

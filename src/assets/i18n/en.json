@@ -71,6 +71,14 @@
     "partner": {
         "title": "Partners"
     },
+    "artikel": {
+        "nav": "Knowledge",
+        "pageTitle": "Knowledge",
+        "back": "← All articles",
+        "readingTime": "min read",
+        "notFound": "This article could not be found.",
+        "notFoundBack": "Back to overview"
+    },
     "footer": {
         "copyright": "© 2026 Domotix GmbH",
         "policies": {

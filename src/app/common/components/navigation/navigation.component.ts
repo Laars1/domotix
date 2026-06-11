@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 
 const NAV_HEIGHT = 64;
@@ -19,6 +19,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
   mobileOpen = false;
 
   private readonly scroller = inject(ViewportScroller);
+  private readonly router = inject(Router);
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.onScroll, { passive: true });
@@ -39,8 +40,14 @@ export class NavigationComponent implements OnInit, OnDestroy {
   };
 
   scrollToSection(fragment: string) {
-    this.scroller.scrollToAnchor(fragment);
     this.mobileOpen = false;
+    if (this.router.url === '/' || this.router.url === '') {
+      this.scroller.scrollToAnchor(fragment);
+    } else {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => this.scroller.scrollToAnchor(fragment), 100);
+      });
+    }
   }
 
   toggleNav() {

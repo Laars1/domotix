@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "multiroom-audio-lautsprecher",
+    "title": "Multiroom Audio: Warum auch Nicht-Audiophile fest installierte Lautsprecher einplanen sollten",
+    "description": "Fest installierte Lautsprecher sind kein Luxus – sie sind eine Entscheidung, die man beim Bau oder bei der Renovation einmal trifft. Wir erklären, warum sich der Einbau auch ohne audiophilen Anspruch lohnt.",
+    "date": "2026-01-15",
+    "category": "Multimedia",
+    "readingTime": 7,
+    "headerImg": "assets/images/artikel/Multiroom.avif"
+  },
+  {
+    "slug": "loxone-vs-knx",
+    "title": "Loxone oder KNX – welches System passt besser zur modernen Gebäudeautomation?",
+    "description": "Loxone und KNX im direkten Vergleich: Unterschiede, Stärken und wann welches System die bessere Wahl für Ihr Projekt ist.",
+    "date": "2026-02-10",
+    "category": "Systeme",
+    "readingTime": 10,
+    "headerImg": "assets/images/artikel/Loxone_vs_KNX.avif"
+  }
+  ,{
+    "slug": "lichtplanung-kein-luxusgut",
+    "title": "Lichtplanung ist kein Luxusgut",
+    "description": "Gute Lichtplanung kostet nicht zwingend mehr – sie verhindert aber teure Fehler und sorgt dafür, dass Räume im Alltag wirklich funktionieren. Warum Licht früh mitgedacht werden sollte.",
+    "date": "2026-05-08",
+    "category": "Grundlagen",
+    "readingTime": 8,
+    "headerImg": "assets/images/artikel/Lichtplanung.avif"
+  }
+  ,{
+    "slug": "fruehe-smart-home-planung",
+    "title": "Warum eine frühe Smart-Home-Planung so wichtig ist",
+    "description": "Smart Home gelingt am besten, wenn es von Anfang an mitgedacht wird. Wir erklären, welche Entscheidungen früh getroffen werden müssen und was nachträglich kaum noch möglich ist.",
+    "date": "2026-04-10",
+    "category": "Grundlagen",
+    "readingTime": 8,
+    "headerImg": "assets/images/artikel/Planung.avif"
+  }
+  ,{
+    "slug": "control4-als-alternative",
+    "title": "Control4 als Alternative: Wenn Smart Home mehr nach Erlebnis, AV und Komfort gedacht wird",
+    "description": "Control4 kommt aus der Welt von Audio, Video und Bedienkomfort. Wir erklären, was das System besonders macht, wo seine Grenzen liegen und warum die Kombination mit KNX oft die stärkste Lösung ist.",
+    "date": "2026-03-05",
+    "category": "Systeme",
+    "readingTime": 12,
+    "headerImg": "assets/images/artikel/Control4.avif"
+  }
+]

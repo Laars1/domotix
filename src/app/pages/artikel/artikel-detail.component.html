@@ -1,0 +1,40 @@
+<app-navigation></app-navigation>
+
+<main class="artikel-detail-page">
+  <div *ngIf="meta; else notFoundTpl">
+
+    <div class="artikel-hero">
+      <img [src]="meta.headerImg" [alt]="meta.title" class="artikel-hero__img" />
+      <div class="artikel-hero__overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="artikel-back">
+        <a routerLink="/artikel" class="artikel-back__link">{{ 'artikel.back' | translate }}</a>
+      </div>
+
+      <div class="artikel-header">
+        <span class="artikel-header__category">{{ meta.category }}</span>
+        <h1 class="artikel-header__title">{{ meta.title }}</h1>
+        <div class="artikel-header__meta">
+          <span>{{ formatDate(meta.date) }}</span>
+          <span>{{ meta.readingTime }} {{ 'artikel.readingTime' | translate }}</span>
+        </div>
+      </div>
+
+      <div class="artikel-content">
+        <markdown [data]="content"></markdown>
+      </div>
+    </div>
+
+  </div>
+
+  <ng-template #notFoundTpl>
+    <div class="container artikel-not-found">
+      <p>{{ 'artikel.notFound' | translate }}</p>
+      <a routerLink="/artikel">{{ 'artikel.notFoundBack' | translate }}</a>
+    </div>
+  </ng-template>
+</main>
+
+<app-footer></app-footer>
