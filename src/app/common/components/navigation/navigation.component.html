@@ -1,18 +1,25 @@
-<header class="topbar" [class.topbar--scrolled]="scrolled && !overDark" [class.topbar--dark]="overDark">
+<header class="topbar" [class.topbar--scrolled]="mobileOpen || ((scrolled || noHero) && !overDark)" [class.topbar--dark]="overDark && !mobileOpen">
 
   <!-- Logo (visible only after scroll) -->
-  <a class="topbar__logo" routerLink="." (click)="scrollToSection('home')">
+  <a
+    class="topbar__logo"
+    (click)="scrollToSection('home')"
+    (keydown.enter)="scrollToSection('home')"
+    (keydown.space)="scrollToSection('home')"
+    tabindex="0"
+    role="button"
+  >
     <img src="assets/images/logo.svg" alt="Domotix" class="topbar__logo-img" />
   </a>
 
   <!-- Desktop nav links (hidden ≤900px) -->
   <nav class="topbar__links" aria-label="Main navigation">
-    <a routerLink="." (click)="scrollToSection('home')">{{ 'navigation.home' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('vision')">{{ 'navigation.vision' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('about')">{{ 'navigation.about' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('services')">{{ 'services.label' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('references')">{{ 'navigation.references' | translate }}</a>
-    <a routerLink="/artikel">{{ 'artikel.nav' | translate }}</a>
+    <a (click)="scrollToSection('home')" (keydown.enter)="scrollToSection('home')" (keydown.space)="scrollToSection('home')" tabindex="0" role="button">{{ 'navigation.home' | translate }}</a>
+    <a (click)="scrollToSection('vision')" (keydown.enter)="scrollToSection('vision')" (keydown.space)="scrollToSection('vision')" tabindex="0" role="button">{{ 'navigation.vision' | translate }}</a>
+    <a (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" tabindex="0" role="button">{{ 'navigation.about' | translate }}</a>
+    <a (click)="scrollToSection('services')" (keydown.enter)="scrollToSection('services')" (keydown.space)="scrollToSection('services')" tabindex="0" role="button">{{ 'services.label' | translate }}</a>
+    <a (click)="scrollToSection('references')" (keydown.enter)="scrollToSection('references')" (keydown.space)="scrollToSection('references')" tabindex="0" role="button">{{ 'navigation.references' | translate }}</a>
+    <a [routerLink]="['/artikel', currentLanguage]">{{ 'artikel.nav' | translate }}</a>
   </nav>
 
   <!-- Right cluster: language (desktop only) + hamburger (mobile only) -->
@@ -40,12 +47,12 @@
 <!-- Mobile drawer -->
 <div class="mobile-drawer" [class.mobile-drawer--open]="mobileOpen">
   <nav class="mobile-drawer__links">
-    <a routerLink="." (click)="scrollToSection('home')">{{ 'navigation.home' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('vision')">{{ 'navigation.vision' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('about')">{{ 'navigation.about' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('services')">{{ 'services.label' | translate }}</a>
-    <a routerLink="." (click)="scrollToSection('references')">{{ 'navigation.references' | translate }}</a>
-    <a routerLink="/artikel" (click)="mobileOpen = false">{{ 'artikel.nav' | translate }}</a>
+    <a (click)="scrollToSection('home')" (keydown.enter)="scrollToSection('home')" (keydown.space)="scrollToSection('home')" tabindex="0" role="button">{{ 'navigation.home' | translate }}</a>
+    <a (click)="scrollToSection('vision')" (keydown.enter)="scrollToSection('vision')" (keydown.space)="scrollToSection('vision')" tabindex="0" role="button">{{ 'navigation.vision' | translate }}</a>
+    <a (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" tabindex="0" role="button">{{ 'navigation.about' | translate }}</a>
+    <a (click)="scrollToSection('services')" (keydown.enter)="scrollToSection('services')" (keydown.space)="scrollToSection('services')" tabindex="0" role="button">{{ 'services.label' | translate }}</a>
+    <a (click)="scrollToSection('references')" (keydown.enter)="scrollToSection('references')" (keydown.space)="scrollToSection('references')" tabindex="0" role="button">{{ 'navigation.references' | translate }}</a>
+    <a [routerLink]="['/artikel', currentLanguage]" (click)="mobileOpen = false">{{ 'artikel.nav' | translate }}</a>
   </nav>
 
   <!-- Language switcher at bottom of drawer on mobile -->

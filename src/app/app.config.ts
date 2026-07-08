@@ -18,10 +18,15 @@ export const appConfig: ApplicationConfig = {
       },
       {
         path: 'artikel',
+        redirectTo: 'artikel/de',
+        pathMatch: 'full',
+      },
+      {
+        path: 'artikel/:lang',
         loadComponent: () => import('./pages/artikel/artikel-list.component').then(m => m.ArtikelListComponent),
       },
       {
-        path: 'artikel/:slug',
+        path: 'artikel/:lang/:slug',
         loadComponent: () => import('./pages/artikel/artikel-detail.component').then(m => m.ArtikelDetailComponent),
       },
       { path: '**', redirectTo: '' },

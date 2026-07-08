@@ -1,4 +1,8 @@
 {
+    "meta": {
+        "title": "Domotix GmbH – Gebäudeautomation für Wohnhäuser und KMU",
+        "description": "Gebäudeautomation (KNX, Loxone, Control4), Smart Home und Planung für Wohnhäuser und KMU in Bern, Solothurn und der ganzen Schweiz."
+    },
     "navigation": {
         "home": "Home",
         "vision": "Vision",
@@ -75,7 +79,6 @@
         "nav": "Wissen",
         "pageTitle": "Wissen",
         "back": "← Alle Artikel",
-        "readingTime": "Min. Lesezeit",
         "notFound": "Dieser Artikel wurde nicht gefunden.",
         "notFoundBack": "Zurück zur Übersicht"
     },

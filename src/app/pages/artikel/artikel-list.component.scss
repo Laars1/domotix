@@ -10,7 +10,7 @@ $color-bluegrey: #8599A6;
 }
 
 .artikel-list-header {
-  padding: 4rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .artikel-grid {
@@ -47,7 +47,7 @@ $color-bluegrey: #8599A6;
 }
 
 .artikel-card__image-wrap {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 4.5;
   overflow: hidden;
   background-color: rgba($color-tan, 0.08);
 }

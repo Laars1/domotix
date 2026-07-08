@@ -2,7 +2,7 @@
   <div
     class="parallax__slide"
     *ngFor="let src of slides; let i = index"
-    [style.background-image]="'url(' + src + ')'"
+    [style]="backgroundStyle(src)"
     [class.parallax__slide--active]="i === currentIndex"
   ></div>
   <ng-content></ng-content>

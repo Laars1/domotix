@@ -1,4 +1,8 @@
 {
+    "meta": {
+        "title": "Domotix GmbH – Domotique pour résidences et PME",
+        "description": "Domotique (KNX, Loxone, Control4), smart home et planification pour résidences et PME à Berne, Soleure et dans toute la Suisse."
+    },
     "navigation": {
         "home": "Home",
         "vision": "Vision",
@@ -75,7 +79,6 @@
         "nav": "Savoir",
         "pageTitle": "Savoir",
         "back": "← Tous les articles",
-        "readingTime": "min de lecture",
         "notFound": "Cet article est introuvable.",
         "notFoundBack": "Retour à l'aperçu"
     },

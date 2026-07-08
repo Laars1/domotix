@@ -29,6 +29,9 @@
             "assets": [
               "src/favicon.ico",
               "src/404.html",
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/llms.txt",
               "src/assets"
             ],
             "styles": [
@@ -97,6 +100,9 @@
             "assets": [
               "src/favicon.ico",
               "src/404.html",
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/llms.txt",
               "src/assets"
             ],
             "styles": [

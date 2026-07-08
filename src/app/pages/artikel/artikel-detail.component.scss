@@ -12,11 +12,13 @@ $color-bluegrey: #8599A6;
 .artikel-hero {
   position: relative;
   width: 100%;
-  height: calc(55vh + 4.5rem);
-  min-height: 320px;
-  max-height: 560px;
+  height: 250px;
   overflow: hidden;
   margin-top: 0;
+
+  @media (max-width: 640px) {
+    height: 180px;
+  }
 
   &__img {
     width: 100%;

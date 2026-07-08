@@ -1,4 +1,4 @@
-# Audio multiroom : pourquoi même les non-audiophiles devraient prévoir des haut-parleurs intégrés et pourquoi Sonos n’est pas toujours la meilleure solution
+# Audio multiroom: pourquoi même les non-audiophiles devraient prévoir des haut-parleurs intégrés et pourquoi Sonos n’est pas toujours la meilleure solution
 
 La musique fait aujourd’hui naturellement partie de l’habitat. Elle accompagne la cuisine, le travail, la douche, les repas entre amis ou simplement le retour à la maison en arrière-plan. Pourtant, dans de nombreux projets de construction ou de rénovation, l’audio est pris en compte beaucoup trop tard, souvent seulement lorsque les murs sont déjà fermés et qu’il ne reste plus que des haut-parleurs mobiles posés sur des meubles ou branchés sur des prises.
 

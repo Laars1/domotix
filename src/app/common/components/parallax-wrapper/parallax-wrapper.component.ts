@@ -27,6 +27,14 @@ export class ParallaxWrapperComponent implements OnInit, OnDestroy {
     return this.imgSrcs.length ? this.imgSrcs : (this.imgSrc ? [this.imgSrc] : []);
   }
 
+  backgroundStyle(src: string): string {
+    const webpSrc = src.replace(/\.avif$/i, '.webp');
+    if (webpSrc === src) {
+      return `background-image: url('${src}');`;
+    }
+    return `background-image: url('${src}'); background-image: image-set(url('${webpSrc}') type('image/webp'), url('${src}') type('image/avif'));`;
+  }
+
   ngOnInit() {
     if (this.slides.length > 1) {
       this.randomStart();

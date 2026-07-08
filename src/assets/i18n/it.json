@@ -1,4 +1,8 @@
 {
+    "meta": {
+        "title": "Domotix GmbH – Domotica per abitazioni e PMI",
+        "description": "Domotica (KNX, Loxone, Control4), smart home e pianificazione per abitazioni e PMI a Berna, Soletta e in tutta la Svizzera."
+    },
     "navigation": {
         "home": "Home",
         "vision": "Visione",
@@ -73,7 +77,6 @@
         "nav": "Sapere",
         "pageTitle": "Sapere",
         "back": "← Tutti gli articoli",
-        "readingTime": "min di lettura",
         "notFound": "Questo articolo non è stato trovato.",
         "notFoundBack": "Torna alla panoramica"
     },

@@ -4,6 +4,5 @@ export interface Artikel {
   description: string;
   date: string;
   category: string;
-  readingTime: number;
   headerImg: string;
 }
