@@ -1,8 +1,12 @@
-/* eslint-disable no-unused-vars */
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageProviderService } from '../../services/languageProvider.service';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+
+// Matches '/artikel/<lang>' or '/artikel/<lang>/<slug>' — the only section with language-specific URLs.
+const ARTIKEL_ROUTE_PATTERN = /^\/artikel\/[a-z]{2}(\/[^/]+)?$/;
 
 @Component({
   selector: 'app-language-switcher',
@@ -11,23 +15,32 @@ import { CommonModule } from '@angular/common';
   imports: [TranslateModule, CommonModule],
   standalone: true
 })
-export class LanguageSwitcherComponent implements OnInit {
+export class LanguageSwitcherComponent implements OnInit, OnDestroy {
+  private languageProvider = inject(LanguageProviderService);
+  private router = inject(Router);
+  private langSub?: Subscription;
+
   supportedLanguages: string[] = [];
   currentLanguage: string = '';
 
-  constructor(private languageProvider: LanguageProviderService) {}
-
   ngOnInit(): void {
-    this.loadLanguages();
+    this.supportedLanguages = this.languageProvider.getSupportedLanguages();
+    this.langSub = this.languageProvider.language$.subscribe(lang => {
+      this.currentLanguage = lang;
+    });
   }
 
-  loadLanguages(): void {
-    this.supportedLanguages = this.languageProvider.getSupportedLanguages();
-    this.currentLanguage = this.languageProvider.getCurrentLanguage();
+  ngOnDestroy(): void {
+    this.langSub?.unsubscribe();
   }
 
   switchLanguage(language: string): void {
+    const match = this.router.url.match(ARTIKEL_ROUTE_PATTERN);
+    if (match) {
+      const rest = match[1] || '';
+      this.router.navigateByUrl(`/artikel/${language}${rest}`);
+      return;
+    }
     this.languageProvider.useLanguage(language);
-    this.currentLanguage = this.languageProvider.getCurrentLanguage();
   }
 }

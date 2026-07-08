@@ -1,0 +1,24 @@
+# Domotix GmbH
+
+> Domotix GmbH bietet Gebäudeautomation (KNX, Loxone, Control4), Smart Home und Planung für Wohnhäuser und KMU von Bern aus in der ganzen Schweiz.
+
+Domotix bietet professionelle, spezialisierte Planung für Gebäudeautomation – von der Erstberatung bis zur Umsetzung, inklusive Licht-, Heizungs-, Beschattungs-, Multimedia- und Energiemanagement-Systemen (u.a. KNX, Loxone, Control4).
+
+## Hauptseiten
+
+- [Startseite](https://domotix.ch/): Übersicht über Vision, Leistungen, Team und Referenzen von Domotix GmbH.
+- [Wissen / Artikel](https://domotix.ch/artikel/de): Fachartikel rund um Gebäudeautomation, Smart Home und Energieeffizienz.
+
+## Artikel
+
+- [Multiroom Audio](https://domotix.ch/artikel/de/multiroom): Warum auch Nicht-Audiophile fest installierte Lautsprecher einplanen sollten.
+- [Loxone oder KNX](https://domotix.ch/artikel/de/loxone-vs-knx): Vergleich der beiden Gebäudeautomationssysteme.
+- [Control4 als Alternative](https://domotix.ch/artikel/de/control4): Control4 im Vergleich zu klassischen KNX-Lösungen.
+- [Frühe Smart-Home-Planung](https://domotix.ch/artikel/de/planung): Warum eine frühe Planung entscheidend ist.
+- [Lichtplanung ist kein Luxusgut](https://domotix.ch/artikel/de/lichtplanung): Grundlagen guter Lichtplanung.
+
+Alle Artikel sind zusätzlich auf Englisch (`/artikel/en/...`) und Französisch (`/artikel/fr/...`) verfügbar.
+
+## Kontakt
+
+Domotix GmbH, Muesmattstrasse 37, 3012 Bern, Schweiz.

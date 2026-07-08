@@ -7,7 +7,7 @@
     "build": "ng lint && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href https://laars1.github.io/domotix/ --no-silent --repo=https://github.com/Laars1/domotix.git --name=Laars1",
+    "deploy": "ng deploy --base-href / --no-silent --repo=https://github.com/Laars1/domotix.git --name=Laars1",
     "lint": "ng lint"
   },
   "private": true,
@@ -29,6 +29,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "bootstrap5-toggle": "^5.1.1",
+    "ngx-markdown": "^18.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"

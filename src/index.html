@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <title>Domotix</title>
@@ -11,8 +11,23 @@
     data-site-id="7315bc4356a5"
     defer
   ></script>
+  <script>
+    // GitHub Pages SPA redirect: stellt den Pfad nach dem Redirect wieder her
+    (function() {
+      var redirect = sessionStorage.getItem('redirectPath');
+      if (redirect) {
+        sessionStorage.removeItem('redirectPath');
+        window.history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>
+  <noscript>
+    <h1>Domotix GmbH</h1>
+    <p>Gebäudeautomation (KNX, Loxone, Control4), Smart Home und Planung für Wohnhäuser und KMU von Bern aus in der ganzen Schweiz.</p>
+    <p>Bitte aktivieren Sie JavaScript, um die vollständige Website zu nutzen.</p>
+  </noscript>
 </body>
 </html>

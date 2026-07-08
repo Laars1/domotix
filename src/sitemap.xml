@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://domotix.ch/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/de</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/en</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/fr</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/de/multiroom</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/multiroom" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/multiroom" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/multiroom" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/en/multiroom</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/multiroom" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/multiroom" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/multiroom" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/fr/multiroom</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/multiroom" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/multiroom" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/multiroom" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/de/loxone-vs-knx</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/loxone-vs-knx" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/loxone-vs-knx" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/loxone-vs-knx" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/en/loxone-vs-knx</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/loxone-vs-knx" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/loxone-vs-knx" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/loxone-vs-knx" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/fr/loxone-vs-knx</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/loxone-vs-knx" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/loxone-vs-knx" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/loxone-vs-knx" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/de/control4</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/control4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/control4" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/control4" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/en/control4</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/control4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/control4" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/control4" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/fr/control4</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/control4" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/control4" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/control4" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/de/planung</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/planung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/planung" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/planung" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/en/planung</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/planung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/planung" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/planung" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/fr/planung</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/planung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/planung" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/planung" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/de/lichtplanung</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/lichtplanung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/lichtplanung" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/lichtplanung" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/en/lichtplanung</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/lichtplanung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/lichtplanung" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/lichtplanung" />
+  </url>
+  <url>
+    <loc>https://domotix.ch/artikel/fr/lichtplanung</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://domotix.ch/artikel/de/lichtplanung" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://domotix.ch/artikel/en/lichtplanung" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://domotix.ch/artikel/fr/lichtplanung" />
+  </url>
+</urlset>

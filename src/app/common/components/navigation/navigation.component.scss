@@ -50,6 +50,10 @@ html {
   }
 
   &--dark {
+    left: 0.5rem;
+    right: 0.5rem;
+    width: auto;
+    padding: 0 2rem;
     background: $color-dark;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
@@ -57,6 +61,18 @@ html {
     box-shadow: none;
     --navigation-font-color: rgba(242, 242, 242, 0.85);
     --navigation-font-color-hover: #F2F2F2;
+
+    @media (max-width: 960px) {
+      left: 1rem;
+      right: 1rem;
+      padding: 0 1.5rem;
+    }
+
+    @media (max-width: 640px) {
+      left: 0.5rem;
+      right: 0.5rem;
+      padding: 0 2rem;
+    }
   }
 }
 
@@ -183,12 +199,12 @@ html {
   width: 100%;
   z-index: 199;
   background-color: $color-light;
-  overflow: hidden;
+  overflow-y: auto;
   max-height: 0;
   transition: max-height 0.35s ease;
 
   &--open {
-    max-height: 400px;
+    max-height: calc(100dvh - #{$nav-height});
     box-shadow: 0 4px 16px rgba($color-dark, 0.12);
   }
 }
