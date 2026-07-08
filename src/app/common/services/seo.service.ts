@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { Injectable, inject } from '@angular/core';
 
-export const SITE_URL = 'https://domotix.ch';
+export const SITE_URL = 'https://www.domotix.ch';
 
 @Injectable({ providedIn: 'root' })
 export class SeoService {
