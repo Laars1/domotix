@@ -29,6 +29,7 @@
             "assets": [
               "src/favicon.ico",
               "src/404.html",
+              "src/.htaccess",
               "src/robots.txt",
               "src/sitemap.xml",
               "src/llms.txt",
@@ -100,6 +101,7 @@
             "assets": [
               "src/favicon.ico",
               "src/404.html",
+              "src/.htaccess",
               "src/robots.txt",
               "src/sitemap.xml",
               "src/llms.txt",
