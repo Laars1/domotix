@@ -1,4 +1,8 @@
 {
+    "meta": {
+        "title": "Domotix GmbH – Building Automation for Homes and SMEs",
+        "description": "Building automation (KNX, Loxone, Control4), smart home and planning for homes and SMEs in Bern, Solothurn, and across Switzerland."
+    },
     "navigation": {
         "home": "Home",
         "vision": "Vision",
@@ -70,6 +74,13 @@
     },
     "partner": {
         "title": "Partners"
+    },
+    "artikel": {
+        "nav": "Knowledge",
+        "pageTitle": "Knowledge",
+        "back": "← All articles",
+        "notFound": "This article could not be found.",
+        "notFoundBack": "Back to overview"
     },
     "footer": {
         "copyright": "© 2026 Domotix GmbH",
