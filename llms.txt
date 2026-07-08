@@ -6,16 +6,16 @@ Domotix bietet professionelle, spezialisierte Planung für Gebäudeautomation �
 
 ## Hauptseiten
 
-- [Startseite](https://domotix.ch/): Übersicht über Vision, Leistungen, Team und Referenzen von Domotix GmbH.
-- [Wissen / Artikel](https://domotix.ch/artikel/de): Fachartikel rund um Gebäudeautomation, Smart Home und Energieeffizienz.
+- [Startseite](https://www.domotix.ch/): Übersicht über Vision, Leistungen, Team und Referenzen von Domotix GmbH.
+- [Wissen / Artikel](https://www.domotix.ch/artikel/de): Fachartikel rund um Gebäudeautomation, Smart Home und Energieeffizienz.
 
 ## Artikel
 
-- [Multiroom Audio](https://domotix.ch/artikel/de/multiroom): Warum auch Nicht-Audiophile fest installierte Lautsprecher einplanen sollten.
-- [Loxone oder KNX](https://domotix.ch/artikel/de/loxone-vs-knx): Vergleich der beiden Gebäudeautomationssysteme.
-- [Control4 als Alternative](https://domotix.ch/artikel/de/control4): Control4 im Vergleich zu klassischen KNX-Lösungen.
-- [Frühe Smart-Home-Planung](https://domotix.ch/artikel/de/planung): Warum eine frühe Planung entscheidend ist.
-- [Lichtplanung ist kein Luxusgut](https://domotix.ch/artikel/de/lichtplanung): Grundlagen guter Lichtplanung.
+- [Multiroom Audio](https://www.domotix.ch/artikel/de/multiroom): Warum auch Nicht-Audiophile fest installierte Lautsprecher einplanen sollten.
+- [Loxone oder KNX](https://www.domotix.ch/artikel/de/loxone-vs-knx): Vergleich der beiden Gebäudeautomationssysteme.
+- [Control4 als Alternative](https://www.domotix.ch/artikel/de/control4): Control4 im Vergleich zu klassischen KNX-Lösungen.
+- [Frühe Smart-Home-Planung](https://www.domotix.ch/artikel/de/planung): Warum eine frühe Planung entscheidend ist.
+- [Lichtplanung ist kein Luxusgut](https://www.domotix.ch/artikel/de/lichtplanung): Grundlagen guter Lichtplanung.
 
 Alle Artikel sind zusätzlich auf Englisch (`/artikel/en/...`) und Französisch (`/artikel/fr/...`) verfügbar.
 

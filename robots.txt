@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://domotix.ch/sitemap.xml
+Sitemap: https://www.domotix.ch/sitemap.xml
