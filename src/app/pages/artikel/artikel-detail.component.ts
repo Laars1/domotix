@@ -52,6 +52,7 @@ export class ArtikelDetailComponent implements OnInit, OnDestroy {
     this.paramSub?.unsubscribe();
     this.seo.removeJsonLd('ld-article');
     this.seo.removeJsonLd('ld-breadcrumb');
+    this.seo.clearHreflangs();
   }
 
   private load(slug: string): void {
@@ -78,6 +79,7 @@ export class ArtikelDetailComponent implements OnInit, OnDestroy {
           this.metaService.updateTag({ name: 'twitter:description', content: this.meta.description });
           this.metaService.updateTag({ name: 'twitter:image', content: image });
           this.seo.setCanonical(`/artikel/${this.lang}/${slug}`);
+          this.seo.setHreflangs(this.langProvider.getSupportedLanguages(), l => `/artikel/${l}/${slug}`);
           this.seo.setJsonLd('ld-article', {
             '@context': 'https://schema.org',
             '@type': 'Article',

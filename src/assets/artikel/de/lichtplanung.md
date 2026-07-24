@@ -55,3 +55,8 @@ Lichtplanung ist kein Luxusgut. Sie ist eine sinnvolle Investition in Komfort, A
 Gute Planung bedeutet nicht, möglichst viel Geld auszugeben. Sie bedeutet, das vorhandene Budget richtig einzusetzen. Mit einem durchdachten Konzept sind überzeugende Lichtlösungen in jeder Preisspanne möglich — vom einfachen Wohnraum bis zum hochwertigen Gesamtkonzept.
 
 [Kontaktieren Sie uns](mailto:getintouch@domotix.ch) – wir unterstützen Sie bei der Lichtplanung von der ersten Idee bis zur fertigen Umsetzung.
+
+## Weiterführende Artikel
+
+- [Warum eine frühe Smart-Home-Planung so wichtig ist](/artikel/de/planung)
+- [Multiroom Audio: Warum auch Nicht-Audiophile fest installierte Lautsprecher einplanen sollten](/artikel/de/multiroom)

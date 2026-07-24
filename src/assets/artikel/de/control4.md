@@ -51,3 +51,8 @@ Eine sauber geplante Gebäudeautomation ersetzt Control4 im Schweizer Markt jedo
 Die stärkste Lösung entsteht deshalb durch die richtige Kombination: KNX bildet das technische Rückgrat des Gebäudes, Control4 ergänzt es als komfortable User Platform für AV, Szenen und Bedienung. So entsteht ein Smart Home, das technisch sauber aufgebaut ist und sich im Alltag einfach und durchdacht bedienen lässt.
 
 [Kontaktieren Sie uns](mailto:getintouch@domotix.ch) – wir zeigen Ihnen, wie eine solche Lösung für Ihr Projekt aussehen könnte.
+
+## Weiterführende Artikel
+
+- [Loxone oder KNX – welches System passt besser zur modernen Gebäudeautomation?](/artikel/de/loxone-vs-knx)
+- [Multiroom Audio: Warum auch Nicht-Audiophile fest installierte Lautsprecher einplanen sollten](/artikel/de/multiroom)

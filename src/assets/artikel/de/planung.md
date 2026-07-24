@@ -99,3 +99,8 @@ Wer früh plant, schafft die Grundlage für ein zuverlässiges, langlebiges und 
 Robuste Integration bedeutet nicht, möglichst komplizierte Technik einzubauen. Sie bedeutet, die richtigen Entscheidungen früh zu treffen, Systeme sauber aufeinander abzustimmen und eine Lösung zu schaffen, die im Alltag zuverlässig funktioniert.
 
 [Kontaktieren Sie uns](mailto:getintouch@domotix.ch) – wir begleiten Ihr Projekt von der frühen Planungsphase bis zur fertigen Installation.
+
+## Weiterführende Artikel
+
+- [Lichtplanung ist kein Luxusgut](/artikel/de/lichtplanung)
+- [Loxone oder KNX – welches System passt besser zur modernen Gebäudeautomation?](/artikel/de/loxone-vs-knx)

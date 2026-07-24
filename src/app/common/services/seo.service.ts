@@ -18,6 +18,29 @@ export class SeoService {
     link.setAttribute('href', href);
   }
 
+  /**
+   * Set <link rel="alternate" hreflang> tags for the given path per language.
+   * `pathForLang` receives the language code and returns the path (e.g. `/artikel/de/planung`).
+   * German is also declared as x-default.
+   */
+  // eslint-disable-next-line no-unused-vars
+  setHreflangs(langs: string[], pathForLang: (lang: string) => string): void {
+    this.clearHreflangs();
+    const entries = langs.map(lang => ({ lang, href: `${SITE_URL}${pathForLang(lang)}` }));
+    entries.push({ lang: 'x-default', href: `${SITE_URL}${pathForLang('de')}` });
+    for (const entry of entries) {
+      const link = this.doc.createElement('link');
+      link.setAttribute('rel', 'alternate');
+      link.setAttribute('hreflang', entry.lang);
+      link.setAttribute('href', entry.href);
+      this.doc.head.appendChild(link);
+    }
+  }
+
+  clearHreflangs(): void {
+    this.doc.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
+  }
+
   setJsonLd(id: string, data: object): void {
     this.removeJsonLd(id);
     const script = this.doc.createElement('script');

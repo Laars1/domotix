@@ -42,12 +42,14 @@ export class ArtikelListComponent implements OnInit, OnDestroy {
       this.lang = routeLang;
       this.langProvider.useLanguage(routeLang);
       this.seo.setCanonical(`/artikel/${this.lang}`);
+      this.seo.setHreflangs(this.langProvider.getSupportedLanguages(), l => `/artikel/${l}`);
       this.load();
     });
   }
 
   ngOnDestroy(): void {
     this.paramSub?.unsubscribe();
+    this.seo.clearHreflangs();
   }
 
   private load(): void {
