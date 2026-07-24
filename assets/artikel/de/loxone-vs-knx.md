@@ -69,3 +69,8 @@ Die beste Lösung entsteht nicht durch die Wahl eines Systems nach Bauchgefühl,
 Genau hier setzt eine professionelle Planung an. Bei Domotix betrachten wir nicht nur einzelne Produkte, sondern das gesamte Gebäude. Unser Ziel ist eine Lösung, die technisch sauber, alltagstauglich, erweiterbar und langfristig sinnvoll ist.
 
 [Kontaktieren Sie uns](mailto:getintouch@domotix.ch) für eine unverbindliche Beratung – wir analysieren Ihr Projekt und empfehlen die Lösung, die wirklich zu Ihnen passt.
+
+## Weiterführende Artikel
+
+- [Control4 als Alternative: Wenn Smart Home mehr nach Erlebnis, AV und Komfort gedacht wird](/artikel/de/control4)
+- [Warum eine frühe Smart-Home-Planung so wichtig ist](/artikel/de/planung)

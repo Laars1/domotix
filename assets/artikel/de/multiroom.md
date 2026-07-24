@@ -84,3 +84,8 @@ Audio ist nicht nur ein Thema für Audiophile. Es ist ein Thema für alle, die W
 Sonos kann ein sehr gutes System sein, aber es ist nicht automatisch die beste Lösung für jedes Projekt. Gerade bei Neubauten, Umbauten und hochwertigen Wohnsituationen lohnt es sich, Audio früh mitzudenken und nicht erst nachträglich mit mobilen Lautsprechern zu lösen.
 
 [Kontaktieren Sie uns](mailto:getintouch@domotix.ch) – wir begleiten Sie von der ersten Idee bis zur fertigen Audiolösung.
+
+## Weiterführende Artikel
+
+- [Control4 als Alternative: Wenn Smart Home mehr nach Erlebnis, AV und Komfort gedacht wird](/artikel/de/control4)
+- [Warum eine frühe Smart-Home-Planung so wichtig ist](/artikel/de/planung)

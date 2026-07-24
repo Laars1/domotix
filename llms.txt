@@ -19,6 +19,10 @@ Domotix bietet professionelle, spezialisierte Planung für Gebäudeautomation �
 
 Alle Artikel sind zusätzlich auf Englisch (`/artikel/en/...`) und Französisch (`/artikel/fr/...`) verfügbar.
 
+## Optional
+
+- [Vollständige Artikelinhalte](https://www.domotix.ch/llms-full.txt): Alle Fachartikel in voller Länge (Markdown, Deutsch).
+
 ## Kontakt
 
 Domotix GmbH, Muesmattstrasse 37, 3012 Bern, Schweiz.
