@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -8,10 +9,10 @@ import { HomeComponent } from '../../common/components/home/home.component';
 import { VisionComponent } from '../../common/components/vision/vision.component';
 import { ServicesComponent } from '../../common/components/services/services.component';
 import { AboutComponent } from '../../common/components/about/about.component';
-import { ReferencesComponent } from '../../common/components/references/references.component';
 import { PartnerComponent } from '../../common/components/partner/partner.component';
 import { FooterComponent } from '../../common/components/footer/footer.component';
 import { ContainerComponent } from '../../common/components/container/container.component';
+import { CtaBandComponent } from '../../common/components/cta-band/cta-band.component';
 import { LanguageProviderService } from '../../common/services/languageProvider.service';
 import { SeoService, SITE_URL } from '../../common/services/seo.service';
 
@@ -26,10 +27,11 @@ import { SeoService, SITE_URL } from '../../common/services/seo.service';
     VisionComponent,
     ServicesComponent,
     AboutComponent,
-    ReferencesComponent,
     PartnerComponent,
     FooterComponent,
     ContainerComponent,
+    CtaBandComponent,
+    RouterLink,
   ],
   templateUrl: './home-page.component.html',
 })
@@ -40,6 +42,9 @@ export class HomePageComponent implements OnInit, OnDestroy {
   private langProvider = inject(LanguageProviderService);
   private seo = inject(SeoService);
   private langSub?: Subscription;
+
+  /** Drives the router link on the references teaser. */
+  lang = 'de';
 
   ngOnInit(): void {
     this.seo.setCanonical('/');
@@ -60,7 +65,10 @@ export class HomePageComponent implements OnInit, OnDestroy {
       },
       areaServed: ['Bern', 'Solothurn', 'Schweiz'],
     });
-    this.langSub = this.langProvider.language$.subscribe(() => this.updateMeta());
+    this.langSub = this.langProvider.language$.subscribe(lang => {
+      this.lang = lang;
+      this.updateMeta();
+    });
   }
 
   ngOnDestroy(): void {

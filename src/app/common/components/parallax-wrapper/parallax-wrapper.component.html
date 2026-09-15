@@ -2,8 +2,9 @@
   <div
     class="parallax__slide"
     *ngFor="let src of slides; let i = index"
-    [style]="backgroundStyle(src)"
+    [style]="slideStyle(i)"
     [class.parallax__slide--active]="i === currentIndex"
+    [class.parallax__slide--has-mobile]="hasMobile(i)"
   ></div>
   <ng-content></ng-content>
 </div>

@@ -1,19 +1,88 @@
 [
     {
-        "id": 1,
+        "slug": "platzhalter-wohnhaus",
+        "title": "Segnaposto – Abitazione",
+        "subtitle": "Quattro immagini, due righe – progetto di esempio per la verifica del layout",
+        "description": "Progetto segnaposto per la verifica del layout. Verrà sostituito da una referenza reale.",
+        "headerImg": "assets/images/hero-1.webp",
+        "draft": true,
+        "content": {
+            "date": "2026",
+            "location": "Berna",
+            "tags": [
+                "Attività segnaposto",
+                "Attività segnaposto",
+                "Attività segnaposto"
+            ],
+            "images": [
+                "assets/images/hero-1.webp",
+                "assets/images/hero-2.webp",
+                "assets/images/hero-3.webp",
+                "assets/images/hero-4.webp"
+            ]
+        }
+    },
+    {
+        "slug": "golfsimulator-systemupdate",
+        "title": "Aggiornamento di un simulatore di golf",
+        "subtitle": "Modernizzazione di un impianto esistente",
+        "description": "Modernizzazione di un simulatore di golf esistente: nuova elettronica, schermo su misura e un rivestimento del soffitto che protegge la tecnica.",
+        "headerImg": "assets/images/references/go4golf/hero.webp",
+        "content": {
+            "date": "2025",
+            "tags": [
+                "Revisione completa dell'elettronica",
+                "Realizzazione su misura e montaggio di un nuovo schermo",
+                "Coordinamento dei lavori (montaggio, coordinamento delle maestranze, realizzazione in loco)"
+            ],
+            "images": [
+                "assets/images/references/go4golf/1.webp",
+                "assets/images/references/go4golf/2.webp"
+            ]
+        }
+    },
+    {
+        "slug": "einfamilienhaus",
+        "title": "Casa unifamiliare moderna",
+        "subtitle": "Tecnologia intelligente per l'abitare moderno",
+        "description": "Automazione degli edifici KNX per una casa unifamiliare a Berna: illuminazione DALI, ombreggiamento, regolazione del clima ambiente e audio, visualizzati centralmente tramite un Gira X1.",
+        "headerImg": "assets/images/references/einfamilienhaus/hero.webp",
+        "content": {
+            "date": "2026",
+            "location": "Berna",
+            "tags": [
+                "Automazione degli edifici KNX",
+                "Concetto di comando JUNG KNX",
+                "Visualizzazione Gira X1",
+                "Controllo dell'illuminazione DALI"
+            ],
+            "images": [
+                "assets/images/references/einfamilienhaus/1.webp",
+                "assets/images/references/einfamilienhaus/2.webp",
+                "assets/images/references/einfamilienhaus/3.webp",
+                "assets/images/references/einfamilienhaus/4.webp",
+                "assets/images/references/einfamilienhaus/5.webp",
+                "assets/images/references/einfamilienhaus/6.webp"
+            ]
+        }
+    },
+    {
+        "slug": "tennis-club-neufeld",
         "title": "Tennis Club Neufeld",
-        "subtitle": "Collegamento dell'illuminazione del campo sportivo al sistema di prenotazione",
-        "headerImg": "assets/images/references/tcn/TCN_1.png",
+        "subtitle": "Collegamento dell'illuminazione dei campi al sistema di prenotazione",
+        "description": "L'illuminazione dei campi del Tennis Club Neufeld a Berna si accende automaticamente in base alle prenotazioni GotCourts – realizzata con KNX e Loxone.",
+        "headerImg": "assets/images/references/tcn/hero.webp",
         "content": {
             "date": "2024",
-            "description": "L'illuminazione del tennis club dovrebbe essere orientata automaticamente verso le riserve. L'obiettivo è quello di ridurre il consumo energetico attraverso lo spegnimento automatico e allo stesso tempo ridurre al minimo le emissioni luminose per il quartiere. \n ",
-            "solution": "L'intero impianto elettrico è stato realizzato su base KNX come parte della nuova costruzione della piscina coperta e della riprogettazione del tennis club. Utilizzando l'API del sistema di prenotazione GotCourts, Loxone può controllare l'illuminazione in base alle prenotazioni. Ciò significa che l'illuminazione si accende solo quando è necessario, tenendo conto della luminosità ambientale.",
-            "tags": ["Soluzione compatibile con il sistema esistente", "Creare l'interfaccia API di GotCourt", "Creare l'interfaccia utente per il Comitato esecutivo"],
+            "location": "Berna",
+            "tags": [
+                "Soluzione compatibile con l'impianto esistente",
+                "Sviluppo dell'interfaccia API GotCourts",
+                "Creazione di un'interfaccia per il comitato"
+            ],
             "images": [
-                "assets/images/references/tcn/TCN_1.png",
-                "assets/images/references/tcn/TCN_2.png",
-                "assets/images/references/tcn/TCN_3.png",
-                "assets/images/references/tcn/TCN_4.png"
+                "assets/images/references/tcn/1.webp",
+                "assets/images/references/tcn/2.webp"
             ]
         }
     }

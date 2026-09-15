@@ -48,7 +48,10 @@
         "tagline": "Maximiser l'autoconsommation, optimiser les ressources.",
         "text": "La gestion intelligente de l'énergie permet d'utiliser l'électricité produite soi-même de manière efficace et durable. L'énergie est pilotée automatiquement selon les besoins, le moment de la journée, la consommation et la disponibilité. Les surplus photovoltaïques peuvent être utilisés de façon ciblée pour le stockage, l'eau chaude, le refroidissement, la pompe à chaleur ou la recharge d'un véhicule électrique. Cela augmente l'autoconsommation et réduit l'énergie prélevée sur le réseau, sans intervention manuelle. La visualisation rend tous les flux d'énergie transparents et signale rapidement les consommateurs actifs ou les anomalies. Il en résulte un système efficace, qui pilote l'énergie de manière ciblée et compréhensible."
     },
-    "services": { "label": "Prestations", "more": "En savoir plus" },
+    "services": {
+        "label": "Prestations",
+        "more": "En savoir plus"
+    },
     "security": {
         "title": "Sécurité",
         "tagline": "Accès sécurisé, gestion locale des données, sans dépendance au cloud.",
@@ -70,6 +73,25 @@
         "cta": "En savoir plus",
         "modal": {
             "responsibilities": "Responsabilités"
+        },
+        "pageTitle": "Références",
+        "metaDescription": "Projets sélectionnés de Domotix GmbH : domotique avec KNX, Loxone et Control4 pour maisons, clubs et PME à Berne et dans toute la Suisse.",
+        "intro": "Une sélection de projets réalisés – de l'intégration d'installations existantes à l'installation entièrement neuve.",
+        "all": "Toutes les références",
+        "back": "← Toutes les références",
+        "empty": "Aucune référence n'est encore disponible dans cette langue.",
+        "notFound": "Ce projet n'a pas été trouvé.",
+        "detail": {
+            "prev": "Projet précédent",
+            "next": "Projet suivant"
+        },
+        "teaser": {
+            "text": "Intéressé par nos services ? Laissez-vous inspirer par nos projets réalisés – de l'intégration d'installations existantes à l'installation entièrement neuve.",
+            "cta": "Voir les références"
+        },
+        "contact": {
+            "text": "Ce que vous voyez vous plaît ? Parlez-nous de votre projet – nous l'examinons avec vous et vous recontactons.",
+            "cta": "Prendre contact"
         }
     },
     "partner": {
@@ -78,6 +100,7 @@
     "artikel": {
         "nav": "Savoir",
         "pageTitle": "Savoir",
+        "metaDescription": "Savoir-faire en automatisation du bâtiment, maison intelligente et efficacité énergétique – par les experts de Domotix GmbH à Berne.",
         "back": "← Tous les articles",
         "notFound": "Cet article est introuvable.",
         "notFoundBack": "Retour à l'aperçu"
@@ -87,8 +110,7 @@
         "policies": {
             "title": "Déclaration de confidentialité & mentions légales",
             "data-protection": {
-                "title": "Déclaration de confidentialité",
-                "content": "Protection des données En vertu de l'article 13 de la Constitution fédérale suisse et des dispositions fédérales relatives à la protection des données (loi sur la protection des données, LPD), toute personne a droit à la protection de sa sphère privée ainsi qu'à la protection contre l'emploi abusif de ses données personnelles. Nous respectons ces dispositions. Les données personnelles sont traitées de manière strictement confidentielle et ne sont ni vendues ni transmises à des tiers. En étroite collaboration avec nos fournisseurs d'hébergement, nous nous efforçons de protéger autant que possible les bases de données contre les accès étrangers, les pertes, les abus ou les falsifications."
+                "title": "Déclaration de confidentialité"
             },
             "imprint": {
                 "title": "Mentions légales",
@@ -105,5 +127,10 @@
     "common": {
         "email": "Adresse e-mail",
         "write-us": "Écrivez-nous"
+    },
+    "notFound": {
+        "title": "Page introuvable",
+        "text": "La page que vous recherchez n'existe pas ou a été déplacée.",
+        "back": "Retour à l'accueil"
     }
 }

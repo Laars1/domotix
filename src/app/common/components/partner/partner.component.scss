@@ -4,10 +4,19 @@ $color-dark:     #0D0D0D;
 
 .partners-section {
   background-color: $color-light;
-  padding-top: 0.25rem;
+
+  // The gap below the logos is this section's own bottom padding plus the top
+  // padding of the services section that follows (.section-pad-sm + .section-pad).
+  // Matching that above the logos keeps the strip optically centred between the
+  // dark About block and the services label.
+  padding-top: 9.5rem;   // 3.5 + 6
 
   @media (max-width: 768px) {
-    padding-top: unset;
+    padding-top: 6.5rem; // 2.5 + 4
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 5rem;   // 2 + 3
   }
 }
 
@@ -90,6 +99,19 @@ $color-dark:     #0D0D0D;
 
     @media (max-width: 640px) {
       height: 1.42rem;
+      max-width: 61px;
+    }
+  }
+
+  // Very wide wordmark (viewBox 197 x 20, roughly 10:1). Capped to the same
+  // width as Meljac; the height follows from the ratio, so the box hugs the
+  // artwork instead of leaving empty space above and below it.
+  &--bw {
+    height: 0.63rem;
+    max-width: 108px;
+
+    @media (max-width: 640px) {
+      height: 0.36rem;
       max-width: 61px;
     }
   }

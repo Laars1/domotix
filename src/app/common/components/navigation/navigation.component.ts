@@ -9,10 +9,11 @@ import { LanguageProviderService } from '../../services/languageProvider.service
 
 const NAV_HEIGHT = 64;
 
-// Routes without a hero image behind the nav — bar must stay solid/dark-text from the top.
-// Matches the artikel LIST page ('/artikel/:lang') only — the detail page
-// ('/artikel/:lang/:slug') DOES have a hero image, so it's excluded here.
-const NO_HERO_PATTERN = /^\/artikel\/[a-z]{2}$/;
+// Routes WITH a hero image behind the nav: the home page and the artikel /
+// referenzen detail pages. Everything else — the list pages, the 404 page and
+// any page added later — starts with a solid bar, so white nav text never
+// ends up on a light background by default.
+const HERO_PATTERN = /^$|^\/(artikel|referenzen)\/[a-z]{2}\/[^/]+$/;
 
 @Component({
   selector: 'app-navigation',
@@ -51,7 +52,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
 
   private updateNoHero(url: string): void {
     const path = url.split(/[?#]/)[0].replace(/\/$/, '');
-    this.noHero = NO_HERO_PATTERN.test(path);
+    this.noHero = !HERO_PATTERN.test(path);
   }
 
   private onScroll = (): void => {

@@ -20,6 +20,7 @@
 .parallax__slide {
   position: absolute;
   inset: 0;
+  background-image: var(--slide-bg);
   background-attachment: fixed;
   background-position: center 60%;
   background-repeat: no-repeat;
@@ -30,6 +31,20 @@
   @media (hover: none), (max-width: 768px) {
     background-attachment: scroll;
     background-position: 70% center;
+  }
+
+  // Portrait screens — phones, and tablets held upright — get the portrait
+  // image. Switching on the viewport's shape rather than its width means a
+  // phone turned sideways gets the landscape image, which suits it better.
+  @media (max-aspect-ratio: 4/5) {
+    background-image: var(--slide-bg-mobile);
+    background-attachment: scroll;
+
+    // The portrait image is cropped for this purpose, so it is centred; the
+    // 70% offset above only exists to rescue a landscape picture on a phone.
+    &--has-mobile {
+      background-position: center;
+    }
   }
 
   &--active {

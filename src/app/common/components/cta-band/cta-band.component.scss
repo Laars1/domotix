@@ -1,0 +1,46 @@
+$color-light:    #F2F2F2;
+$color-dark:     #0D0D0D;
+$color-tan:      #A69885;
+$color-bluegrey: #8599A6;
+
+// Follows the same rhythm as every other section: tan section-label, hairline,
+// then left-aligned content. Layout and type live here, the action itself is
+// projected in by the caller.
+// No top padding on purpose: the section above already ends with its own
+// bottom padding, and adding .section-pad on top of that doubled the gap
+// before the hairline. Pages that end flush (the references mosaic) provide
+// the space themselves.
+.cta-band {
+  background-color: $color-light;
+  padding: 0 0 6rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    padding-bottom: 3rem;
+  }
+}
+
+.cta-band__text {
+  max-width: 620px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba($color-dark, 0.65);
+  margin: 0 0 2rem;
+
+  // Matches the breakpoint at which .section-label centres itself.
+  @media (max-width: 960px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.cta-band__action {
+  @media (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+  }
+}

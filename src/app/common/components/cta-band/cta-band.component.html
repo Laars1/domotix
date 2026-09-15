@@ -1,0 +1,13 @@
+<section class="cta-band">
+  <div class="container">
+
+    <div class="hairline" *ngIf="divider"></div>
+
+    <p class="cta-band__text">{{ text | translate }}</p>
+
+    <div class="cta-band__action">
+      <ng-content></ng-content>
+    </div>
+
+  </div>
+</section>

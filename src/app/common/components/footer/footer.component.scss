@@ -172,3 +172,30 @@ $color-tan:   #A69885;
   color: rgba($color-dark, 0.7);
   margin-bottom: 0;
 }
+
+// Rendered privacy policy — same scale as the imprint text beside it, with the
+// section headings set like the modal's own labels.
+.policy-modal__markdown ::ng-deep {
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $color-tan;
+    margin: 2rem 0 0.75rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.85;
+    color: rgba($color-dark, 0.7);
+    margin-bottom: 0.9rem;
+  }
+
+  // "Stand: …" line at the very top.
+  > p:first-child em {
+    font-size: 0.8rem;
+    font-style: normal;
+    color: rgba($color-dark, 0.45);
+  }
+}

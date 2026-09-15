@@ -18,6 +18,10 @@ export class SeoService {
     link.setAttribute('href', href);
   }
 
+  removeCanonical(): void {
+    this.doc.head.querySelector('link[rel="canonical"]')?.remove();
+  }
+
   /**
    * Set <link rel="alternate" hreflang> tags for the given path per language.
    * `pathForLang` receives the language code and returns the path (e.g. `/artikel/de/planung`).

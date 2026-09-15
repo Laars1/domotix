@@ -18,7 +18,7 @@
     <a (click)="scrollToSection('vision')" (keydown.enter)="scrollToSection('vision')" (keydown.space)="scrollToSection('vision')" tabindex="0" role="button">{{ 'navigation.vision' | translate }}</a>
     <a (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" tabindex="0" role="button">{{ 'navigation.about' | translate }}</a>
     <a (click)="scrollToSection('services')" (keydown.enter)="scrollToSection('services')" (keydown.space)="scrollToSection('services')" tabindex="0" role="button">{{ 'services.label' | translate }}</a>
-    <a (click)="scrollToSection('references')" (keydown.enter)="scrollToSection('references')" (keydown.space)="scrollToSection('references')" tabindex="0" role="button">{{ 'navigation.references' | translate }}</a>
+    <a [routerLink]="['/referenzen', currentLanguage]">{{ 'navigation.references' | translate }}</a>
     <a [routerLink]="['/artikel', currentLanguage]">{{ 'artikel.nav' | translate }}</a>
   </nav>
 
@@ -51,7 +51,7 @@
     <a (click)="scrollToSection('vision')" (keydown.enter)="scrollToSection('vision')" (keydown.space)="scrollToSection('vision')" tabindex="0" role="button">{{ 'navigation.vision' | translate }}</a>
     <a (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" tabindex="0" role="button">{{ 'navigation.about' | translate }}</a>
     <a (click)="scrollToSection('services')" (keydown.enter)="scrollToSection('services')" (keydown.space)="scrollToSection('services')" tabindex="0" role="button">{{ 'services.label' | translate }}</a>
-    <a (click)="scrollToSection('references')" (keydown.enter)="scrollToSection('references')" (keydown.space)="scrollToSection('references')" tabindex="0" role="button">{{ 'navigation.references' | translate }}</a>
+    <a [routerLink]="['/referenzen', currentLanguage]" (click)="mobileOpen = false">{{ 'navigation.references' | translate }}</a>
     <a [routerLink]="['/artikel', currentLanguage]" (click)="mobileOpen = false">{{ 'artikel.nav' | translate }}</a>
   </nav>
 

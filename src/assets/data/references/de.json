@@ -1,36 +1,88 @@
 [
     {
-        "id": 1,
-        "title": "Tennis Club Neufeld",
-        "subtitle": "Anbindung der Sportplatzbeleuchtung an das Reservierungssystem",
-        "headerImg": "assets/images/references/tcn/TCN_1.png",
+        "slug": "platzhalter-wohnhaus",
+        "title": "Platzhalter – Wohnhaus",
+        "subtitle": "Vier Bilder, zwei Zeilen – Beispielprojekt zur Layout-Abnahme",
+        "description": "Platzhalter-Projekt zur Layout-Abnahme. Wird durch eine echte Referenz ersetzt.",
+        "headerImg": "assets/images/hero-1.webp",
+        "draft": true,
         "content": {
-            "date": "2024",
-            "description": "Die Beleuchtung des Tennisclubs sollte sich automatisch an den Reservierungen orientieren. Ziel ist es, den Energieverbrauch durch automatische Abschaltung zu senken und gleichzeitig die Lichtemissionen für die Nachbarschaft zu minimieren. \n ",
-            "solution": "Im Zuge des Neubaus der Schwimmhalle und der Neugestaltung des Tennisclubs wurde die gesamte Elektroinstallation auf KNX-Basis realisiert. Mithilfe der API des GotCourts-Reservierungssystems kann Loxone die Beleuchtung abhängig von den Reservierungen steuern. So schaltet sich das Licht nur bei Bedarf und unter Berücksichtigung der Umgebungshelligkeit ein.",
-            "tags": ["Kompatible Lösung mit Bestands Anlage", "GotCourts API Schnittstelle bauen", "UI für den Vorstand erstellen"],
+            "date": "2026",
+            "location": "Bern",
+            "tags": [
+                "Platzhalter-Aufgabe",
+                "Platzhalter-Aufgabe",
+                "Platzhalter-Aufgabe"
+            ],
             "images": [
-                "assets/images/references/tcn/TCN_1.png",
-                "assets/images/references/tcn/TCN_2.png",
-                "assets/images/references/tcn/TCN_3.png",
-                "assets/images/references/tcn/TCN_4.png"
+                "assets/images/hero-1.webp",
+                "assets/images/hero-2.webp",
+                "assets/images/hero-3.webp",
+                "assets/images/hero-4.webp"
             ]
         }
     },
     {
-        "id": 2,
+        "slug": "golfsimulator-systemupdate",
         "title": "Golfsimulator Systemupdate",
         "subtitle": "Modernisierung einer Bestandsanlage",
-        "headerImg": "assets/images/references/go4golf/1.JPG",
+        "description": "Modernisierung einer bestehenden Golfsimulator-Anlage: neue Elektronik, massgefertigte Leinwand und eine Deckenverkleidung, die die Technik schützt.",
+        "headerImg": "assets/images/references/go4golf/hero.webp",
         "content": {
             "date": "2025",
-            "description": "Der bestehende Golfsimulator sollte umfassend überarbeitet werden. Im Fokus standen ein technisches Update sowie bauliche Anpassungen im Raum (Erneuerung der Leinwand und Verkleidung der Decke). Die geringe Deckenhöhe brachte zwei zentrale Herausforderungen mit sich:\n 1. Der Projektor musste schräg und ausserhalb des Abschlagbereichs montiert werden.\n 2. Die Decke musste gegen versehentliche Treffer durch Golfschläger geschützt werden.",
-            "solution": "Der Golfsimulator wurde technisch vollständig modernisiert und an die räumlichen Gegebenheiten angepasst. Dazu wurden die Elektronik erneuert, eine neue massgefertigte Leinwand installiert und die Decke baulich so verkleidet, dass sie vor versehentlichen Treffern geschützt ist und die Technik unauffällig sowie sauber ins Raumkonzept integriert werden konnte.",
-            "tags": ["Komplette Überarbeitung der Elektronik", "Massanfertigung und Montage einer neuen Leinwand", "Baukoordination (Montage, Abstimmung der Gewerke, Umsetzung vor Ort)"],
+            "tags": [
+                "Komplette Überarbeitung der Elektronik",
+                "Massanfertigung und Montage einer neuen Leinwand",
+                "Baukoordination (Montage, Abstimmung der Gewerke, Umsetzung vor Ort)"
+            ],
             "images": [
-                "assets/images/references/go4golf/1.JPG",
-                "assets/images/references/go4golf/2.JPG",
-                "assets/images/references/go4golf/3.jpg"
+                "assets/images/references/go4golf/1.webp",
+                "assets/images/references/go4golf/2.webp"
+            ]
+        }
+    },
+    {
+        "slug": "einfamilienhaus",
+        "title": "Modernes Einfamilienhaus",
+        "subtitle": "Intelligente Technik für modernes Wohnen",
+        "description": "KNX-Gebäudeautomation für ein Einfamilienhaus in Bern: DALI-Licht, Beschattung, Raumregelung und Audio, zentral visualisiert über einen Gira X1.",
+        "headerImg": "assets/images/references/einfamilienhaus/hero.webp",
+        "content": {
+            "date": "2026",
+            "location": "Bern",
+            "tags": [
+                "KNX-Gebäudeautomation",
+                "JUNG KNX-Bedienkonzept",
+                "Gira X1 Visualisierung",
+                "DALI-Lichtsteuerung"
+            ],
+            "images": [
+                "assets/images/references/einfamilienhaus/1.webp",
+                "assets/images/references/einfamilienhaus/2.webp",
+                "assets/images/references/einfamilienhaus/3.webp",
+                "assets/images/references/einfamilienhaus/4.webp",
+                "assets/images/references/einfamilienhaus/5.webp",
+                "assets/images/references/einfamilienhaus/6.webp"
+            ]
+        }
+    },
+    {
+        "slug": "tennis-club-neufeld",
+        "title": "Tennis Club Neufeld",
+        "subtitle": "Anbindung der Sportplatzbeleuchtung an das Reservierungssystem",
+        "description": "Die Sportplatzbeleuchtung des Tennis Club Neufeld in Bern schaltet automatisch nach den Reservierungen aus GotCourts – umgesetzt mit KNX und Loxone.",
+        "headerImg": "assets/images/references/tcn/hero.webp",
+        "content": {
+            "date": "2024",
+            "location": "Bern",
+            "tags": [
+                "Kompatible Lösung mit Bestands Anlage",
+                "GotCourts API Schnittstelle bauen",
+                "UI für den Vorstand erstellen"
+            ],
+            "images": [
+                "assets/images/references/tcn/1.webp",
+                "assets/images/references/tcn/2.webp"
             ]
         }
     }

@@ -1,0 +1,72 @@
+<app-navigation></app-navigation>
+
+<main class="referenzen-page">
+
+  <header class="referenzen-header">
+    <div class="container">
+      <h1 class="section-label">{{ 'references.pageTitle' | translate }}</h1>
+      <div class="hairline"></div>
+      <p class="referenzen-header__intro">{{ 'references.intro' | translate }}</p>
+    </div>
+  </header>
+
+  <!-- Mosaic: one row per image pair, narrow tile alternating sides.
+       Sits in the same container as the header, so both edges line up with
+       the title and the intro text. -->
+  <div class="container">
+    <div class="mosaik">
+      <a
+        class="mosaik__row"
+        *ngFor="let row of rows; let i = index"
+        [class.mosaik__row--flip]="!row.narrowLeft"
+        [class.mosaik__row--single]="!row.wide"
+        [routerLink]="['/referenzen', lang, row.reference.slug]"
+        [attr.aria-label]="row.reference.title"
+      >
+        <figure class="mosaik__tile mosaik__tile--narrow">
+          <img
+            class="mosaik__img"
+            [src]="row.lead.src"
+            [alt]="row.reference.title"
+            [style.object-position]="row.lead.focus"
+            [attr.loading]="loading(i)"
+            decoding="async"
+          />
+          <span class="mosaik__scrim"></span>
+
+          <figcaption class="mosaik__label" *ngIf="row.showTitle">
+            <!-- lang drives the hyphenation dictionary on narrow screens. -->
+            <span class="mosaik__title" [attr.lang]="lang">{{ row.reference.title }}</span>
+            <span class="mosaik__meta">
+              {{ row.reference.content.date }}
+              <ng-container *ngIf="row.reference.content.location">
+                <span class="mosaik__sep">·</span>{{ row.reference.content.location }}
+              </ng-container>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="mosaik__tile mosaik__tile--wide" *ngIf="row.wide">
+          <img
+            class="mosaik__img"
+            [src]="row.wide.src"
+            [alt]="row.reference.title"
+            [style.object-position]="row.wide.focus"
+            [attr.loading]="loading(i)"
+            decoding="async"
+          />
+          <span class="mosaik__scrim"></span>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <p class="referenzen-empty" *ngIf="loaded && !rows.length">{{ 'references.empty' | translate }}</p>
+
+  <app-cta-band text="references.contact.text">
+    <a class="link-cta" [href]="'mailto:' + email">{{ 'references.contact.cta' | translate }}</a>
+  </app-cta-band>
+
+</main>
+
+<app-footer></app-footer>

@@ -1,0 +1,62 @@
+<app-navigation></app-navigation>
+
+<main class="referenz-detail">
+  <ng-container *ngIf="reference; else notFoundTpl">
+
+    <!-- Single defined hero image (headerImg from the JSON). -->
+    <div class="referenz-hero">
+      <img [src]="reference.headerImg" [alt]="reference.title" class="referenz-hero__img" fetchpriority="high" />
+      <div class="referenz-hero__overlay"></div>
+    </div>
+
+    <div class="container">
+
+      <div class="referenz-back">
+        <a [routerLink]="['/referenzen', lang]" class="referenz-back__link">{{ 'references.back' | translate }}</a>
+      </div>
+
+      <header class="referenz-header">
+        <span class="referenz-header__meta">
+          {{ reference.content.date }}
+          <ng-container *ngIf="reference.content.location">
+            <span class="referenz-header__sep">·</span>{{ reference.content.location }}
+          </ng-container>
+        </span>
+        <h1 class="referenz-header__title">{{ reference.title }}</h1>
+        <p class="referenz-header__subtitle">{{ reference.subtitle }}</p>
+      </header>
+
+      <div class="referenz-content">
+        <markdown [data]="content"></markdown>
+      </div>
+
+      <section class="referenz-tags-block" *ngIf="reference.content.tags.length">
+        <h2 class="referenz-tags-block__label">{{ 'references.modal.responsibilities' | translate }}</h2>
+        <ul class="referenz-tags">
+          <li class="referenz-tags__item" *ngFor="let tag of reference.content.tags">{{ tag }}</li>
+        </ul>
+      </section>
+
+      <nav class="referenz-nav" *ngIf="prev || next" [attr.aria-label]="'references.pageTitle' | translate">
+        <a class="referenz-nav__link" *ngIf="prev" [routerLink]="['/referenzen', lang, prev.slug]">
+          <span class="referenz-nav__dir">← {{ 'references.detail.prev' | translate }}</span>
+          <span class="referenz-nav__title">{{ prev.title }}</span>
+        </a>
+        <a class="referenz-nav__link referenz-nav__link--next" *ngIf="next" [routerLink]="['/referenzen', lang, next.slug]">
+          <span class="referenz-nav__dir">{{ 'references.detail.next' | translate }} →</span>
+          <span class="referenz-nav__title">{{ next.title }}</span>
+        </a>
+      </nav>
+
+    </div>
+  </ng-container>
+
+  <ng-template #notFoundTpl>
+    <div class="container referenz-not-found" *ngIf="notFound">
+      <p>{{ 'references.notFound' | translate }}</p>
+      <a [routerLink]="['/referenzen', lang]" class="link-cta">{{ 'references.back' | translate }}</a>
+    </div>
+  </ng-template>
+</main>
+
+<app-footer></app-footer>

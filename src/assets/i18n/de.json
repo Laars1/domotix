@@ -48,7 +48,10 @@
         "tagline": "Eigenverbrauch maximieren, Ressourcen optimal nutzen.",
         "text": "Intelligentes Energiemanagement hilft, selbst erzeugten Strom effizient und nachhaltig zu nutzen. Energie wird automatisch nach Bedarf, Tageszeit, Verbrauch und Verfügbarkeit gesteuert. Überschüsse aus Photovoltaik können gezielt für Speicher, Warmwasser, Kühlung, Wärmepumpe oder das Laden eines Elektroautos eingesetzt werden. Dadurch steigt der Eigenverbrauch und der Netzbezug sinkt, ohne manuelle Eingriffe. Gleichzeitig macht die Visualisierung alle Energieflüsse transparent und zeigt aktive Verbraucher sowie Auffälligkeiten frühzeitig an. So entsteht ein effizientes System, das Energie gezielt steuert und verständlich sichtbar macht."
     },
-    "services": { "label": "Leistungen", "more": "Mehr erfahren" },
+    "services": {
+        "label": "Leistungen",
+        "more": "Mehr erfahren"
+    },
     "security": {
         "title": "Sicherheit",
         "tagline": "Sicherer Zugang, lokale Datenhaltung, kein Cloud-Zwang.",
@@ -70,6 +73,25 @@
         "cta": "Mehr erfahren",
         "modal": {
             "responsibilities": "Aufgaben"
+        },
+        "pageTitle": "Referenzen",
+        "metaDescription": "Ausgewählte Projekte der Domotix GmbH: Gebäudeautomation mit KNX, Loxone und Control4 für Wohnhäuser, Vereine und KMU in Bern und der ganzen Schweiz.",
+        "intro": "Eine Auswahl umgesetzter Projekte – von der Anbindung bestehender Anlagen bis zur kompletten Neuinstallation.",
+        "all": "Alle Referenzen",
+        "back": "← Alle Referenzen",
+        "empty": "Für diese Sprache sind noch keine Referenzen erfasst.",
+        "notFound": "Dieses Projekt wurde nicht gefunden.",
+        "detail": {
+            "prev": "Vorheriges Projekt",
+            "next": "Nächstes Projekt"
+        },
+        "teaser": {
+            "text": "Interessiert an unserer Dienstleistung? Lassen Sie sich von unseren umgesetzten Projekten inspirieren – von der Anbindung bestehender Anlagen bis zur kompletten Neuinstallation.",
+            "cta": "Referenzen ansehen"
+        },
+        "contact": {
+            "text": "Gefällt Ihnen, was Sie sehen? Erzählen Sie uns von Ihrem Vorhaben – wir schauen es uns gemeinsam an und melden uns bei Ihnen.",
+            "cta": "Kontakt aufnehmen"
         }
     },
     "partner": {
@@ -78,6 +100,7 @@
     "artikel": {
         "nav": "Wissen",
         "pageTitle": "Wissen",
+        "metaDescription": "Fachwissen rund um Gebäudeautomation, Smart Home und Energieeffizienz – von den Experten der Domotix GmbH aus Bern.",
         "back": "← Alle Artikel",
         "notFound": "Dieser Artikel wurde nicht gefunden.",
         "notFoundBack": "Zurück zur Übersicht"
@@ -87,8 +110,7 @@
         "policies": {
             "title": "Datenschutzerklärung & Impressum",
             "data-protection": {
-                "title": "Datenschutzerklärung",
-                "content": "Datenschutz Gestützt auf Artikel 13 der schweizerischen Bundesverfassung und die datenschutzrechtlichen Bestimmungen des Bundes (Datenschutzgesetz, DSG) hat jede Person Anspruch auf Schutz ihrer Privatsphäre sowie auf Schutz vor Missbrauch ihrer persönlichen Daten. Wir halten diese Bestimmungen ein. Persönliche Daten werden streng vertraulich behandelt und weder an Dritte verkauft noch weiter gegeben. In enger Zusammenarbeit mit unseren Hosting-Providern bemühen wir uns, die Datenbanken so gut wie möglich vor fremden Zugriffen, Verlusten, Missbrauch oder vor Fälschung zu schützen."
+                "title": "Datenschutzerklärung"
             },
             "imprint": {
                 "title": "Impressum",
@@ -105,5 +127,10 @@
     "common": {
         "email": "E-Mail Adresse",
         "write-us": "Schreiben Sie uns"
+    },
+    "notFound": {
+        "title": "Seite nicht gefunden",
+        "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+        "back": "Zur Startseite"
     }
 }

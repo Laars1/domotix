@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../../environments/environment.development';
 import { BehaviorSubject } from 'rxjs';
@@ -12,7 +13,16 @@ export class LanguageProviderService {
   // Behavior subject in order to detect language changes, which can be used to update static services
   language$ = new BehaviorSubject('de');
 
-  constructor(private translateService: TranslateService) {}
+  private doc = inject(DOCUMENT);
+
+  constructor(private translateService: TranslateService) {
+    // Keep <html lang> in step with the active language. index.html ships
+    // lang="de"; without this, /fr and /en pages would still announce German
+    // to screen readers, search engines and the browser's hyphenation.
+    this.language$.subscribe(language => {
+      this.doc.documentElement.lang = language;
+    });
+  }
 
   /**
    * Set default language for user by its browser config is supported, otherwise german will be the default language

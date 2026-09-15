@@ -35,7 +35,8 @@
 
     <!-- Privacy -->
     <div class="policy-modal__body" *ngIf="activeTab === 'privacy'">
-      <p class="policy-modal__text">{{ 'footer.policies.data-protection.content' | translate }}</p>
+      <!-- Source: assets/rechtliches/<lang>/datenschutz.md -->
+      <markdown class="policy-modal__markdown" [data]="privacyContent"></markdown>
     </div>
 
     <!-- Imprint -->

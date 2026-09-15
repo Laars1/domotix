@@ -29,7 +29,23 @@ export const appConfig: ApplicationConfig = {
         path: 'artikel/:lang/:slug',
         loadComponent: () => import('./pages/artikel/artikel-detail.component').then(m => m.ArtikelDetailComponent),
       },
-      { path: '**', redirectTo: '' },
+      {
+        path: 'referenzen',
+        redirectTo: 'referenzen/de',
+        pathMatch: 'full',
+      },
+      {
+        path: 'referenzen/:lang',
+        loadComponent: () => import('./pages/referenzen/referenzen-list.component').then(m => m.ReferenzenListComponent),
+      },
+      {
+        path: 'referenzen/:lang/:slug',
+        loadComponent: () => import('./pages/referenzen/referenz-detail.component').then(m => m.ReferenzDetailComponent),
+      },
+      {
+        path: '**',
+        loadComponent: () => import('./pages/not-found/not-found.component').then(m => m.NotFoundComponent),
+      },
     ], withInMemoryScrolling({ scrollPositionRestoration: 'top' })),
     provideHttpClient(withInterceptorsFromDi()),
     importProvidersFrom(

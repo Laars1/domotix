@@ -8,6 +8,13 @@ Domotix bietet professionelle, spezialisierte Planung für Gebäudeautomation �
 
 - [Startseite](https://www.domotix.ch/): Übersicht über Vision, Leistungen, Team und Referenzen von Domotix GmbH.
 - [Wissen / Artikel](https://www.domotix.ch/artikel/de): Fachartikel rund um Gebäudeautomation, Smart Home und Energieeffizienz.
+- [Referenzen](https://www.domotix.ch/referenzen/de): Umgesetzte Projekte mit Ausgangslage, Lösung und Bildern.
+
+## Referenzen
+
+- [Tennis Club Neufeld](https://www.domotix.ch/referenzen/de/tennis-club-neufeld): Anbindung der Sportplatzbeleuchtung an das GotCourts-Reservierungssystem (KNX und Loxone, Bern, 2024).
+- [Modernes Einfamilienhaus](https://www.domotix.ch/referenzen/de/einfamilienhaus): KNX-Gebäudeautomation mit JUNG-Tastern, DALI-Beleuchtung, Gira-X1-Visualisierung und integrierter Gira-Türkommunikation (Bern, 2026).
+- [Golfsimulator Systemupdate](https://www.domotix.ch/referenzen/de/golfsimulator-systemupdate): Modernisierung einer bestehenden Golfsimulator-Anlage inklusive Elektronik, Leinwand und Baukoordination (2025).
 
 ## Artikel
 

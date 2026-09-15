@@ -1,0 +1,227 @@
+$color-light:    #F2F2F2;
+$color-dark:     #0D0D0D;
+$color-tan:      #A69885;
+$color-bluegrey: #8599A6;
+
+// Gap between tiles and rows — thin, so the mosaic reads as one surface.
+$gap: 0.6rem;
+
+// House radius, same as the artikel cards. Set to 0 for the sharp-edged look
+// of the reference layout.
+$tile-radius: 1rem;
+$tile-radius-sm: 0.75rem;
+
+.referenzen-page {
+  background-color: $color-light;
+  min-height: 100vh;
+  // Clears the fixed top bar. No bottom padding — the CTA band below the
+  // mosaic brings its own.
+  padding-top: 5rem;
+}
+
+.referenzen-header {
+  // The .hairline below the label already carries 3rem of its own spacing.
+  padding: 2.5rem 0 0;
+
+  &__intro {
+    max-width: 620px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba($color-dark, 0.65);
+    margin: 0 0 2.5rem;
+
+    @media (max-width: 960px) {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+
+// ─── Mosaic ───────────────────────────────────────────────────────────────────
+// Runs in the page container, so its edges align with the title and intro.
+// Each row is one anchor, so a project is a single crawlable link rather than
+// two competing ones.
+.mosaik {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  // The CTA band below carries no top padding, so the space before its
+  // hairline comes from here — same 6rem as between any two sections.
+  margin-bottom: 6rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 640px) {
+    gap: 0.4rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.mosaik__row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $gap;
+  // Height follows the container width rather than the viewport, so the rows
+  // keep their proportion now that the mosaic is no longer full-bleed. At the
+  // widest container this makes the narrow tile roughly square.
+  aspect-ratio: 3 / 1;
+  text-decoration: none;
+  outline: none;
+
+  // Narrow tile moves to the right on every second row.
+  &--flip {
+    grid-template-columns: 2fr 1fr;
+
+    .mosaik__tile--narrow { order: 2; }
+    .mosaik__tile--wide   { order: 1; }
+  }
+
+  // Odd leftover image — fills the row on its own.
+  &--single {
+    grid-template-columns: 1fr;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-tan;
+    outline-offset: 3px;
+  }
+
+  // Phones keep the desktop composition — narrow and wide tile side by side,
+  // alternating sides — instead of stacking every photo into one long list.
+  // A 1/3 column would be too thin to carry the title, so the split widens to
+  // roughly 40/60 and the row gets taller (2:1). The flip ordering above
+  // still applies unchanged.
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr 1.4fr;
+    aspect-ratio: 2 / 1;
+    gap: 0.4rem;
+
+    &--flip {
+      grid-template-columns: 1.4fr 1fr;
+    }
+
+    &--single {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.mosaik__tile {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: $tile-radius;
+  background-color: rgba($color-tan, 0.08);
+
+  @media (max-width: 640px) {
+    border-radius: $tile-radius-sm;
+  }
+}
+
+// Hover reacts on the individual tile, not on the row. The row is the link, but
+// only the image actually under the cursor should respond.
+.mosaik__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  .mosaik__tile:hover & {
+    transform: scale(1.03);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+
+    .mosaik__tile:hover & {
+      transform: none;
+    }
+  }
+}
+
+// Our project photos run from bright (tennis court) to near-black (golf sim),
+// so the white overlay type needs a scrim to stay legible on both.
+.mosaik__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba($color-dark, 0.28) 0%, rgba($color-dark, 0.18) 55%, rgba($color-dark, 0.42) 100%);
+  transition: background 0.4s ease;
+
+  .mosaik__tile:hover & {
+    background: linear-gradient(to bottom, rgba($color-dark, 0.45) 0%, rgba($color-dark, 0.35) 55%, rgba($color-dark, 0.55) 100%);
+  }
+}
+
+// ─── Overlay label ────────────────────────────────────────────────────────────
+.mosaik__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  text-align: center;
+
+  @media (max-width: 640px) {
+    gap: 0.35rem;
+    padding: 0.75rem;
+  }
+}
+
+.mosaik__title {
+  font-size: clamp(0.95rem, 1.4vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $color-light;
+  text-shadow: 0 1px 12px rgba($color-dark, 0.4);
+
+  // The narrow tile is only ~150px wide on a phone. Long German compounds
+  // ("Einfamilienhaus") get hyphenated; overflow-wrap is the safety net where
+  // the browser won't hyphenate, so nothing ever runs out of the tile.
+  @media (max-width: 640px) {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    line-height: 1.35;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+  }
+}
+
+.mosaik__meta {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba($color-light, 0.8);
+  text-shadow: 0 1px 10px rgba($color-dark, 0.4);
+  transition: color 0.3s ease;
+
+  .mosaik__tile:hover & {
+    color: $color-tan;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+.mosaik__sep {
+  margin: 0 0.4rem;
+}
+
+.referenzen-empty {
+  padding: 3rem 0;
+  color: $color-bluegrey;
+  text-align: center;
+}

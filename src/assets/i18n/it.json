@@ -47,7 +47,10 @@
         "tagline": "Massimizzare l'autoconsumo, ottimizzare le risorse.",
         "text": "La gestione intelligente dell'energia massimizza l'autoconsumo del vostro impianto fotovoltaico. I dati di consumo vengono registrati e visualizzati in tempo reale per identificare in modo trasparente il potenziale di risparmio. Carichi come pompe di calore, lavatrici o stazioni di ricarica vengono controllati automaticamente in base alla disponibilità energetica. L'energia in eccesso viene utilizzata in modo ottimale invece di essere immessa inutilizzata nella rete. Nel lungo termine, i sistemi energetici intelligenti riducono notevolmente i costi operativi. Sostenibilità ed efficienza economica vanno di pari passo."
     },
-    "services": { "label": "Prestazioni", "more": "Scopri di più" },
+    "services": {
+        "label": "Prestazioni",
+        "more": "Scopri di più"
+    },
     "security": {
         "title": "Sicurezza",
         "tagline": "Accesso sicuro, gestione locale dei dati, senza dipendenza dal cloud.",
@@ -68,6 +71,25 @@
         "cta": "Scopri di più",
         "modal": {
             "responsibilities": "Responsabilità"
+        },
+        "pageTitle": "Referenze",
+        "metaDescription": "Progetti selezionati di Domotix GmbH: automazione degli edifici con KNX, Loxone e Control4 per abitazioni, associazioni e PMI a Berna e in tutta la Svizzera.",
+        "intro": "Una selezione di progetti realizzati – dall'integrazione di impianti esistenti alla nuova installazione completa.",
+        "all": "Tutte le referenze",
+        "back": "← Tutte le referenze",
+        "empty": "Per questa lingua non sono ancora disponibili referenze.",
+        "notFound": "Questo progetto non è stato trovato.",
+        "detail": {
+            "prev": "Progetto precedente",
+            "next": "Progetto successivo"
+        },
+        "teaser": {
+            "text": "Interessato ai nostri servizi? Lasciatevi ispirare dai nostri progetti realizzati – dall'integrazione di impianti esistenti alla nuova installazione completa.",
+            "cta": "Vedi le referenze"
+        },
+        "contact": {
+            "text": "Le piace quello che vede? Ci racconti il suo progetto – lo esaminiamo insieme e la ricontattiamo.",
+            "cta": "Contattaci"
         }
     },
     "partner": {
@@ -76,6 +98,7 @@
     "artikel": {
         "nav": "Sapere",
         "pageTitle": "Sapere",
+        "metaDescription": "Competenze su automazione degli edifici, smart home ed efficienza energetica – dagli esperti di Domotix GmbH a Berna.",
         "back": "← Tutti gli articoli",
         "notFound": "Questo articolo non è stato trovato.",
         "notFoundBack": "Torna alla panoramica"
@@ -84,8 +107,7 @@
         "policies": {
             "title": "Informativa sulla privacy e impronta",
             "data-protection": {
-                "title": "Informativa sulla privacy",
-                "content": "Protezione dei dati Sulla base dell'articolo 13 della Costituzione federale svizzera e delle disposizioni della Confederazione svizzera in materia di protezione dei dati (legge sulla protezione dei dati, DSG), ogni persona ha diritto alla tutela della propria privacy e alla protezione dall'uso improprio dei propri dati personali. Noi ci atteniamo a queste disposizioni. I dati personali sono trattati in modo strettamente confidenziale e non vengono venduti o ceduti a terzi. In stretta collaborazione con i nostri fornitori di hosting, cerchiamo di proteggere al meglio i database da accessi non autorizzati, perdita, uso improprio o falsificazione."
+                "title": "Informativa sulla privacy"
             },
             "imprint": {
                 "title": "Impronta",
@@ -102,5 +124,10 @@
     "common": {
         "email": "Indirizzo e-mail",
         "write-us": "Scriveteci"
+    },
+    "notFound": {
+        "title": "Pagina non trovata",
+        "text": "La pagina che cerca non esiste o è stata spostata.",
+        "back": "Torna alla home page"
     }
 }

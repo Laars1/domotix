@@ -53,9 +53,9 @@ export class ArtikelListComponent implements OnInit, OnDestroy {
   }
 
   private load(): void {
-    this.translate.get(['artikel.pageTitle']).subscribe(t => {
+    this.translate.get(['artikel.pageTitle', 'artikel.metaDescription']).subscribe(t => {
       const title = `${t['artikel.pageTitle']} – Domotix GmbH`;
-      const description = 'Fachwissen rund um Gebäudeautomation, Smart Home und Energieeffizienz – von den Experten der Domotix GmbH aus Bern.';
+      const description = t['artikel.metaDescription'];
       const url = `${SITE_URL}/artikel/${this.lang}`;
       this.titleService.setTitle(title);
       this.metaService.updateTag({ name: 'description', content: description });
@@ -65,6 +65,8 @@ export class ArtikelListComponent implements OnInit, OnDestroy {
       this.metaService.updateTag({ property: 'og:type', content: 'website' });
       this.metaService.updateTag({ property: 'og:image', content: `${SITE_URL}/assets/images/hero-1.webp` });
       this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+      this.metaService.updateTag({ name: 'twitter:title', content: title });
+      this.metaService.updateTag({ name: 'twitter:description', content: description });
     });
     this.artikelService.getAll(this.lang).subscribe(data => {
       this.artikel = data.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

@@ -19,18 +19,24 @@
     },
     {
         "id": 4,
+        "title": "BW",
+        "headerImg": "assets/images/partners/BW.svg",
+        "url": "https://www.bwgroup.ch"
+    },
+    {
+        "id": 5,
         "title": "Gira",
         "headerImg": "assets/images/partners/Gira.svg",
         "url": "https://gira.ch/"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Meljac",
         "headerImg": "assets/images/partners/Meljac.svg",
         "url": "https://www.meljac.com/en/"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Bluesound",
         "headerImg": "assets/images/partners/Bluesound.svg",
         "url": "https://www.bluesound.com"
