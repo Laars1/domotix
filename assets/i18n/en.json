@@ -48,7 +48,10 @@
         "tagline": "Maximise self-consumption, optimise every resource.",
         "text": "Intelligent energy management helps use self-generated electricity efficiently and sustainably. Energy is controlled automatically according to demand, time of day, consumption and availability. Surplus photovoltaic energy can be directed to battery storage, hot water, cooling, a heat pump or electric vehicle charging. This increases self-consumption and reduces grid dependency without manual intervention. At the same time, visualisation makes all energy flows transparent and highlights active consumers or irregularities early. The result is an efficient system that manages energy precisely and makes it clearly understandable."
     },
-    "services": { "label": "Services", "more": "Learn more" },
+    "services": {
+        "label": "Services",
+        "more": "Learn more"
+    },
     "security": {
         "title": "Security",
         "tagline": "Secure access, local data management, no cloud dependency.",
@@ -70,6 +73,25 @@
         "cta": "View project",
         "modal": {
             "responsibilities": "Responsibilities"
+        },
+        "pageTitle": "Projects",
+        "metaDescription": "Selected projects by Domotix GmbH: building automation with KNX, Loxone and Control4 for homes, clubs and SMEs in Bern and across Switzerland.",
+        "intro": "A selection of completed projects – from integrating existing installations to complete new builds.",
+        "all": "All projects",
+        "back": "← All projects",
+        "empty": "No projects have been added for this language yet.",
+        "notFound": "This project could not be found.",
+        "detail": {
+            "prev": "Previous project",
+            "next": "Next project"
+        },
+        "teaser": {
+            "text": "Interested in what we do? Let our completed projects inspire you – from integrating existing installations to a complete new build.",
+            "cta": "View our projects"
+        },
+        "contact": {
+            "text": "Like what you see? Tell us about your plans – we will look at them with you and get back to you.",
+            "cta": "Get in touch"
         }
     },
     "partner": {
@@ -78,6 +100,7 @@
     "artikel": {
         "nav": "Knowledge",
         "pageTitle": "Knowledge",
+        "metaDescription": "Expert knowledge on building automation, smart homes and energy efficiency – from the specialists at Domotix GmbH in Bern.",
         "back": "← All articles",
         "notFound": "This article could not be found.",
         "notFoundBack": "Back to overview"
@@ -87,8 +110,7 @@
         "policies": {
             "title": "Privacy Policy & Imprint",
             "data-protection": {
-                "title": "Privacy Policy",
-                "content": "Data protection Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the Swiss Confederation (Data Protection Act, DSG), every person is entitled to protection of their privacy and protection against misuse of their personal data. We comply with these provisions. Personal data is treated as strictly confidential and is neither sold nor passed on to third parties. In close cooperation with our hosting providers, we endeavour to protect the databases as well as possible against unauthorised access, loss, misuse or falsification."
+                "title": "Privacy Policy"
             },
             "imprint": {
                 "title": "Imprint",
@@ -105,5 +127,10 @@
     "common": {
         "email": "Email address",
         "write-us": "Write to us"
+    },
+    "notFound": {
+        "title": "Page not found",
+        "text": "The page you are looking for does not exist or has been moved.",
+        "back": "Back to the home page"
     }
 }

@@ -1,36 +1,88 @@
 [
     {
-        "id": 1,
-        "title": "Tennis Club Neufeld",
-        "subtitle": "Connexion de l'éclairage du terrain de sport au système de réservation",
-        "headerImg": "assets/images/references/tcn/TCN_1.png",
+        "slug": "platzhalter-wohnhaus",
+        "title": "Espace réservé – Maison",
+        "subtitle": "Quatre images, deux lignes – projet exemple pour la validation",
+        "description": "Projet provisoire pour la validation de la mise en page. Sera remplacé par une véritable référence.",
+        "headerImg": "assets/images/hero-1.webp",
+        "draft": true,
         "content": {
-            "date": "2024",
-            "description": "L'éclairage du club de tennis devrait s'orienter automatiquement en fonction des réservations. L'objectif est de réduire la consommation d'énergie en l'éteignant automatiquement tout en minimisant les émissions lumineuses pour le voisinage. \n ",
-            "solution": "Dans le cadre de la construction de la nouvelle piscine et du réaménagement du club de tennis, toute l'installation électrique a été réalisée sur la base de KNX. En utilisant l'API du système de réservation GotCourts, Loxone peut contrôler l'éclairage en fonction des réservations. Ainsi, l'éclairage ne s'allume qu'en cas de besoin et en tenant compte de la luminosité ambiante.",
-            "tags": ["Solution compatible avec l'installation existante", "Construire l'interface API de GotCourt", "Créer une interface utilisateur pour le conseil d'administration"],
+            "date": "2026",
+            "location": "Berne",
+            "tags": [
+                "Tâche provisoire",
+                "Tâche provisoire",
+                "Tâche provisoire"
+            ],
             "images": [
-                "assets/images/references/tcn/TCN_1.png",
-                "assets/images/references/tcn/TCN_2.png",
-                "assets/images/references/tcn/TCN_3.png",
-                "assets/images/references/tcn/TCN_4.png"
+                "assets/images/hero-1.webp",
+                "assets/images/hero-2.webp",
+                "assets/images/hero-3.webp",
+                "assets/images/hero-4.webp"
             ]
         }
     },
-        {
-        "id": 2,
-        "title": "Mise à jour du système de simulateur de golf",
+    {
+        "slug": "golfsimulator-systemupdate",
+        "title": "Mise à jour d'un simulateur de golf",
         "subtitle": "Modernisation d'une installation existante",
-        "headerImg": "assets/images/references/go4golf/1.JPG",
+        "description": "Modernisation d'un simulateur de golf existant : nouvelle électronique, écran sur mesure et habillage du plafond qui protège la technique.",
+        "headerImg": "assets/images/references/go4golf/hero.webp",
         "content": {
             "date": "2025",
-            "description": "Le simulateur de golf existant devait être entièrement remanié. Le projet comprenait principalement une mise à niveau technique ainsi que des adaptations de l’espace (renouvellement de l’écran et habillage du plafond). La faible hauteur sous plafond a entraîné deux contraintes majeures:\n 1. Le projecteur devait être installé en biais, en dehors de la zone de frappe.\n 2. Le plafond devait être protégé contre les coups accidentels de club.",
-            "solution": "Le simulateur a été modernisé sur le plan technique et adapté aux contraintes du local. L’électronique a été renouvelée, un écran sur mesure a été installé et le plafond a été habillé de manière à le protéger tout en intégrant la technique de façon discrète et propre dans le concept de la pièce.",
-            "tags": ["Refonte complète de l’électronique", "Fabrication sur mesure et montage d’un nouvel écran", "Coordination de chantier (montage, coordination des corps de métier, mise en œuvre sur site)"],
+            "tags": [
+                "Révision complète de l'électronique",
+                "Fabrication sur mesure et montage d'un nouvel écran",
+                "Coordination des travaux (montage, coordination des corps de métier, mise en œuvre sur place)"
+            ],
             "images": [
-                "assets/images/references/go4golf/1.JPG",
-                "assets/images/references/go4golf/2.JPG",
-                "assets/images/references/go4golf/3.jpg"
+                "assets/images/references/go4golf/1.webp",
+                "assets/images/references/go4golf/2.webp"
+            ]
+        }
+    },
+    {
+        "slug": "einfamilienhaus",
+        "title": "Maison individuelle moderne",
+        "subtitle": "Une technique intelligente pour un habitat moderne",
+        "description": "Automatisation du bâtiment KNX pour une maison individuelle à Berne : éclairage DALI, protection solaire, régulation du climat intérieur et audio, visualisés de manière centralisée via un Gira X1.",
+        "headerImg": "assets/images/references/einfamilienhaus/hero.webp",
+        "content": {
+            "date": "2026",
+            "location": "Berne",
+            "tags": [
+                "Automatisation du bâtiment KNX",
+                "Concept de commande JUNG KNX",
+                "Visualisation Gira X1",
+                "Commande d'éclairage DALI"
+            ],
+            "images": [
+                "assets/images/references/einfamilienhaus/1.webp",
+                "assets/images/references/einfamilienhaus/2.webp",
+                "assets/images/references/einfamilienhaus/3.webp",
+                "assets/images/references/einfamilienhaus/4.webp",
+                "assets/images/references/einfamilienhaus/5.webp",
+                "assets/images/references/einfamilienhaus/6.webp"
+            ]
+        }
+    },
+    {
+        "slug": "tennis-club-neufeld",
+        "title": "Tennis Club Neufeld",
+        "subtitle": "Raccordement de l'éclairage des courts au système de réservation",
+        "description": "L'éclairage des courts du Tennis Club Neufeld à Berne s'allume automatiquement selon les réservations GotCourts – réalisé avec KNX et Loxone.",
+        "headerImg": "assets/images/references/tcn/hero.webp",
+        "content": {
+            "date": "2024",
+            "location": "Berne",
+            "tags": [
+                "Solution compatible avec l'installation existante",
+                "Développement de l'interface API GotCourts",
+                "Création d'une interface pour le comité"
+            ],
+            "images": [
+                "assets/images/references/tcn/1.webp",
+                "assets/images/references/tcn/2.webp"
             ]
         }
     }

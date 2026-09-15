@@ -1,36 +1,88 @@
 [
     {
-        "id": 1,
-        "title": "Tennis Club Neufeld",
-        "subtitle": "Connection of the sports field lighting to the reservation system",
-        "headerImg": "assets/images/references/tcn/TCN_1.png",
+        "slug": "platzhalter-wohnhaus",
+        "title": "Placeholder – Residential",
+        "subtitle": "Four images, two rows – sample project for layout review",
+        "description": "Placeholder project for the layout review. Will be replaced by a real reference.",
+        "headerImg": "assets/images/hero-1.webp",
+        "draft": true,
         "content": {
-            "date": "2024",
-            "description": "The tennis club's lighting should be automatically based on reservations. The aim is to reduce energy consumption through automatic switch-off and at the same time minimize light emissions for the neighbourhood. \n ",
-            "solution": "As part of the new construction of the indoor swimming pool and the redesign of the tennis club, the entire electrical installation was implemented on a KNX basis. Using the API of the GotCourts reservation system, Loxone can control the lighting depending on the reservations. This means that the lights are only switched on when required, taking into account the ambient brightness.",
-            "tags": ["Compatible solution with existing system", "Build GotCourt's API interface", "Create UI for the Management Board"],
+            "date": "2026",
+            "location": "Bern",
+            "tags": [
+                "Placeholder task",
+                "Placeholder task",
+                "Placeholder task"
+            ],
             "images": [
-                "assets/images/references/tcn/TCN_1.png",
-                "assets/images/references/tcn/TCN_2.png",
-                "assets/images/references/tcn/TCN_3.png",
-                "assets/images/references/tcn/TCN_4.png"
+                "assets/images/hero-1.webp",
+                "assets/images/hero-2.webp",
+                "assets/images/hero-3.webp",
+                "assets/images/hero-4.webp"
             ]
         }
     },
     {
-        "id": 2,
+        "slug": "golfsimulator-systemupdate",
         "title": "Golf Simulator System Update",
         "subtitle": "Modernisation of an existing facility",
-        "headerImg": "assets/images/references/go4golf/1.JPG",
+        "description": "Modernisation of an existing golf simulator: new electronics, a custom-made screen and ceiling cladding that protects the technology.",
+        "headerImg": "assets/images/references/go4golf/hero.webp",
         "content": {
             "date": "2025",
-            "description": "The existing golf simulator required a comprehensive overhaul. The scope included a technical upgrade as well as room modifications (new impact screen and ceiling cladding). The low ceiling height created two key challenges:\n 1. The projector had to be mounted at an angle, outside the hitting area.\n 2. The ceiling needed protection against accidental strikes from golf clubs.",
-            "solution": "The simulator was fully modernised and adapted to the room constraints. The electronics were upgraded, a new custom-made screen was installed, and the ceiling was clad to provide protection while allowing the technology to be integrated discreetly and neatly into the overall room design.",
-            "tags": ["Complete overhaul of the electronics", "Design, fabrication and installation of a new custom screen", "Construction coordination (installation, trade coordination, on-site execution)"],
+            "tags": [
+                "Complete overhaul of the electronics",
+                "Custom fabrication and installation of a new screen",
+                "Construction coordination (installation, coordinating the trades, on-site execution)"
+            ],
             "images": [
-                "assets/images/references/go4golf/1.JPG",
-                "assets/images/references/go4golf/2.JPG",
-                "assets/images/references/go4golf/3.jpg"
+                "assets/images/references/go4golf/1.webp",
+                "assets/images/references/go4golf/2.webp"
+            ]
+        }
+    },
+    {
+        "slug": "einfamilienhaus",
+        "title": "Modern Single-Family Home",
+        "subtitle": "Intelligent technology for modern living",
+        "description": "KNX building automation for a single-family home in Bern: DALI lighting, shading, room climate control and audio, centrally visualised via a Gira X1.",
+        "headerImg": "assets/images/references/einfamilienhaus/hero.webp",
+        "content": {
+            "date": "2026",
+            "location": "Bern",
+            "tags": [
+                "KNX building automation",
+                "JUNG KNX control concept",
+                "Gira X1 visualisation",
+                "DALI lighting control"
+            ],
+            "images": [
+                "assets/images/references/einfamilienhaus/1.webp",
+                "assets/images/references/einfamilienhaus/2.webp",
+                "assets/images/references/einfamilienhaus/3.webp",
+                "assets/images/references/einfamilienhaus/4.webp",
+                "assets/images/references/einfamilienhaus/5.webp",
+                "assets/images/references/einfamilienhaus/6.webp"
+            ]
+        }
+    },
+    {
+        "slug": "tennis-club-neufeld",
+        "title": "Tennis Club Neufeld",
+        "subtitle": "Linking the court lighting to the booking system",
+        "description": "The court lighting at Tennis Club Neufeld in Bern switches automatically based on GotCourts bookings – implemented with KNX and Loxone.",
+        "headerImg": "assets/images/references/tcn/hero.webp",
+        "content": {
+            "date": "2024",
+            "location": "Bern",
+            "tags": [
+                "Solution compatible with the existing installation",
+                "Building the GotCourts API interface",
+                "Creating a UI for the club board"
+            ],
+            "images": [
+                "assets/images/references/tcn/1.webp",
+                "assets/images/references/tcn/2.webp"
             ]
         }
     }

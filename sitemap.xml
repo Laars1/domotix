@@ -164,4 +164,100 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/artikel/en/lichtplanung" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/artikel/fr/lichtplanung" />
   </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/de</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/en</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/fr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/de/tennis-club-neufeld</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/tennis-club-neufeld" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/tennis-club-neufeld" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/tennis-club-neufeld" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/en/tennis-club-neufeld</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/tennis-club-neufeld" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/tennis-club-neufeld" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/tennis-club-neufeld" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/fr/tennis-club-neufeld</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/tennis-club-neufeld" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/tennis-club-neufeld" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/tennis-club-neufeld" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/de/golfsimulator-systemupdate</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/golfsimulator-systemupdate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/golfsimulator-systemupdate" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/golfsimulator-systemupdate" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/en/golfsimulator-systemupdate</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/golfsimulator-systemupdate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/golfsimulator-systemupdate" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/golfsimulator-systemupdate" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/fr/golfsimulator-systemupdate</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/golfsimulator-systemupdate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/golfsimulator-systemupdate" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/golfsimulator-systemupdate" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/de/einfamilienhaus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/einfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/einfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/einfamilienhaus" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/en/einfamilienhaus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/einfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/einfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/einfamilienhaus" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/fr/einfamilienhaus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/einfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/einfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/einfamilienhaus" />
+  </url>
 </urlset>
