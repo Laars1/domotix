@@ -110,6 +110,9 @@ $nav-height: 64px;
 
 // ─── Mockup: house and its scene links side by side ──────────────────────────
 // Stacked layouts: the text scrolls away and only the mockup stays pinned.
+// It is as tall as the visible screen below the navigation, so the house sits
+// in the vertical middle while pinned (svh: the height with the browser bars
+// shown, which stays put while they collapse instead of making the house jump).
 .vision-mockup {
   flex: none;
   display: flex;
@@ -118,7 +121,9 @@ $nav-height: 64px;
 
   @media (max-width: $bp-stack) {
     position: sticky;
-    top: calc(#{$nav-height} + 1rem);
+    top: $nav-height;
+    height: calc(100vh - #{$nav-height});
+    height: calc(100svh - #{$nav-height});
   }
 
   @media (max-width: 640px) {
