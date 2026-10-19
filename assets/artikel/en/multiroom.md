@@ -83,4 +83,9 @@ Audio is not only a topic for audiophiles. It is a topic for everyone who values
 
 Sonos can be a very good system, but it is not automatically the best solution for every project. Especially in new builds, renovations and high-quality residential environments, it is worth considering audio early instead of solving it afterwards with mobile speakers.
 
-Have questions about your project? [Contact us](mailto:getintouch@domotix.ch) – we're happy to advise you without obligation.
+[Contact us](mailto:getintouch@domotix.ch) – we accompany you from the first idea to the finished audio solution.
+
+## Further reading
+
+- [Control4 as an Alternative: When Smart Home Thinks More in Terms of Experience, AV and Comfort](/artikel/en/control4)
+- [Why Early Smart Home Planning Is So Important](/artikel/en/planung)

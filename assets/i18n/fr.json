@@ -4,24 +4,34 @@
         "description": "Domotique (KNX, Loxone, Control4), smart home et planification pour résidences et PME à Berne, Soleure et dans toute la Suisse."
     },
     "navigation": {
-        "home": "Home",
+        "home": "Accueil",
         "vision": "Vision",
-        "about": "Sur nous",
+        "about": "À propos",
+        "building": "Bâtiment",
+        "experience": "Expérience",
         "references": "Références",
         "partners": "Partenaires",
         "contact": "Contact"
     },
     "hero": {
         "headline": "Des bâtiments intelligents.",
-        "headline2": "Réalisés avec précision.",
+        "headline2": "Réalisés avec rigueur.",
         "subheadline": "Domotique pour résidences et PME – à Berne, Soleure et dans toute la Suisse.",
         "cta": "Nous contacter"
     },
     "vision": {
         "title": "Vision",
         "heading": "Votre maison intelligente",
-        "text": "Domotix est synonyme d'intégration intelligente de la technologie dans les environnements résidentiels et commerciaux afin d'améliorer le confort de vie, d'optimiser l'efficacité énergétique et de simplifier la vie quotidienne. Cela comprend l'automatisation de l'éclairage, du chauffage, de la climatisation, de la sécurité et d'autres aspects de la vie quotidienne.",
-        "contact": "Get in touch!"
+        "text": "Nous créons des solutions sur mesure qui enrichissent le quotidien, relient les technologies de manière fluide et ouvrent de nouvelles possibilités. Nous associons pour cela des fonctions intelligentes, une utilisation intuitive et des idées innovantes en une expérience globale unique.",
+        "contact": "Get in touch !",
+        "scenes": {
+            "label": "Choisir une ambiance",
+            "day": "Jour",
+            "night": "Nuit",
+            "tv": "TV",
+            "golf": "Golf",
+            "alt": "Maquette en coupe d'une maison avec l'ambiance « {{scene}} »"
+        }
     },
     "light": {
         "title": "Lumière",
@@ -52,6 +62,34 @@
         "label": "Prestations",
         "more": "En savoir plus"
     },
+    "building": {
+        "pageTitle": "Bâtiment",
+        "intro": "Éclairage, climat intérieur, protection solaire, multimédia, énergie et sécurité : dans un bon bâtiment, tout fonctionne ensemble et se commande simplement. Nous planifions l'ensemble de ces systèmes en tant qu'interlocuteur unique et traçons une ligne claire du premier concept jusqu'à la mise en service.",
+        "metaDescription": "Automatisation du bâtiment pour l'éclairage, le climat intérieur, la protection solaire, le multimédia, l'énergie et la sécurité – planifiée et réalisée par Domotix GmbH à Berne et dans toute la Suisse."
+    },
+    "experience": {
+        "pageTitle": "Expérience",
+        "metaDescription": "Curieux de technologie, indépendants des fabricants et honnêtes dans nos conseils : c'est ainsi que Domotix GmbH planifie et réalise une automatisation du bâtiment qui enrichit le quotidien – depuis Berne dans toute la Suisse.",
+        "values": {
+            "label": "Valeurs",
+            "discovery": {
+                "title": "Curieux de technologie",
+                "text": "Les bonnes solutions naissent de la curiosité. Nous suivons les nouvelles technologies, testons nous-mêmes les produits et découvrons ce qui fait réellement ses preuves dans la pratique. Nous intégrons nos expériences et nos idées dans chaque projet – y compris des possibilités qui vont au-delà de l'habituel. Car pour nous, la technique ne doit pas seulement fonctionner de manière fiable, mais enrichir le quotidien, créer de nouvelles expériences et enthousiasmer."
+            },
+            "independence": {
+                "title": "Indépendants des fabricants",
+                "text": "Pour nous, ce n'est pas le fabricant qui est au centre, mais la meilleure solution pour votre projet. Nous connaissons différentes technologies, comprenons leurs points forts et savons comment les combiner judicieusement. Nous développons ainsi des solutions adaptées à vos besoins, qui tiennent compte des systèmes existants et laissent de la place pour de futures extensions."
+            },
+            "honesty": {
+                "title": "Conseil honnête",
+                "text": "Nous attachons une grande importance à une communication ouverte, à des offres transparentes et à des promesses réalistes. Nous disons honnêtement ce qui est judicieux et réalisable, présentons les possibilités et abordons ouvertement les limites. Plutôt que la solution la plus complexe, nous recommandons celle qui convient à votre projet. Nous créons ainsi la confiance, des attentes claires et une collaboration sur laquelle vous pouvez compter bien après la réalisation."
+            }
+        },
+        "contact": {
+            "text": "Vous souhaitez en savoir plus ? Parlez-nous de votre projet – nous vous recontacterons.",
+            "cta": "Nous contacter"
+        }
+    },
     "security": {
         "title": "Sécurité",
         "tagline": "Accès sécurisé, gestion locale des données, sans dépendance au cloud.",
@@ -61,9 +99,9 @@
         "no-cloud": "Notre approche garantit l'indépendance par rapport au cloud et vos données sont gérées localement."
     },
     "about": {
-        "title": "Sur nous",
+        "title": "À propos",
         "heading": "L'équipe",
-        "contact": "Nous proposons une planification professionnelle spécialisée en domotique, spécialement pour les particuliers et les PME. Notre équipe planifie et programme des systèmes de gestion domotique sur mesure, parfaitement adaptés à vos besoins individuels. Du premier conseil à la mise en œuvre, nous vous accompagnons avec un savoir-faire technique et un engagement personnel - pour une commande intelligente, efficace et confortable de vos bâtiments. N'hésitez pas à nous contacter pour recevoir une offre sans engagement."
+        "contact": "Derrière Domotix se trouvent des personnes passionnées de technique et d'idées innovantes, animées par l'ambition de trouver la bonne solution à chaque défi. Nous associons une longue expérience à un savoir-faire technique et à une sensibilité pour les besoins individuels. De la première idée à la réalisation, en passant par la planification, nous accompagnons nos clients de manière personnelle, simple et avec un grand engagement. Nous attachons une grande importance à la qualité, à des solutions bien pensées et à une collaboration durable."
     },
     "contact": {
         "title": "Contact"
@@ -72,10 +110,10 @@
         "title": "Références",
         "cta": "En savoir plus",
         "modal": {
-            "responsibilities": "Responsabilités"
+            "responsibilities": "Prestations"
         },
         "pageTitle": "Références",
-        "metaDescription": "Projets sélectionnés de Domotix GmbH : domotique avec KNX, Loxone et Control4 pour maisons, clubs et PME à Berne et dans toute la Suisse.",
+        "metaDescription": "Projets sélectionnés de Domotix GmbH : domotique avec KNX, Loxone et Control4 pour maisons, clubs et PME à Berne et dans toute la Suisse.",
         "intro": "Une sélection de projets réalisés – de l'intégration d'installations existantes à l'installation entièrement neuve.",
         "all": "Toutes les références",
         "back": "← Toutes les références",
@@ -86,11 +124,11 @@
             "next": "Projet suivant"
         },
         "teaser": {
-            "text": "Intéressé par nos services ? Laissez-vous inspirer par nos projets réalisés – de l'intégration d'installations existantes à l'installation entièrement neuve.",
+            "text": "Nos services vous intéressent ? Laissez-vous inspirer par nos projets réalisés – de l'intégration d'installations existantes à l'installation entièrement neuve.",
             "cta": "Voir les références"
         },
         "contact": {
-            "text": "Ce que vous voyez vous plaît ? Parlez-nous de votre projet – nous l'examinons avec vous et vous recontactons.",
+            "text": "Ce que vous voyez vous plaît ? Parlez-nous de votre projet – nous l'examinons avec vous et vous recontactons.",
             "cta": "Prendre contact"
         }
     },
@@ -100,7 +138,7 @@
     "artikel": {
         "nav": "Savoir",
         "pageTitle": "Savoir",
-        "metaDescription": "Savoir-faire en automatisation du bâtiment, maison intelligente et efficacité énergétique – par les experts de Domotix GmbH à Berne.",
+        "metaDescription": "Connaissances spécialisées en automatisation du bâtiment, maison intelligente et efficacité énergétique – par les spécialistes de Domotix GmbH à Berne.",
         "back": "← Tous les articles",
         "notFound": "Cet article est introuvable.",
         "notFoundBack": "Retour à l'aperçu"
@@ -120,7 +158,7 @@
                 "city": "3012 Berne",
                 "phone": "031 512 50 05",
                 "email": "getintouch(at)domotix.ch",
-                "registration-number": "Numéro d'enregistrement: CHE-317.880.883"
+                "registration-number": "Numéro IDE : CHE-317.880.883"
             }
         }
     },

@@ -50,4 +50,9 @@ However, Control4 does not replace well-planned building automation in the Swiss
 
 The strongest solution therefore comes from the right combination: KNX forms the technical backbone of the building, while Control4 complements it as a comfortable user platform for AV, scenes and operation. The result is a smart home that is technically well structured and simple, intuitive and pleasant to use in everyday life.
 
-Have questions about your project? [Contact us](mailto:getintouch@domotix.ch) – we're happy to advise you without obligation.
+[Contact us](mailto:getintouch@domotix.ch) – we will show you what such a solution could look like for your project.
+
+## Further reading
+
+- [Loxone or KNX – Which System Is Better Suited to Modern Building Automation?](/artikel/en/loxone-vs-knx)
+- [Multiroom Audio: Why Even Non-Audiophiles Should Plan for Built-In Speakers](/artikel/en/multiroom)

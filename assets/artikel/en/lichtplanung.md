@@ -54,4 +54,9 @@ Lighting design is not a luxury. It is a meaningful investment in comfort, atmos
 
 Good planning does not mean spending as much money as possible. It means using the available budget correctly. With a well-thought-out concept, convincing lighting solutions are possible in every price range — from a simple living space to a high-end overall concept.
 
-Have questions about your project? [Contact us](mailto:getintouch@domotix.ch) – we're happy to advise you without obligation.
+[Contact us](mailto:getintouch@domotix.ch) – we support you with your lighting design from the first idea to the finished installation.
+
+## Further reading
+
+- [Why Early Smart Home Planning Is So Important](/artikel/en/planung)
+- [Multiroom Audio: Why Even Non-Audiophiles Should Plan for Built-In Speakers](/artikel/en/multiroom)

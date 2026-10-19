@@ -5,7 +5,7 @@
     "description": "Fest installierte Lautsprecher sind kein Luxus – sie sind eine Entscheidung, die man beim Bau oder bei der Renovation einmal trifft. Wir erklären, warum sich der Einbau auch ohne audiophilen Anspruch lohnt.",
     "date": "2026-01-15",
     "category": "Multimedia",
-    "headerImg": "assets/images/artikel/Multiroom.webp"
+    "headerImg": "assets/images/Artikel/Multiroom.webp"
   },
   {
     "slug": "loxone-vs-knx",
@@ -13,7 +13,7 @@
     "description": "Loxone und KNX im direkten Vergleich: Unterschiede, Stärken und wann welches System die bessere Wahl für Ihr Projekt ist.",
     "date": "2026-02-10",
     "category": "Systeme",
-    "headerImg": "assets/images/artikel/Loxone_vs_KNX.webp"
+    "headerImg": "assets/images/Artikel/Loxone_vs_KNX.webp"
   },
   {
     "slug": "lichtplanung",
@@ -21,7 +21,7 @@
     "description": "Gute Lichtplanung kostet nicht zwingend mehr – sie verhindert aber teure Fehler und sorgt dafür, dass Räume im Alltag wirklich funktionieren. Warum Licht früh mitgedacht werden sollte.",
     "date": "2026-05-08",
     "category": "Grundlagen",
-    "headerImg": "assets/images/artikel/Lichtplanung.webp"
+    "headerImg": "assets/images/Artikel/Lichtplanung.webp"
   },
   {
     "slug": "planung",
@@ -29,7 +29,7 @@
     "description": "Smart Home gelingt am besten, wenn es von Anfang an mitgedacht wird. Wir erklären, welche Entscheidungen früh getroffen werden müssen und was nachträglich kaum noch möglich ist.",
     "date": "2026-04-10",
     "category": "Grundlagen",
-    "headerImg": "assets/images/artikel/Planung.webp"
+    "headerImg": "assets/images/Artikel/Planung.webp"
   },
   {
     "slug": "control4",
@@ -37,6 +37,6 @@
     "description": "Control4 kommt aus der Welt von Audio, Video und Bedienkomfort. Wir erklären, was das System besonders macht, wo seine Grenzen liegen und warum die Kombination mit KNX oft die stärkste Lösung ist.",
     "date": "2026-03-05",
     "category": "Systeme",
-    "headerImg": "assets/images/artikel/Control4.webp"
+    "headerImg": "assets/images/Artikel/Control4.webp"
   }
 ]

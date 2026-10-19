@@ -36,7 +36,7 @@ Loxone is more closely tied to its own ecosystem. This is not necessarily negati
 
 ## Operation and everyday use
 
-For the end customer, what ultimately matters is not the technology in the electrical cabinet, but everyday life. Lighting should adjust automatically, shading should think ahead, rooms should be comfortably tempered and operation should remain simple.
+For the end customer, what ultimately matters is not the technology in the electrical cabinet, but everyday life. Lighting should adjust automatically, shading should think ahead, rooms should be at a comfortable temperature and operation should remain simple.
 
 This is where Loxone is often very strong, because many functions are designed for automation and ease of use from the outset. KNX can achieve the same, but usually requires more planning, good visualisation and clearly defined logic. In return, KNX can be adapted very individually to architecture, design requirements and technical specifications.
 
@@ -68,4 +68,9 @@ The best solution is not created by choosing a system based on gut feeling, but 
 
 This is exactly where professional planning begins. At Domotix, we do not look only at individual products, but at the entire building. Our goal is a solution that is technically clean, practical in everyday life, expandable and meaningful in the long term.
 
-[Contact us](mailto:getintouch@domotix.ch) for a no-obligation consultation.
+[Contact us](mailto:getintouch@domotix.ch) for a no-obligation consultation – we analyse your project and recommend the solution that really suits you.
+
+## Further reading
+
+- [Control4 as an Alternative: When Smart Home Thinks More in Terms of Experience, AV and Comfort](/artikel/en/control4)
+- [Why Early Smart Home Planning Is So Important](/artikel/en/planung)

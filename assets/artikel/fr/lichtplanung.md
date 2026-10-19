@@ -6,9 +6,9 @@ La lumière influence bien plus que la simple luminosité d’une pièce. Elle c
 
 ## Une bonne planification ne commence pas par le luminaire
 
-Une erreur fréquente consiste à aborder le thème de l’éclairage seulement lorsque le plafond est déjà coulé, que la planification électrique est terminée ou que les luminaires doivent être choisis. Il ne reste alors souvent qu’une seule question: où placer une lampe?
+Une erreur fréquente consiste à aborder le thème de l’éclairage seulement lorsque le plafond est déjà coulé, que la planification électrique est terminée ou que les luminaires doivent être choisis. Il ne reste alors souvent qu’une seule question : où placer une lampe ?
 
-Une planification professionnelle de l’éclairage commence beaucoup plus tôt. Il ne s’agit pas d’installer le plus grand nombre possible de luminaires ni de choisir les produits les plus chers. L’essentiel est de comprendre l’utilisation des pièces: où travaille-t-on? Où mange-t-on? Où l’ambiance doit-elle être chaleureuse? Quelles zones doivent être mises en valeur? Où faut-il de l’orientation, de la sécurité ou de la flexibilité?
+Une planification professionnelle de l’éclairage commence beaucoup plus tôt. Il ne s’agit pas d’installer le plus grand nombre possible de luminaires ni de choisir les produits les plus chers. L’essentiel est de comprendre l’utilisation des pièces : où travaille-t-on ? Où mange-t-on ? Où l’ambiance doit-elle être chaleureuse ? Quelles zones doivent être mises en valeur ? Où faut-il de l’orientation, de la sécurité ou de la flexibilité ?
 
 Ce n’est qu’une fois ces questions clarifiées qu’un concept d’éclairage cohérent peut voir le jour.
 
@@ -22,11 +22,11 @@ Ces niveaux ne doivent pas forcément être coûteux. Une répartition claire de
 
 Une bonne planification de l’éclairage ne signifie pas automatiquement un grand budget. Même avec des luminaires simples, il est possible de réaliser des concepts de qualité lorsque l’emplacement, la température de couleur, la luminosité et la commande sont bien pensés.
 
-Avec un budget plus modeste, l’accent peut être mis sur quelques mesures efficaces: une belle suspension au-dessus de la table à manger, un éclairage indirect dans le séjour, des spots bien placés dans la cuisine ou une séparation claire entre lumière de travail et lumière d’ambiance.
+Avec un budget plus modeste, l’accent peut être mis sur quelques mesures efficaces : une belle suspension au-dessus de la table à manger, un éclairage indirect dans le séjour, des spots bien placés dans la cuisine ou une séparation claire entre lumière de travail et lumière d’ambiance.
 
-Avec des budgets plus importants, le concept peut être développé davantage: avec des luminaires haut de gamme, la commande de scènes, des détecteurs de présence, DALI ainsi que des systèmes Smart Home comme KNX ou Loxone, qui permettent une commande de l’éclairage intelligente et flexible.
+Avec des budgets plus importants, le concept peut être développé davantage : avec des luminaires haut de gamme, la commande de scènes, des détecteurs de présence, DALI ainsi que des systèmes Smart Home comme KNX ou Loxone, qui permettent une commande de l’éclairage intelligente et flexible.
 
-Le point essentiel reste le même: le budget doit être utilisé de manière ciblée. Une planification soignée évite les mauvais investissements et garantit que chaque franc apporte une réelle valeur ajoutée là où il compte vraiment.
+Le point essentiel reste le même : le budget doit être utilisé de manière ciblée. Une planification soignée évite les mauvais investissements et garantit que chaque franc apporte une réelle valeur ajoutée là où il compte vraiment.
 
 ## La lumière fait partie de l’architecture
 
@@ -46,7 +46,7 @@ La commande et l’utilisation au quotidien sont également souvent sous-estimé
 
 Une planification précoce de l’éclairage offre également des avantages à long terme. Celui qui planifie correctement aujourd’hui pourra plus facilement étendre, adapter ou automatiser son installation par la suite. En particulier dans les nouvelles constructions et les rénovations, il est judicieux de prévoir dès le départ des tubes vides, des réserves, des zones cohérentes et des lignes de commande adaptées.
 
-Le bâtiment reste ainsi flexible. Qu’il s’agisse d’une simple solution par boutons-poussoirs, d’actionneurs de variation, de DALI, KNX, Loxone ou d’une extension Smart Home ultérieure: une base de planification solide ouvre de nombreuses possibilités.
+Le bâtiment reste ainsi flexible. Qu’il s’agisse d’une simple solution par boutons-poussoirs, d’actionneurs de variation, de DALI, KNX, Loxone ou d’une extension Smart Home ultérieure : une base de planification solide ouvre de nombreuses possibilités.
 
 ## Conclusion
 
@@ -54,4 +54,9 @@ La planification de l’éclairage n’est pas un luxe. C’est un investissemen
 
 Bien planifier ne signifie pas dépenser le plus d’argent possible. Cela signifie utiliser correctement le budget disponible. Avec un concept bien pensé, des solutions d’éclairage convaincantes sont possibles dans toutes les gammes de prix — du simple espace de vie au concept global haut de gamme.
 
-Vous avez des questions sur votre projet ? [Contactez-nous](mailto:getintouch@domotix.ch) – nous vous conseillons sans engagement.
+[Contactez-nous](mailto:getintouch@domotix.ch) – nous vous accompagnons dans la planification de votre éclairage, de la première idée à la réalisation.
+
+## Articles connexes
+
+- [Pourquoi une planification précoce du smart home est si importante](/artikel/fr/planung)
+- [Audio multiroom : pourquoi même les non-audiophiles devraient prévoir des haut-parleurs encastrés](/artikel/fr/multiroom)
