@@ -1,0 +1,27 @@
+$color-light: #F2F2F2;
+
+.experience-page {
+  background-color: $color-light;
+  min-height: 100vh;
+}
+
+// The hero stays pinned behind the value cards; the component shrinks it into
+// a card and, once the deck lets go, moves it out together with the cards
+.experience-deck > app-page-hero {
+  display: block;
+  position: sticky;
+  top: 0;
+}
+
+// The deck ends flush with the contact card; space before the footer
+.experience-deck {
+  padding-bottom: 6rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    padding-bottom: 3rem;
+  }
+}

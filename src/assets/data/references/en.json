@@ -1,24 +1,27 @@
 [
     {
-        "slug": "platzhalter-wohnhaus",
-        "title": "Placeholder – Residential",
-        "subtitle": "Four images, two rows – sample project for layout review",
-        "description": "Placeholder project for the layout review. Will be replaced by a real reference.",
-        "headerImg": "assets/images/hero-1.webp",
-        "draft": true,
+        "slug": "mehrfamilienhaus",
+        "title": "Apartment Building",
+        "subtitle": "Modern technology meets classic design",
+        "description": "Loxone building automation for an apartment building with classic interior architecture: lighting, heating, shading and access in one system, discreetly integrated down to the custom-made brass doorbell.",
+        "headerImg": "assets/images/References/mehrfamilienhaus/hero.webp",
         "content": {
             "date": "2026",
             "location": "Bern",
             "tags": [
-                "Placeholder task",
-                "Placeholder task",
-                "Placeholder task"
+                "Loxone building automation",
+                "Integrated lighting and room control",
+                "Custom-made temperature sensors",
+                "Custom brass doorbell with Loxone integration",
+                "DALI lighting control"
             ],
             "images": [
-                "assets/images/hero-1.webp",
-                "assets/images/hero-2.webp",
-                "assets/images/hero-3.webp",
-                "assets/images/hero-4.webp"
+                "assets/images/References/mehrfamilienhaus/1.webp",
+                "assets/images/References/mehrfamilienhaus/2.webp",
+                "assets/images/References/mehrfamilienhaus/3.webp",
+                "assets/images/References/mehrfamilienhaus/4.webp",
+                "assets/images/References/mehrfamilienhaus/5.webp",
+                "assets/images/References/mehrfamilienhaus/6.webp"
             ]
         }
     },
@@ -27,7 +30,7 @@
         "title": "Golf Simulator System Update",
         "subtitle": "Modernisation of an existing facility",
         "description": "Modernisation of an existing golf simulator: new electronics, a custom-made screen and ceiling cladding that protects the technology.",
-        "headerImg": "assets/images/references/go4golf/hero.webp",
+        "headerImg": "assets/images/References/go4golf/hero.webp",
         "content": {
             "date": "2025",
             "location": "Bern",
@@ -37,8 +40,8 @@
                 "Construction coordination (installation, coordinating the trades, on-site execution)"
             ],
             "images": [
-                "assets/images/references/go4golf/1.webp",
-                "assets/images/references/go4golf/2.webp"
+                "assets/images/References/go4golf/1.webp",
+                "assets/images/References/go4golf/2.webp"
             ]
         }
     },
@@ -47,7 +50,7 @@
         "title": "Modern Single-Family Home",
         "subtitle": "Intelligent technology for modern living",
         "description": "KNX building automation for a single-family home in Bern: DALI lighting, shading, room climate control and audio, centrally visualised via a Gira X1.",
-        "headerImg": "assets/images/references/einfamilienhaus/hero.webp",
+        "headerImg": "assets/images/References/einfamilienhaus/hero.webp",
         "content": {
             "date": "2026",
             "location": "Bern",
@@ -58,12 +61,12 @@
                 "DALI lighting control"
             ],
             "images": [
-                "assets/images/references/einfamilienhaus/1.webp",
-                "assets/images/references/einfamilienhaus/2.webp",
-                "assets/images/references/einfamilienhaus/3.webp",
-                "assets/images/references/einfamilienhaus/4.webp",
-                "assets/images/references/einfamilienhaus/5.webp",
-                "assets/images/references/einfamilienhaus/6.webp"
+                "assets/images/References/einfamilienhaus/1.webp",
+                "assets/images/References/einfamilienhaus/2.webp",
+                "assets/images/References/einfamilienhaus/3.webp",
+                "assets/images/References/einfamilienhaus/4.webp",
+                "assets/images/References/einfamilienhaus/5.webp",
+                "assets/images/References/einfamilienhaus/6.webp"
             ]
         }
     },
@@ -72,7 +75,7 @@
         "title": "Tennis Club Neufeld",
         "subtitle": "Linking the court lighting to the booking system",
         "description": "The court lighting at Tennis Club Neufeld in Bern switches automatically based on GotCourts bookings – implemented with KNX and Loxone.",
-        "headerImg": "assets/images/references/tcn/hero.webp",
+        "headerImg": "assets/images/References/tcn/hero.webp",
         "content": {
             "date": "2024",
             "location": "Bern",
@@ -82,8 +85,8 @@
                 "Creating a UI for the club board"
             ],
             "images": [
-                "assets/images/references/tcn/1.webp",
-                "assets/images/references/tcn/2.webp"
+                "assets/images/References/tcn/1.webp",
+                "assets/images/References/tcn/2.webp"
             ]
         }
     }

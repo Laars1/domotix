@@ -4,19 +4,18 @@ $color-dark:     #0D0D0D;
 
 .partners-section {
   background-color: $color-light;
-
-  // The gap below the logos is this section's own bottom padding plus the top
-  // padding of the services section that follows (.section-pad-sm + .section-pad).
-  // Matching that above the logos keeps the strip optically centred between the
-  // dark About block and the services label.
-  padding-top: 9.5rem;   // 3.5 + 6
+  // No top padding, like the CTA band: the section above already ends with its
+  // own bottom padding, so the strip sits centred between that section and the
+  // hairline of the band that follows. Pages where it follows something flush
+  // (a hero) provide the space themselves.
+  padding: 0 0 6rem;
 
   @media (max-width: 768px) {
-    padding-top: 6.5rem; // 2.5 + 4
+    padding-bottom: 4rem;
   }
 
   @media (max-width: 480px) {
-    padding-top: 5rem;   // 2 + 3
+    padding-bottom: 3rem;
   }
 }
 
@@ -114,5 +113,31 @@ $color-dark:     #0D0D0D;
       height: 0.36rem;
       max-width: 61px;
     }
+  }
+}
+
+// ─── Dark variant: opens the dark closing element ────────────────────────────
+.partners-section--dark {
+  background-color: $color-dark;
+  border-radius: 2rem 2rem 0 0;
+  margin: 0 0.5rem;
+  padding: 6rem 0 5rem;
+
+  // The logo files are light; only the light variant above inverts them
+  .partner-logo {
+    filter: none;
+  }
+
+  @media (max-width: 960px) {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 0 3.5rem;
+  }
+
+  @media (max-width: 640px) {
+    border-radius: 1.25rem 1.25rem 0 0;
+    margin: 0 0.5rem;
   }
 }

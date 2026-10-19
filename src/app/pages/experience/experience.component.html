@@ -1,0 +1,23 @@
+<app-navigation></app-navigation>
+
+<main class="experience-page">
+
+  <!-- The hero is the bottom card of the stack: pinned, it narrows into a card
+       while scrolling, then the value cards slide over it. Both live in this
+       wrapper so the hero stays pinned exactly as long as the cards do. -->
+  <div class="experience-deck">
+
+    <app-page-hero
+      title="experience.pageTitle"
+      [imgSrcs]="['assets/images/Experience/Hero/hero-1.webp']"
+      [imgSrcsMobile]="['assets/images/Experience/Hero/hero-1-mobile.webp']"
+      [pinned]="true"
+    ></app-page-hero>
+
+    <app-services label="" layout="cards" [services]="values" [closing]="contact"></app-services>
+
+  </div>
+
+</main>
+
+<app-footer></app-footer>

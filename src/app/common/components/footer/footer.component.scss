@@ -2,6 +2,27 @@ $color-dark:  #0D0D0D;
 $color-light: #F2F2F2;
 $color-tan:   #A69885;
 
+// A block, not the default inline: as an inline box around the footer it
+// adds an empty line below it, visible as a light strip at the end of the page.
+:host {
+  display: block;
+}
+
+:host(.footer--inset) {
+  // In front of the pinned vision view, see .cta-band--dark
+  position: relative;
+  z-index: 1;
+  margin: 0 0.5rem;
+
+  @media (max-width: 960px) {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 640px) {
+    margin: 0 0.5rem;
+  }
+}
+
 .site-footer {
   background-color: $color-dark;
   border-top: 1px solid rgba($color-light, 0.07);

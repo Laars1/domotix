@@ -1,10 +1,14 @@
-<section class="services-section section-pad" id="services">
+<section class="services-section section-pad" id="services" [class.services-section--cards]="layout === 'cards'">
   <div class="container">
 
-    <span class="section-label">{{ 'services.label' | translate }}</span>
-    <div class="hairline"></div>
+    <ng-container *ngIf="label">
+      <span class="section-label">{{ label | translate }}</span>
+      <div class="hairline"></div>
+    </ng-container>
 
-    <div class="services-grid">
+    <p class="services-intro" *ngIf="intro">{{ intro | translate }}</p>
+
+    <div class="services-grid" *ngIf="layout === 'grid'">
       <div
         class="service-tile"
         *ngFor="let service of services"
@@ -14,12 +18,62 @@
         (keydown.enter)="open(service)"
         (keydown.space)="open(service)"
       >
-        <i [class]="'bi ' + service.icon + ' service-icon'" aria-hidden="true"></i>
-        <h3 class="service-title">{{ (service.key + '.title') | translate }}</h3>
-        <p class="service-tagline">{{ (service.key + '.tagline') | translate }}</p>
-        <span class="service-cta">{{ 'services.more' | translate }} →</span>
+        <ng-container *ngTemplateOutlet="tileContent; context: { $implicit: service }"></ng-container>
       </div>
     </div>
+
+    <!-- Items alternate sides of a vertical line that ends in a dot; the icon
+         sits large on the opposite side. -->
+    <div class="services-line" *ngIf="layout === 'line'" #line>
+      <span class="services-line__track" aria-hidden="true"><span class="services-line__fill"></span></span>
+      <ol class="services-line__list">
+        <li
+          class="line-item"
+          *ngFor="let service of services; let odd = odd"
+          [class.line-item--right]="odd"
+        >
+          <span class="line-item__dot" aria-hidden="true"></span>
+          <i [class]="'bi ' + service.icon + ' line-item__symbol'" aria-hidden="true"></i>
+          <div class="line-item__body">
+            <h3 class="line-item__title">{{ (service.key + '.title') | translate }}</h3>
+            <p class="line-item__tagline">{{ (service.key + '.tagline') | translate }}</p>
+            <p class="line-item__text">{{ (service.key + '.text') | translate }}</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Each card sticks a little lower than the one before, so the stack shows its edges. -->
+    <div class="services-cards" *ngIf="layout === 'cards'" #cards>
+      <article
+        class="service-card"
+        *ngFor="let service of services; let i = index"
+        [style.--card-index]="i"
+      >
+        <div class="service-card__head">
+          <i [class]="'bi ' + service.icon + ' service-card__icon'" aria-hidden="true"></i>
+          <h3 class="service-card__title">{{ (service.key + '.title') | translate }}</h3>
+        </div>
+        <div class="service-card__body">
+          <p class="service-card__text">{{ (service.key + '.text') | translate }}</p>
+        </div>
+      </article>
+      <article
+        class="service-card service-card--closing"
+        *ngIf="closing"
+        [style.--card-index]="services.length"
+      >
+        <p class="service-card__closing-text">{{ closing.text | translate }}</p>
+        <a class="service-card__closing-cta" [href]="closing.href">{{ closing.cta | translate }}</a>
+      </article>
+    </div>
+
+    <ng-template #tileContent let-service>
+      <i [class]="'bi ' + service.icon + ' service-icon'" aria-hidden="true"></i>
+      <h3 class="service-title">{{ (service.key + '.title') | translate }}</h3>
+      <p class="service-tagline">{{ (service.key + '.tagline') | translate }}</p>
+      <span class="service-cta">{{ 'services.more' | translate }} →</span>
+    </ng-template>
 
   </div>
 </section>

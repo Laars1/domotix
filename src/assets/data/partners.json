@@ -2,43 +2,50 @@
     {
         "id": 1,
         "title": "Loxone",
-        "headerImg": "assets/images/partners/Loxone.svg",
-        "url": "https://loxone.ch/"
+        "headerImg": "assets/images/Partners/Loxone.svg",
+        "url": "https://loxone.ch/",
+        "pages": ["gebaeude"]
     },
     {
         "id": 2,
         "title": "KNX",
-        "headerImg": "assets/images/partners/knx.svg",
-        "url": "https://knx.org/"
+        "headerImg": "assets/images/Partners/knx.svg",
+        "url": "https://knx.org/",
+        "pages": ["gebaeude"]
     },
     {
         "id": 3,
         "title": "Control4",
-        "headerImg": "assets/images/partners/Control4.svg",
-        "url": "https://control4.com/"
+        "headerImg": "assets/images/Partners/Control4.svg",
+        "url": "https://control4.com/",
+        "pages": ["gebaeude"]
     },
     {
         "id": 4,
         "title": "BW",
-        "headerImg": "assets/images/partners/BW.svg",
-        "url": "https://www.bwgroup.ch"
+        "headerImg": "assets/images/Partners/BW.svg",
+        "url": "https://www.bwgroup.ch",
+        "pages": ["gebaeude"]
     },
     {
         "id": 5,
         "title": "Gira",
-        "headerImg": "assets/images/partners/Gira.svg",
-        "url": "https://gira.ch/"
+        "headerImg": "assets/images/Partners/Gira.svg",
+        "url": "https://gira.ch/",
+        "pages": ["gebaeude"]
     },
     {
         "id": 6,
         "title": "Meljac",
-        "headerImg": "assets/images/partners/Meljac.svg",
-        "url": "https://www.meljac.com/en/"
+        "headerImg": "assets/images/Partners/Meljac.svg",
+        "url": "https://www.meljac.com/en/",
+        "pages": ["gebaeude"]
     },
     {
         "id": 7,
         "title": "Bluesound",
-        "headerImg": "assets/images/partners/Bluesound.svg",
-        "url": "https://www.bluesound.com"
+        "headerImg": "assets/images/Partners/Bluesound.svg",
+        "url": "https://www.bluesound.com",
+        "pages": ["gebaeude"]
     }
 ]

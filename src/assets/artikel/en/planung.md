@@ -98,4 +98,9 @@ Those who plan early create the foundation for a reliable, durable and expandabl
 
 Robust integration does not mean installing the most complicated technology possible. It means making the right decisions early, coordinating systems properly and creating a solution that works reliably in everyday life.
 
-Have questions about your project? [Contact us](mailto:getintouch@domotix.ch) – we're happy to advise you without obligation.
+[Contact us](mailto:getintouch@domotix.ch) – we accompany your project from the early planning phase to the finished installation.
+
+## Further reading
+
+- [Lighting Design Is Not a Luxury](/artikel/en/lichtplanung)
+- [Loxone or KNX – Which System Is Better Suited to Modern Building Automation?](/artikel/en/loxone-vs-knx)

@@ -6,6 +6,54 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.domotix.ch/gebaeude/de</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/gebaeude/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/gebaeude/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/gebaeude/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/gebaeude/en</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/gebaeude/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/gebaeude/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/gebaeude/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/gebaeude/fr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/gebaeude/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/gebaeude/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/gebaeude/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/experience/de</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/experience/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/experience/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/experience/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/experience/en</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/experience/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/experience/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/experience/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/experience/fr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/experience/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/experience/en" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/experience/fr" />
+  </url>
+  <url>
     <loc>https://www.domotix.ch/artikel/de</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -187,6 +235,30 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/de/mehrfamilienhaus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/mehrfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/mehrfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/mehrfamilienhaus" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/en/mehrfamilienhaus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/mehrfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/mehrfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/mehrfamilienhaus" />
+  </url>
+  <url>
+    <loc>https://www.domotix.ch/referenzen/fr/mehrfamilienhaus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.domotix.ch/referenzen/de/mehrfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.domotix.ch/referenzen/en/mehrfamilienhaus" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.domotix.ch/referenzen/fr/mehrfamilienhaus" />
   </url>
   <url>
     <loc>https://www.domotix.ch/referenzen/de/tennis-club-neufeld</loc>

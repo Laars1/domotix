@@ -2,8 +2,8 @@
 
 <app-parallax-wrapper
   id="home"
-  [imgSrcs]="['assets/images/hero-1.webp','assets/images/hero-2.webp','assets/images/hero-3.webp','assets/images/hero-4.webp']"
-  [imgSrcsMobile]="['assets/images/hero-1-mobile.webp','assets/images/hero-2-mobile.webp','assets/images/hero-3-mobile.webp','assets/images/hero-4-mobile.webp']"
+  [imgSrcs]="['assets/images/Landing/Hero/hero-1.webp','assets/images/Landing/Hero/hero-2.webp','assets/images/Landing/Hero/hero-3.webp','assets/images/Landing/Hero/hero-4.webp']"
+  [imgSrcsMobile]="['assets/images/Landing/Hero/hero-1-mobile.webp','assets/images/Landing/Hero/hero-2-mobile.webp','assets/images/Landing/Hero/hero-3-mobile.webp','assets/images/Landing/Hero/hero-4-mobile.webp']"
 >
   <app-home></app-home>
 </app-parallax-wrapper>
@@ -12,20 +12,17 @@
   <app-vision></app-vision>
 </app-container>
 
-<app-container id="about">
-  <app-about></app-about>
-</app-container>
+<!-- About, the references teaser and the footer form one dark element down to
+     the page end. Together at least a screen tall, so they cover the pinned
+     vision view while sliding over it; spare height goes to the teaser. -->
+<div class="dark-run">
+  <app-container id="about">
+    <app-about></app-about>
+  </app-container>
 
-<app-container id="partners">
-  <app-partner></app-partner>
-</app-container>
+  <app-cta-band text="references.teaser.text" [dark]="true">
+    <a class="link-cta" [routerLink]="['/referenzen', lang]">{{ 'references.teaser.cta' | translate }}</a>
+  </app-cta-band>
 
-<app-services></app-services>
-
-<!-- Where the references section used to sit — now a teaser onto its own page.
-     No divider: the services grid above already closes with a rule. -->
-<app-cta-band text="references.teaser.text" [divider]="false">
-  <a class="link-cta" [routerLink]="['/referenzen', lang]">{{ 'references.teaser.cta' | translate }}</a>
-</app-cta-band>
-
-<app-footer></app-footer>
+  <app-footer [inset]="true"></app-footer>
+</div>

@@ -30,6 +30,24 @@ export const appConfig: ApplicationConfig = {
         loadComponent: () => import('./pages/artikel/artikel-detail.component').then(m => m.ArtikelDetailComponent),
       },
       {
+        path: 'gebaeude',
+        redirectTo: 'gebaeude/de',
+        pathMatch: 'full',
+      },
+      {
+        path: 'gebaeude/:lang',
+        loadComponent: () => import('./pages/gebaeude/gebaeude.component').then(m => m.GebaeudeComponent),
+      },
+      {
+        path: 'experience',
+        redirectTo: 'experience/de',
+        pathMatch: 'full',
+      },
+      {
+        path: 'experience/:lang',
+        loadComponent: () => import('./pages/experience/experience.component').then(m => m.ExperienceComponent),
+      },
+      {
         path: 'referenzen',
         redirectTo: 'referenzen/de',
         pathMatch: 'full',

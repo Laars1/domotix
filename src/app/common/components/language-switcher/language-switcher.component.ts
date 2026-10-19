@@ -6,11 +6,12 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 // Sections whose URL carries the language as its first segment:
-// '/artikel/<lang>', '/artikel/<lang>/<slug>' and the same for '/referenzen'.
+// '/artikel/<lang>', '/artikel/<lang>/<slug>', the same for '/referenzen',
+// and '/gebaeude/<lang>' and '/experience/<lang>'.
 // On those routes the language must be switched by navigating, not just by
 // swapping the translations — otherwise the URL keeps pointing at the old
 // language while the page shows the new one.
-const LOCALISED_ROUTE_PATTERN = /^\/(artikel|referenzen)\/[a-z]{2}(\/[^/]+)?$/;
+const LOCALISED_ROUTE_PATTERN = /^\/(artikel|referenzen|gebaeude|experience)\/[a-z]{2}(\/[^/]+)?$/;
 
 @Component({
   selector: 'app-language-switcher',

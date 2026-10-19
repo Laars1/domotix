@@ -20,7 +20,7 @@ export class AboutComponent {
   protected readonly email: string = CONFIGURATION_CONSTANT.email;
 
   readonly employees: TeamMember[] = [
-    { firstName: 'Shenthujan', lastName: 'Easwararanjan', img: 'assets/images/portraits/Easwararanjan_Shenthujan.png' },
-    { firstName: 'Joel',       lastName: 'Pulfer',        img: 'assets/images/portraits/Pulfer_Joel.png' },
+    { firstName: 'Shenthujan', lastName: 'Easwararanjan', img: 'assets/images/Landing/portraits/Easwararanjan_Shenthujan.webp' },
+    { firstName: 'Joel',       lastName: 'Pulfer',        img: 'assets/images/Landing/portraits/Pulfer_Joel.webp' },
   ];
 }

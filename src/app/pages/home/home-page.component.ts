@@ -7,9 +7,7 @@ import { NavigationComponent } from '../../common/components/navigation/navigati
 import { ParallaxWrapperComponent } from '../../common/components/parallax-wrapper/parallax-wrapper.component';
 import { HomeComponent } from '../../common/components/home/home.component';
 import { VisionComponent } from '../../common/components/vision/vision.component';
-import { ServicesComponent } from '../../common/components/services/services.component';
 import { AboutComponent } from '../../common/components/about/about.component';
-import { PartnerComponent } from '../../common/components/partner/partner.component';
 import { FooterComponent } from '../../common/components/footer/footer.component';
 import { ContainerComponent } from '../../common/components/container/container.component';
 import { CtaBandComponent } from '../../common/components/cta-band/cta-band.component';
@@ -25,15 +23,14 @@ import { SeoService, SITE_URL } from '../../common/services/seo.service';
     NavigationComponent,
     HomeComponent,
     VisionComponent,
-    ServicesComponent,
     AboutComponent,
-    PartnerComponent,
     FooterComponent,
     ContainerComponent,
     CtaBandComponent,
     RouterLink,
   ],
   templateUrl: './home-page.component.html',
+  styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent implements OnInit, OnDestroy {
   private titleService = inject(Title);
@@ -53,8 +50,8 @@ export class HomePageComponent implements OnInit, OnDestroy {
       '@type': 'ProfessionalService',
       name: 'Domotix GmbH',
       url: SITE_URL,
-      logo: `${SITE_URL}/assets/images/logo.svg`,
-      image: `${SITE_URL}/assets/images/hero-1.webp`,
+      logo: `${SITE_URL}/assets/images/Logo/logo.svg`,
+      image: `${SITE_URL}/assets/images/Landing/og-image.jpg`,
       telephone: '+41315125005',
       address: {
         '@type': 'PostalAddress',
@@ -86,11 +83,11 @@ export class HomePageComponent implements OnInit, OnDestroy {
       this.metaService.updateTag({ property: 'og:description', content: description });
       this.metaService.updateTag({ property: 'og:url', content: SITE_URL });
       this.metaService.updateTag({ property: 'og:type', content: 'website' });
-      this.metaService.updateTag({ property: 'og:image', content: `${SITE_URL}/assets/images/hero-1.webp` });
+      this.metaService.updateTag({ property: 'og:image', content: `${SITE_URL}/assets/images/Landing/og-image.jpg` });
       this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
       this.metaService.updateTag({ name: 'twitter:title', content: title });
       this.metaService.updateTag({ name: 'twitter:description', content: description });
-      this.metaService.updateTag({ name: 'twitter:image', content: `${SITE_URL}/assets/images/hero-1.webp` });
+      this.metaService.updateTag({ name: 'twitter:image', content: `${SITE_URL}/assets/images/Landing/og-image.jpg` });
     });
   }
 }

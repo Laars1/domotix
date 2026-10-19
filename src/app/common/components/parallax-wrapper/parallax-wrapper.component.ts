@@ -23,6 +23,14 @@ export class ParallaxWrapperComponent implements OnInit, OnDestroy {
 
   currentIndex = 0;
 
+  /**
+   * Slides whose picture may be fetched. Only the visible one at first; the
+   * next one is added once the page has loaded and again after every change,
+   * so it is in the cache by the time it fades in. Saves downloading every
+   * slide up front just to show the first.
+   */
+  private readonly loaded = new Set<number>();
+
   private randomStart(): void {
     if (this.slides.length > 1) {
       this.currentIndex = Math.floor(Math.random() * this.slides.length);
@@ -44,6 +52,9 @@ export class ParallaxWrapperComponent implements OnInit, OnDestroy {
    * so a phone never downloads the landscape set.
    */
   slideStyle(index: number): string {
+    if (!this.loaded.has(index)) {
+      return '';
+    }
     const desktop = this.backgroundValue(this.slides[index]);
     const mobileSrc = this.imgSrcsMobile[index];
     const mobile = mobileSrc ? this.backgroundValue(mobileSrc) : desktop;
@@ -64,12 +75,26 @@ export class ParallaxWrapperComponent implements OnInit, OnDestroy {
       this.randomStart();
       this.interval = setInterval(() => {
         this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+        this.loadNext();
       }, 10000);
+      if (document.readyState === 'complete') {
+        this.loadNext();
+      } else {
+        window.addEventListener('load', this.onPageLoad, { once: true });
+      }
     }
+    this.loaded.add(this.currentIndex);
   }
 
   ngOnDestroy() {
     clearInterval(this.interval);
+    window.removeEventListener('load', this.onPageLoad);
+  }
+
+  private onPageLoad = (): void => this.loadNext();
+
+  private loadNext(): void {
+    this.loaded.add((this.currentIndex + 1) % this.slides.length);
   }
 
 }

@@ -1,0 +1,218 @@
+@use 'sass:color';
+
+$color-tan:      #A69885;
+$color-bluegrey: #8599A6;
+$color-dark:     #0D0D0D;
+$color-light:    #F2F2F2;
+
+// Line layout of ServicesComponent (layout="line"), plus the intro paragraph.
+
+// ─── Intro (above line or cards) ─────────────────────────────────────────────
+.services-intro {
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  line-height: 1.85;
+  text-align: center;
+  color: rgba($color-dark, 0.8);
+}
+
+// ─── Line layout ──────────────────────────────────────────────────────────────
+// One item per row with its full text, alternating left and right of a
+// vertical line in the middle, the icon large on the opposite side. On
+// phones the line moves to the left edge and all items follow it.
+$line-gap: clamp(2rem, 5vw, 4.5rem);  // between the line and an item
+$dot-size: 11px;
+
+.services-line {
+  --line-x: 50%;
+  position: relative;
+
+  // The line ends in a dot, filled once the line has reached it; at the top
+  // it fades in instead, so it does not read as an extra item
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--line-x);
+    width: $dot-size;
+    height: $dot-size;
+    border: 1px solid $color-tan;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color: $color-light;
+    transition: background-color 0.3s ease;
+  }
+
+  &.is-complete::after {
+    background-color: $color-tan;
+  }
+
+  @media (max-width: 768px) {
+    --line-x: 0.5rem;
+  }
+}
+
+// A faint track down to the end dot, filled in tan as far as the page has
+// scrolled. The fill height comes from --line-progress, set by the component.
+.services-line__track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--line-x);
+  width: 1px;
+  transform: translateX(-50%);
+  background-color: rgba($color-tan, 0.3);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 4rem);
+  mask-image: linear-gradient(to bottom, transparent, #000 4rem);
+}
+
+.services-line__fill {
+  display: block;
+  width: 100%;
+  height: calc(var(--line-progress, 0) * 100%);
+  background-color: $color-tan;
+}
+
+.services-line__list {
+  list-style: none;
+  margin: 0;
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
+}
+
+.line-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+
+  & + & {
+    margin-top: clamp(4rem, 9vw, 7rem);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Sits on the line at the height of the title; fills once the line reaches it
+$title-centre: 0.85rem;
+
+.line-item__dot {
+  position: absolute;
+  top: calc(#{$title-centre} - #{$dot-size * 0.5});
+  left: var(--line-x);
+  width: $dot-size;
+  height: $dot-size;
+  transform: translateX(-50%);
+  border: 1px solid $color-tan;
+  border-radius: 50%;
+  background-color: $color-light;
+  transition: background-color 0.3s ease;
+
+  .is-reached & {
+    background-color: $color-tan;
+  }
+}
+
+// Body on one side, icon on the other, both hugging the line
+.line-item__body,
+.line-item__symbol {
+  grid-row: 1;
+}
+
+.line-item__body {
+  grid-column: 1;
+  justify-self: end;
+  max-width: 460px;
+  padding-right: $line-gap;
+
+  .line-item--right & {
+    grid-column: 2;
+    justify-self: start;
+    padding-right: 0;
+    padding-left: $line-gap;
+  }
+}
+
+// Centred on the dot; lights up once the line reaches it
+.line-item__symbol {
+  grid-column: 2;
+  justify-self: start;
+  padding-left: $line-gap;
+  margin-top: calc(#{$title-centre} - 0.5em);
+  font-size: clamp(3rem, 5.5vw, 4.75rem);
+  line-height: 1;
+  color: rgba($color-tan, 0.4);
+  transition: color 0.4s ease;
+
+  .line-item--right & {
+    grid-column: 1;
+    justify-self: end;
+    padding-left: 0;
+    padding-right: $line-gap;
+  }
+
+  .is-reached & {
+    color: $color-tan;
+  }
+}
+
+// Phones: one column right of the line, the icon at normal size above the body
+@media (max-width: 768px) {
+  .line-item__body,
+  .line-item__symbol,
+  .line-item--right .line-item__body,
+  .line-item--right .line-item__symbol {
+    grid-column: 1;
+    justify-self: stretch;
+    max-width: none;
+    padding: 0 0 0 2.25rem;
+  }
+
+  .line-item__symbol {
+    grid-row: 1;
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+  }
+
+  .line-item__body {
+    grid-row: 2;
+  }
+
+  // Level with the icon instead of the title
+  .line-item__dot {
+    top: calc(0.8rem - #{$dot-size * 0.5});
+  }
+}
+
+// Left-aligned at every size; the global phone rule in styles-responsive.scss
+// would otherwise centre headings and paragraphs with !important
+.line-item__title,
+.line-item__tagline,
+.line-item__text {
+  text-align: left !important;
+}
+
+.line-item__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+.line-item__tagline {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: $color-bluegrey;
+}
+
+.line-item__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba($color-dark, 0.7);
+}

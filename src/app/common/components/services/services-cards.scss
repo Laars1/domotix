@@ -1,0 +1,182 @@
+@use 'sass:color';
+
+$color-tan:      #A69885;
+$color-bluegrey: #8599A6;
+$color-dark:     #0D0D0D;
+$color-light:    #F2F2F2;
+
+// Cards layout of ServicesComponent (layout="cards").
+
+// ─── Cards layout ─────────────────────────────────────────────────────────────
+// Large dark cards that stick below the navigation, each a step lower than the
+// one before, so scrolling slides the next card over the stack. --shrink and
+// --covered (0–1, set by the component) scale and dim a card as it disappears.
+$nav-height: 64px;
+
+.services-cards {
+  --stack-top: calc(#{$nav-height} + 1.5rem);
+  --stack-step: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  // Scroll distance before the next card reaches the stack
+  gap: 25vh;
+
+  // Empty last item: the gap before it lets the full stack hold for a moment
+  // before it scrolls away, instead of leaving the instant the last card lands
+  &::after {
+    content: '';
+  }
+
+  @media (max-width: 640px) {
+    --stack-top: calc(#{$nav-height} + 1rem);
+    --stack-step: 0.75rem;
+    gap: 15vh;
+  }
+}
+
+.service-card {
+  --title-size: clamp(1.3rem, 2.2vw, 1.9rem);
+  position: sticky;
+  // --fit-shift (set by the component) lifts cards that are too tall to fit
+  top: calc(var(--stack-top) + var(--card-index) * var(--stack-step) - var(--fit-shift, 0px));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  // The text sits in the vertical middle of the card, icon and title in the
+  // vertical middle of the text
+  align-content: center;
+  align-items: center;
+  min-height: min(68vh, 560px);
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+  border-radius: 2rem;
+  background-color: $color-dark;
+  color: $color-light;
+  box-shadow: 0 -14px 30px -16px rgba($color-dark, 0.45);
+  transform: scale(calc(1 - var(--shrink, 0) * 0.05));
+  transform-origin: 50% 0;
+
+  // A shade lighter per card, so the edges in the stack stay apart
+  &:nth-child(2) {
+    background-color: color.mix($color-tan, $color-dark, 8%);
+  }
+
+  &:nth-child(3) {
+    background-color: color.mix($color-tan, $color-dark, 16%);
+  }
+
+  // The call to action closes the stack in the accent colour
+  &--closing {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    align-content: center;
+    justify-items: start;
+    background-color: $color-tan;
+    color: $color-dark;
+  }
+
+  // Side by side only where the title column is wide enough for the titles
+  // at full size; below, title above text
+  @media (max-width: 1199px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  // Phones and tablets: tall cards with room around the text, so they read as
+  // cards rather than boxes squeezed around their content (svh: the height
+  // with the browser bars shown, so a card never ends up taller than visible)
+  @media (max-width: 900px) {
+    min-height: min(78vh, 680px);
+    min-height: min(78svh, 680px);
+  }
+
+  @media (max-width: 640px) {
+    padding: 3rem 1.75rem;
+    border-radius: 1.25rem;
+  }
+
+}
+
+.service-card__head,
+.service-card__body {
+  opacity: calc(1 - var(--covered, 0) * 0.6);
+}
+
+.service-card__icon {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: $color-tan;
+
+  @media (max-width: 900px) {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// Left-aligned at every size: the long text reads badly centred, which the
+// global phone rule in styles-responsive.scss would otherwise force
+.service-card__title,
+.service-card__text {
+  text-align: left !important;
+}
+
+.service-card__title {
+  margin: 0;
+  // Always one line and the same size on every card: the component scales
+  // all titles down (--title-fit) until the longest one just fits
+  font-size: calc(var(--title-size) * var(--title-fit, 1));
+  line-height: 1.2;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-light;
+}
+
+.service-card__text {
+  // Keeps lines readable where the text runs the full card width
+  max-width: 720px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: rgba($color-light, 0.65);
+
+  @media (max-width: 640px) {
+    font-size: 0.95rem;
+  }
+}
+
+.service-card__closing-text {
+  max-width: 760px;
+  margin: 0 0 2.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  line-height: 1.35;
+  color: $color-dark;
+  text-align: left !important;
+}
+
+// Like the hero button, inverted for the light card
+.service-card__closing-cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  background-color: $color-dark;
+  color: $color-light;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: color.mix($color-tan, $color-dark, 25%);
+    color: $color-light;
+  }
+
+  @media (max-width: 640px) {
+    padding: 0.85rem 1.75rem;
+    font-size: 0.75rem;
+  }
+}

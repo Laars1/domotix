@@ -1,0 +1,15 @@
+// A block, not the default inline: as an inline box the page lets margins of
+// its children leak out and adds an empty strip below the footer.
+:host {
+  display: block;
+}
+
+.dark-run {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > app-cta-band {
+    flex: 1 0 auto;
+  }
+}

@@ -5,7 +5,7 @@
     "description": "Built-in speakers are not a luxury – they are a decision made once during construction or renovation. We explain why installation is worthwhile even without audiophile requirements.",
     "date": "2026-01-15",
     "category": "Multimedia",
-    "headerImg": "assets/images/artikel/Multiroom.webp"
+    "headerImg": "assets/images/Artikel/Multiroom.webp"
   },
   {
     "slug": "loxone-vs-knx",
@@ -13,7 +13,7 @@
     "description": "Loxone and KNX compared directly: differences, strengths, and when each system is the better choice for your project.",
     "date": "2026-02-10",
     "category": "Systems",
-    "headerImg": "assets/images/artikel/Loxone_vs_KNX.webp"
+    "headerImg": "assets/images/Artikel/Loxone_vs_KNX.webp"
   },
   {
     "slug": "lichtplanung",
@@ -21,7 +21,7 @@
     "description": "Good lighting design does not necessarily cost more – but it prevents costly mistakes and ensures that spaces function well in everyday life. Why light should be planned early.",
     "date": "2026-05-08",
     "category": "Fundamentals",
-    "headerImg": "assets/images/artikel/Lichtplanung.webp"
+    "headerImg": "assets/images/Artikel/Lichtplanung.webp"
   },
   {
     "slug": "planung",
@@ -29,7 +29,7 @@
     "description": "A smart home works best when it is planned from the start. We explain which decisions need to be made early and what is barely possible to add afterwards.",
     "date": "2026-04-10",
     "category": "Fundamentals",
-    "headerImg": "assets/images/artikel/Planung.webp"
+    "headerImg": "assets/images/Artikel/Planung.webp"
   },
   {
     "slug": "control4",
@@ -37,6 +37,6 @@
     "description": "Control4 comes from the world of audio, video and ease of use. We explain what makes the system special, where its limits lie, and why combining it with KNX is often the strongest solution.",
     "date": "2026-03-05",
     "category": "Systems",
-    "headerImg": "assets/images/artikel/Control4.webp"
+    "headerImg": "assets/images/Artikel/Control4.webp"
   }
 ]

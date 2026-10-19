@@ -1,6 +1,6 @@
 ## Situation initiale
 
-Un simulateur de golf existant devait être entièrement modernisé, sur le plan technique comme sur le plan constructif. La faible hauteur sous plafond constituait un défi particulier : le projecteur devait être placé en dehors de la zone de frappe, et le plafond protégé en même temps contre les coups de club accidentels.
+Un simulateur de golf existant devait être entièrement modernisé, sur le plan technique comme sur le plan constructif. La faible hauteur sous plafond constituait un défi particulier : le projecteur devait être placé en dehors de la zone de frappe, et le plafond protégé en même temps contre les coups de club accidentels.
 
 ## Solution
 

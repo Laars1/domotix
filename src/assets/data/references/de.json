@@ -1,24 +1,27 @@
 [
     {
-        "slug": "platzhalter-wohnhaus",
-        "title": "Platzhalter – Wohnhaus",
-        "subtitle": "Vier Bilder, zwei Zeilen – Beispielprojekt zur Layout-Abnahme",
-        "description": "Platzhalter-Projekt zur Layout-Abnahme. Wird durch eine echte Referenz ersetzt.",
-        "headerImg": "assets/images/hero-1.webp",
-        "draft": true,
+        "slug": "mehrfamilienhaus",
+        "title": "Mehrfamilienhaus",
+        "subtitle": "Moderne Technik trifft klassisches Design",
+        "description": "Loxone-Gebäudeautomation für ein Mehrfamilienhaus mit klassischer Innenarchitektur: Licht, Heizung, Beschattung und Zutritt in einem System, unauffällig integriert bis hin zur massgefertigten Messingklingel.",
+        "headerImg": "assets/images/References/mehrfamilienhaus/hero.webp",
         "content": {
             "date": "2026",
             "location": "Bern",
             "tags": [
-                "Platzhalter-Aufgabe",
-                "Platzhalter-Aufgabe",
-                "Platzhalter-Aufgabe"
+                "Loxone Gebäudeautomation",
+                "Ganzheitliche Licht- und Raumsteuerung",
+                "Massgefertigte Temperatursensoren",
+                "Individuelle Messingklingel mit Loxone-Integration",
+                "DALI-Lichtsteuerung"
             ],
             "images": [
-                "assets/images/hero-1.webp",
-                "assets/images/hero-2.webp",
-                "assets/images/hero-3.webp",
-                "assets/images/hero-4.webp"
+                "assets/images/References/mehrfamilienhaus/1.webp",
+                "assets/images/References/mehrfamilienhaus/2.webp",
+                "assets/images/References/mehrfamilienhaus/3.webp",
+                "assets/images/References/mehrfamilienhaus/4.webp",
+                "assets/images/References/mehrfamilienhaus/5.webp",
+                "assets/images/References/mehrfamilienhaus/6.webp"
             ]
         }
     },
@@ -27,7 +30,7 @@
         "title": "Golfsimulator Systemupdate",
         "subtitle": "Modernisierung einer Bestandsanlage",
         "description": "Modernisierung einer bestehenden Golfsimulator-Anlage: neue Elektronik, massgefertigte Leinwand und eine Deckenverkleidung, die die Technik schützt.",
-        "headerImg": "assets/images/references/go4golf/hero.webp",
+        "headerImg": "assets/images/References/go4golf/hero.webp",
         "content": {
             "date": "2025",
             "location": "Bern",
@@ -37,8 +40,8 @@
                 "Baukoordination (Montage, Abstimmung der Gewerke, Umsetzung vor Ort)"
             ],
             "images": [
-                "assets/images/references/go4golf/1.webp",
-                "assets/images/references/go4golf/2.webp"
+                "assets/images/References/go4golf/1.webp",
+                "assets/images/References/go4golf/2.webp"
             ]
         }
     },
@@ -47,7 +50,7 @@
         "title": "Modernes Einfamilienhaus",
         "subtitle": "Intelligente Technik für modernes Wohnen",
         "description": "KNX-Gebäudeautomation für ein Einfamilienhaus in Bern: DALI-Licht, Beschattung, Raumregelung und Audio, zentral visualisiert über einen Gira X1.",
-        "headerImg": "assets/images/references/einfamilienhaus/hero.webp",
+        "headerImg": "assets/images/References/einfamilienhaus/hero.webp",
         "content": {
             "date": "2026",
             "location": "Bern",
@@ -58,12 +61,12 @@
                 "DALI-Lichtsteuerung"
             ],
             "images": [
-                "assets/images/references/einfamilienhaus/1.webp",
-                "assets/images/references/einfamilienhaus/2.webp",
-                "assets/images/references/einfamilienhaus/3.webp",
-                "assets/images/references/einfamilienhaus/4.webp",
-                "assets/images/references/einfamilienhaus/5.webp",
-                "assets/images/references/einfamilienhaus/6.webp"
+                "assets/images/References/einfamilienhaus/1.webp",
+                "assets/images/References/einfamilienhaus/2.webp",
+                "assets/images/References/einfamilienhaus/3.webp",
+                "assets/images/References/einfamilienhaus/4.webp",
+                "assets/images/References/einfamilienhaus/5.webp",
+                "assets/images/References/einfamilienhaus/6.webp"
             ]
         }
     },
@@ -72,7 +75,7 @@
         "title": "Tennis Club Neufeld",
         "subtitle": "Anbindung der Sportplatzbeleuchtung an das Reservierungssystem",
         "description": "Die Sportplatzbeleuchtung des Tennis Club Neufeld in Bern schaltet automatisch nach den Reservierungen aus GotCourts – umgesetzt mit KNX und Loxone.",
-        "headerImg": "assets/images/references/tcn/hero.webp",
+        "headerImg": "assets/images/References/tcn/hero.webp",
         "content": {
             "date": "2024",
             "location": "Bern",
@@ -82,8 +85,8 @@
                 "UI für den Vorstand erstellen"
             ],
             "images": [
-                "assets/images/references/tcn/1.webp",
-                "assets/images/references/tcn/2.webp"
+                "assets/images/References/tcn/1.webp",
+                "assets/images/References/tcn/2.webp"
             ]
         }
     }

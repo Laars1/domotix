@@ -7,6 +7,8 @@
         "home": "Home",
         "vision": "Vision",
         "about": "Über uns",
+        "building": "Gebäude",
+        "experience": "Experience",
         "references": "Referenzen",
         "partners": "Partner",
         "contact": "Kontakt"
@@ -20,8 +22,16 @@
     "vision": {
         "title": "Vision",
         "heading": "Ihr smartes Zuhause",
-        "text": "Domotix steht für die intelligente Integration von Technologie in Wohn- und Geschäftsumgebungen, um den Wohnkomfort zu steigern, die Energieeffizienz zu optimieren und den Alltag zu vereinfachen. Dies umfasst die Automatisierung von Beleuchtung, Heizung, Klimatisierung, Sicherheit und anderen Alltagsaspekten.",
-        "contact": "Get in touch!"
+        "text": "Wir schaffen massgeschneiderte Lösungen, die den Alltag bereichern, Technologien nahtlos miteinander verbinden und neue Möglichkeiten eröffnen. Dabei vereinen wir intelligente Funktionen, intuitive Bedienung und innovative Ideen zu einem einzigartigen Gesamterlebnis.",
+        "contact": "Get in touch!",
+        "scenes": {
+            "label": "Lichtszene wählen",
+            "day": "Tag",
+            "night": "Nacht",
+            "tv": "TV",
+            "golf": "Golf",
+            "alt": "Schnittmodell eines Hauses mit Lichtszene «{{scene}}»"
+        }
     },
     "light": {
         "title": "Licht",
@@ -52,6 +62,34 @@
         "label": "Leistungen",
         "more": "Mehr erfahren"
     },
+    "building": {
+        "pageTitle": "Gebäude",
+        "intro": "Licht, Raumklima, Beschattung, Multimedia, Energie und Sicherheit: In einem guten Gebäude greift alles ineinander und lässt sich einfach bedienen. Wir planen diese Systeme aus einer Hand und ziehen eine klare Linie vom ersten Konzept bis zur Inbetriebnahme.",
+        "metaDescription": "Gebäudeautomation für Licht, Raumklima, Beschattung, Multimedia, Energie und Sicherheit – geplant und umgesetzt von der Domotix GmbH in Bern und der ganzen Schweiz."
+    },
+    "experience": {
+        "pageTitle": "Experience",
+        "metaDescription": "Neugierig auf Technik, herstellerunabhängig und ehrlich in der Beratung: So plant und realisiert die Domotix GmbH Gebäudeautomation, die den Alltag bereichert – von Bern aus in der ganzen Schweiz.",
+        "values": {
+            "label": "Werte",
+            "discovery": {
+                "title": "Neugierig auf Technik",
+                "text": "Gute Lösungen entstehen aus Neugier. Wir verfolgen neue Technologien, testen Produkte selbst und entdecken, was sich in der Praxis wirklich bewährt. Unsere Erfahrungen und Ideen lassen wir in jedes Projekt einfliessen – auch mit Möglichkeiten, die über das Gewohnte hinausgehen. Denn für uns soll Technik nicht nur zuverlässig funktionieren, sondern den Alltag bereichern, neue Erlebnisse schaffen und begeistern."
+            },
+            "independence": {
+                "title": "Herstellerunabhängig",
+                "text": "Für uns steht nicht der Hersteller im Mittelpunkt, sondern die beste Lösung für Ihr Projekt. Wir kennen unterschiedliche Technologien, verstehen ihre Stärken und wissen, wie sie sich sinnvoll miteinander verbinden lassen. So entwickeln wir Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind, bestehende Systeme berücksichtigen und Raum für zukünftige Erweiterungen lassen."
+            },
+            "honesty": {
+                "title": "Ehrliche Beratung",
+                "text": "Wir legen Wert auf offene Kommunikation, transparente Offerten und realistische Versprechen. Wir sagen ehrlich, was sinnvoll und machbar ist, zeigen Möglichkeiten auf und sprechen auch Grenzen offen an. Dabei empfehlen wir nicht die aufwendigste, sondern die passende Lösung für Ihr Projekt. So schaffen wir Vertrauen, klare Erwartungen und eine Zusammenarbeit, auf die Sie sich auch nach der Umsetzung verlassen können."
+            }
+        },
+        "contact": {
+            "text": "Sie möchten mehr erfahren? Erzählen Sie uns von Ihrem Vorhaben – wir melden uns bei Ihnen.",
+            "cta": "Kontakt aufnehmen"
+        }
+    },
     "security": {
         "title": "Sicherheit",
         "tagline": "Sicherer Zugang, lokale Datenhaltung, kein Cloud-Zwang.",
@@ -63,7 +101,7 @@
     "about": {
         "title": "Über uns",
         "heading": "Das Team",
-        "contact": "Wir bieten professionelle Fachplanung für Gebäudeautomation, speziell für Privatpersonen und KMU. Unser Team plant und programmiert massgeschneiderte Hausleitsysteme, die perfekt auf Ihre individuellen Bedürfnisse abgestimmt sind. Von der ersten Beratung bis zur Umsetzung begleiten wir Sie mit technischem Know-how und persönlichem Engagement – für eine intelligente, effiziente und komfortable Steuerung Ihrer Gebäude. Gerne dürfen Sie sich mit uns in Kontakt setzten, um ein Unverbindliches Angebot zu erhalten."
+        "contact": "Hinter Domotix stehen Menschen mit Leidenschaft für Technik, innovativen Ideen und dem Anspruch, für jede Herausforderung die passende Lösung zu finden. Wir vereinen langjährige Erfahrung mit technischem Know-how und einem Gespür für individuelle Bedürfnisse. Von der ersten Idee über die Planung bis zur Umsetzung begleiten wir unsere Kunden persönlich, unkompliziert und mit viel Engagement. Dabei legen wir grossen Wert auf Qualität, durchdachte Lösungen und eine langfristige Zusammenarbeit."
     },
     "contact": {
         "title": "Kontakt"

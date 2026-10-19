@@ -28,4 +28,13 @@ export class CtaBandComponent {
    * read as a mistake.
    */
   @Input() divider = true;
+
+  /**
+   * Dark band at the inset of the About block, for the place where it follows
+   * that block and should read as part of the same dark element.
+   */
+  @Input() dark = false;
+
+  /** Centre text and action, for pages laid out on a central axis. */
+  @Input() centered = false;
 }

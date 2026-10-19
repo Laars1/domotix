@@ -1,4 +1,4 @@
-*État : 15 septembre 2026*
+*État : 15 septembre 2026*
 
 ## 1. Responsable du traitement
 
@@ -6,8 +6,8 @@ Domotix GmbH
 Muesmattstrasse 37  
 3012 Berne, Suisse
 
-E-mail : getintouch(at)domotix.ch  
-Téléphone : 031 512 50 05
+E-mail : getintouch(at)domotix.ch  
+Téléphone : 031 512 50 05
 
 Nous traitons les données personnelles conformément à la loi fédérale suisse sur la protection des données (LPD) et, dans la mesure où il est applicable, au règlement général sur la protection des données de l'UE (RGPD).
 
