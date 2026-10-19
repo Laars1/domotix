@@ -1,3 +1,5 @@
+# Single-page app: existing files are served as they are, every other path
+# gets index.html and Angular renders the page.
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -5,4 +7,31 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
   RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # ── Caching ────────────────────────────────────────────────────────────────
+  # Default: the browser may keep a copy but must ask first (a cheap 304 via
+  # ETag). Covers index.html, texts, data, sitemap and anything not listed.
+  Header set Cache-Control "no-cache"
+
+  # Images and fonts in assets keep their name when replaced, so only a day;
+  # after that the browser shows the cached copy while it checks for a new one.
+  <FilesMatch "\.(webp|jpe?g|png|svg|ico|woff2?)$">
+    Header set Cache-Control "public, max-age=86400, stale-while-revalidate=604800"
+  </FilesMatch>
+
+  # Build output carries a content hash in the name (main-ZPW3FEGH.js,
+  # media/…-FY65SBJB.woff2): a new version gets a new name, so a year is safe.
+  <FilesMatch "-[A-Z0-9]{8}\.(js|css|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # ── Security ───────────────────────────────────────────────────────────────
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # No embedding in frames on other sites (clickjacking)
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Content-Security-Policy "frame-ancestors 'self'"
 </IfModule>

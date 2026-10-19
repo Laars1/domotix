@@ -3,6 +3,19 @@ $color-dark:     #0D0D0D;
 $color-tan:      #A69885;
 $color-bluegrey: #8599A6;
 
+// A block, not the default inline: the dark card's margins would otherwise
+// leak out of the inline box and add an empty strip at the end of the page.
+// A column, so the band fills its host where a page stretches it (the dark
+// run on the home page); otherwise it behaves like a block
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-band {
+  flex: 1 0 auto;
+}
+
 // Follows the same rhythm as every other section: tan section-label, hairline,
 // then left-aligned content. Layout and type live here, the action itself is
 // projected in by the caller.
@@ -40,6 +53,60 @@ $color-bluegrey: #8599A6;
 
 .cta-band__action {
   @media (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// ─── Dark variant: continues the About block above it ────────────────────────
+// Same inset as the About block and no gap, so both read as one dark element;
+// spacing follows the light band (the block above ends with its own padding).
+.cta-band--dark {
+  // In front of the pinned vision view, like the About block above it: the
+  // dark run as a whole covers the screen while it slides over the house, so
+  // About no longer needs to be a full screen tall on its own
+  position: relative;
+  z-index: 1;
+  background-color: $color-dark;
+  margin: 0 0.5rem;
+
+  .cta-band__text {
+    color: rgba($color-light, 0.7);
+  }
+
+  .hairline {
+    background-color: rgba($color-light, 0.15);
+  }
+
+  // In line with the About text above, which is indented by its tan rule
+  // (2px border + 1.5rem padding, see .about-text); centred layouts keep none
+  &:not(.cta-band--centered) {
+    @media (min-width: 961px) {
+      .cta-band__text,
+      .cta-band__action {
+        padding-left: calc(2px + 1.5rem);
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 640px) {
+    margin: 0 0.5rem;
+  }
+}
+
+// ─── Centred variant ──────────────────────────────────────────────────────────
+.cta-band--centered {
+  .cta-band__text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .cta-band__action {
     display: flex;
     justify-content: center;
   }

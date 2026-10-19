@@ -9,11 +9,11 @@ import { LanguageProviderService } from '../../services/languageProvider.service
 
 const NAV_HEIGHT = 64;
 
-// Routes WITH a hero image behind the nav: the home page and the artikel /
-// referenzen detail pages. Everything else — the list pages, the 404 page and
-// any page added later — starts with a solid bar, so white nav text never
-// ends up on a light background by default.
-const HERO_PATTERN = /^$|^\/(artikel|referenzen)\/[a-z]{2}\/[^/]+$/;
+// Routes WITH a hero image behind the nav: the home page, the gebaeude /
+// experience pages and the artikel / referenzen detail pages. Everything else —
+// the list pages, the 404 page and any page added later — starts with a solid
+// bar, so white nav text never ends up on a light background by default.
+const HERO_PATTERN = /^$|^\/(gebaeude|experience)\/[a-z]{2}$|^\/(artikel|referenzen)\/[a-z]{2}\/[^/]+$/;
 
 @Component({
   selector: 'app-navigation',
@@ -56,12 +56,18 @@ export class NavigationComponent implements OnInit, OnDestroy {
   }
 
   private onScroll = (): void => {
-    // On the home page, stay transparent for the full hero image height and
-    // only go solid once it has scrolled out from behind the nav.
-    const heroEl = document.getElementById('home');
-    this.scrolled = heroEl
-      ? heroEl.getBoundingClientRect().bottom <= NAV_HEIGHT
-      : window.scrollY > 200;
+    // Stay transparent for the full hero image height and only go solid once
+    // it has scrolled out from behind the nav. The home hero is #home, the
+    // content-page heroes carry data-hero. A pinned hero never scrolls away
+    // but shrinks out from under the bar at once, so there any scroll counts.
+    const heroEl = document.getElementById('home') ?? document.querySelector<HTMLElement>('[data-hero]');
+    if (heroEl?.dataset['hero'] === 'pinned') {
+      this.scrolled = window.scrollY > 8;
+    } else {
+      this.scrolled = heroEl
+        ? heroEl.getBoundingClientRect().bottom <= NAV_HEIGHT
+        : window.scrollY > 200;
+    }
 
     const aboutEl = document.getElementById('about');
     if (aboutEl) {

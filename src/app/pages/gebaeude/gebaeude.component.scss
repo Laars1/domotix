@@ -1,0 +1,18 @@
+$color-light: #F2F2F2;
+
+// A block, not the default inline, so margins of the dark closing element
+// cannot leak out below the footer
+:host {
+  display: block;
+}
+
+.gebaeude-page {
+  display: block;
+  background-color: $color-light;
+}
+
+// The closing element starts right after the line section
+app-partner,
+app-cta-band {
+  display: block;
+}

@@ -1,60 +1,93 @@
 $color-light:    #F2F2F2;
 $color-dark:     #0D0D0D;
 $color-tan:      #A69885;
-$color-bluegrey: #8599A6;
-$container-max:  1140px;
+
+// Below this width the text sits above the house instead of beside it
+$bp-stack:  1199px;
+// Height of the fixed navigation bar; the pinned mockup stops below it
+$nav-height: 64px;
 
 .vision-section {
+  // Scroll distance per scene while the view is pinned
+  --scene-scroll: 60vh;
+  // Extra screen at the end during which the next section slides over the
+  // still-pinned view; the negative margin pulls that section up by as much,
+  // so the page is no longer than before
+  --overlap: 100vh;
+  margin-bottom: calc(-1 * var(--overlap));
   background-color: $color-light;
-  overflow: hidden;
+  // clip, not hidden: hidden would make this the scroll container and stop
+  // the pinned elements inside from sticking to the viewport
+  overflow-x: clip;
+
+  @media (max-width: $bp-stack) {
+    --scene-scroll: 50vh;
+  }
 }
 
-// ─── Full-width two-column grid ───────────────────────────────────────────────
-// Left column: text, constrained like a container, padded from centre
-// Right column: image, fills remaining space and bleeds to viewport edge
+// ─── Scroll distance ─────────────────────────────────────────────────────────
+// While the spacer scrolls by, the element right before it stays pinned; the
+// component turns how far it has passed into the active scene.
+.vision-spacer,
+.vision-overlap {
+  flex: none;
+
+  &--stacked {
+    display: none;
+  }
+
+  @media (max-width: $bp-stack) {
+    &--wide {
+      display: none;
+    }
+
+    &--stacked {
+      display: block;
+    }
+  }
+}
+
+.vision-spacer {
+  height: calc(var(--scene-count) * var(--scene-scroll));
+}
+
+.vision-overlap {
+  height: var(--overlap);
+}
+
+// ─── Layout: text left, house + scene links right ────────────────────────────
+// Wide screens: the whole grid fills the viewport and stays pinned.
 .vision-grid {
-  display: grid;
-  grid-template-columns: 1fr clamp(400px, 40vw, 680px);
-  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: clamp(3rem, 6vw, 6rem);
+  height: 100vh;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 5rem 2rem 2.5rem;
 
-  @media (max-width: 960px) {
-    grid-template-columns: 1fr;
-    min-height: unset;
-    padding: 0;
+  @media (max-width: $bp-stack) {
+    position: static;
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    padding: 5rem 1.5rem 4rem;
+  }
+
+  @media (max-width: 640px) {
+    gap: 2rem;
+    padding: 4rem 1rem 3rem;
   }
 }
 
 // ─── Text column ──────────────────────────────────────────────────────────────
 .vision-text-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 7rem clamp(2rem, 4vw, 4rem) 7rem 0;
+  flex: 1 1 0;
+  min-width: 0;
 
-  @media (max-width: 960px) {
-    padding: 5rem 1.5rem 3rem;
-    align-items: center;
-    text-align: center;
-
-    .section-label {
-      text-align: center;
-    }
-
-    .btn-primary {
-      align-self: center;
-    }
-  }
-}
-
-.vision-heading {
-  color: $color-dark;
-  margin-bottom: 1.5rem;
-  text-align: left;
-
-  @media (max-width: 960px) {
+  @media (max-width: $bp-stack) {
     text-align: center;
   }
 }
@@ -66,9 +99,8 @@ $container-max:  1140px;
   margin-bottom: 0;
   max-width: 480px;
 
-  @media (max-width: 960px) {
-    max-width: 100%;
-    text-align: center;
+  @media (max-width: $bp-stack) {
+    max-width: 640px;
   }
 
   @media (max-width: 640px) {
@@ -76,39 +108,145 @@ $container-max:  1140px;
   }
 }
 
-// ─── Image column — full-bleed, fills height ──────────────────────────────────
-.vision-image-col {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.5rem;
-  margin: 5rem 2.5rem 5rem 0;
+// ─── Mockup: house and its scene links side by side ──────────────────────────
+// Stacked layouts: the text scrolls away and only the mockup stays pinned.
+.vision-mockup {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 2.5vw, 2.5rem);
 
-  @media (max-width: 960px) {
-    overflow: visible;
-    margin: 0 2rem 2.5rem;
-    border-radius: 0;
+  @media (max-width: $bp-stack) {
+    position: sticky;
+    top: calc(#{$nav-height} + 1rem);
   }
 
   @media (max-width: 640px) {
-    margin: 0 1rem 2rem;
+    align-self: stretch;
+    gap: 1rem;
   }
 }
 
-.vision-image {
+// ─── House — the four scenes stacked, the active one fades in on top ─────────
+.vision-stage {
+  position: relative;
+  flex: none;
+  height: min(76vh, 720px, 72vw);
+  aspect-ratio: 1024 / 1400;
+  // Own stacking context, so the ground shadow below stays behind the house
+  // but in front of the section background
+  isolation: isolate;
+
+  // Soft ground shadow under the base of the house. A plain gradient rather
+  // than filter: drop-shadow — browsers (Safari especially) re-render a filter
+  // in a clipped rectangle while the scenes fade or the section is pinned,
+  // which showed as a grey box around the house.
+  &::before {
+    content: '';
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: -3%;
+    height: 22%;
+    z-index: -1;
+    background: radial-gradient(
+      closest-side,
+      rgba($color-dark, 0.22),
+      rgba($color-dark, 0.1) 55%,
+      rgba($color-dark, 0) 100%
+    );
+    pointer-events: none;
+  }
+
+  @media (max-width: $bp-stack) {
+    height: min(66vh, 640px, 72vw);
+  }
+
+  @media (max-width: 640px) {
+    flex: 1 1 0;
+    min-width: 0;
+    height: auto;
+  }
+}
+
+.vision-scene {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center;
-  display: block;
+  opacity: 0;
+  z-index: 0;
 
-  @media (max-width: 960px) {
-    position: static;
-    width: 33%;
-    height: auto;
-    object-fit: unset;
-    display: block;
-    margin: 0 auto;
+  // Stays fully opaque underneath, so the house never turns see-through mid-fade
+  &.is-previous {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &.is-active {
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 0.7s ease;
+  }
+}
+
+// ─── Scene links — set like the navigation, a marker slides to the active one ─
+.scene-links {
+  --link-height: 2.25rem;
+  position: relative;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba($color-tan, 0.35);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 2px;
+    height: var(--link-height);
+    background-color: $color-tan;
+    transform: translateY(calc(var(--active-index, 0) * var(--link-height)));
+    transition: transform 0.45s ease;
+  }
+
+  @media (max-width: 640px) {
+    --link-height: 2rem;
+  }
+}
+
+.scene-link {
+  height: var(--link-height);
+  padding: 0 0 0 1rem;
+  border: 0;
+  background: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: left;
+  white-space: nowrap;
+  color: rgba($color-dark, 0.4);
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: rgba($color-dark, 0.75);
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-tan;
+    outline-offset: 2px;
+  }
+
+  &.is-active {
+    color: $color-dark;
+  }
+
+  @media (max-width: 640px) {
+    padding-left: 0.75rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
   }
 }

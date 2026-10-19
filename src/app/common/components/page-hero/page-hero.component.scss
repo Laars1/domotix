@@ -1,0 +1,55 @@
+$color-light: #F2F2F2;
+$color-dark:  #0D0D0D;
+
+// Darkens the lower part of the picture so the title reads on light images too
+.page-hero__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba($color-dark, 0.5) 0%, rgba($color-dark, 0) 55%);
+  pointer-events: none;
+}
+
+// Same placement and type as the home page headline
+.page-hero__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 0 max(1.5rem, 6vw) 5rem;
+
+  @media (max-width: 640px) {
+    padding-bottom: 3.5rem;
+  }
+}
+
+.page-hero__title {
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: $color-light;
+  margin: 0;
+  text-align: left !important;
+}
+
+// ─── Pinned mode: shrunk into a card by the page ─────────────────────────────
+// Scaled as a whole, so picture and title shrink together. The transform sits
+// on this inner element: the host stays pinned and untransformed, so the page
+// can still read its position. The clip is in the unscaled coordinates.
+.page-hero--pinned {
+  transform: translate(var(--hero-x, 0px), var(--hero-y, 0px)) scale(var(--hero-scale, 1));
+  transform-origin: 0 0;
+  clip-path: inset(0 0 var(--clip-bottom, 0px) 0 round var(--clip-radius, 0px));
+  will-change: transform;
+}
+
+// Darkens the card as the next one slides over it, like the cards in the stack
+.page-hero__dim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: $color-dark;
+  opacity: var(--dim, 0);
+  pointer-events: none;
+}

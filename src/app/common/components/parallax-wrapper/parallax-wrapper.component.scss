@@ -15,6 +15,23 @@
     height: 100vh;
     min-height: 380px;
   }
+
+  // A pinned hero is scaled by its page; a background fixed to the viewport
+  // would not scale with it, so the picture scrolls with its box instead
+  &.parallax--pinned .parallax__slide {
+    background-attachment: scroll;
+  }
+
+  // Content pages: shorter, so the first section peeks in below the picture
+  &.parallax--page {
+    height: 78vh;
+    min-height: 420px;
+
+    @media (hover: none), (max-width: 768px) {
+      height: 70vh;
+      min-height: 380px;
+    }
+  }
 }
 
 .parallax__slide {

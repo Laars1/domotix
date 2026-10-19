@@ -4,22 +4,22 @@ $color-tan:      #A69885;
 $color-bluegrey: #8599A6;
 
 .about-section {
+  // Above the pinned vision view, which this card slides over
+  position: relative;
+  z-index: 1;
   background-color: $color-dark;
   color: $color-light;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 2rem;
+  // Rounded on top only: on the home page the teaser band and the footer
+  // continue this block down to the end of the page, at the same inset
+  border-radius: 2rem 2rem 0 0;
   margin: 0 0.5rem;
 
   @media (max-width: 960px) {
-    border-radius: 2rem;
     margin: 0 1rem;
   }
 
   @media (max-width: 640px) {
-    border-radius: 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
     margin: 0 0.5rem;
   }
 }

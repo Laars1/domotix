@@ -1,4 +1,4 @@
-# Audio multiroom: pourquoi même les non-audiophiles devraient prévoir des haut-parleurs intégrés et pourquoi Sonos n’est pas toujours la meilleure solution
+# Audio multiroom : pourquoi même les non-audiophiles devraient prévoir des haut-parleurs intégrés et pourquoi Sonos n’est pas toujours la meilleure solution
 
 La musique fait aujourd’hui naturellement partie de l’habitat. Elle accompagne la cuisine, le travail, la douche, les repas entre amis ou simplement le retour à la maison en arrière-plan. Pourtant, dans de nombreux projets de construction ou de rénovation, l’audio est pris en compte beaucoup trop tard, souvent seulement lorsque les murs sont déjà fermés et qu’il ne reste plus que des haut-parleurs mobiles posés sur des meubles ou branchés sur des prises.
 
@@ -6,11 +6,11 @@ Un bon système audio n’est pourtant pas réservé aux audiophiles. Il ne s’
 
 ## Un bon son n’est pas une question de luxe
 
-Beaucoup de personnes disent : « Je ne suis pas audiophile, un son normal me suffit. » C’est compréhensible, mais la qualité sonore est souvent confondue avec le très haut de gamme.
+Beaucoup de personnes disent : « Je ne suis pas audiophile, un son normal me suffit. » C’est compréhensible, mais la qualité sonore est souvent confondue avec le très haut de gamme.
 
 Un bon son ne signifie pas forcément des haut-parleurs coûteux, une technique visible ou un volume exagéré. Un bon son signifie que la musique est agréable, que la voix reste compréhensible et que le son est réparti de manière homogène dans la pièce. C’est précisément ce qui compte au quotidien.
 
-Un seul haut-parleur posé sur un buffet peut certes diffuser de la musique, mais il sonorise souvent la pièce de manière inégale. À proximité, le son est trop fort ; plus loin, il est trop faible. Dans les espaces ouverts, les cuisines ou les salles à manger, cela conduit souvent à augmenter le volume alors que le vrai problème est simplement une mauvaise répartition.
+Un seul haut-parleur posé sur un buffet peut certes diffuser de la musique, mais il sonorise souvent la pièce de manière inégale. À proximité, le son est trop fort ; plus loin, il est trop faible. Dans les espaces ouverts, les cuisines ou les salles à manger, cela conduit souvent à augmenter le volume alors que le vrai problème est simplement une mauvaise répartition.
 
 Les haut-parleurs intégrés résolvent ce problème de façon plus élégante. Ils sont placés là où le son est nécessaire et disparaissent visuellement dans le plafond ou le mur. Le résultat est une expérience d’écoute plus calme et plus agréable, même à faible volume.
 
@@ -20,7 +20,7 @@ Un bon système multiroom n’est pas simplement une collection de haut-parleurs
 
 Dans le séjour, la musique peut être diffusée discrètement en arrière-plan. Dans la cuisine, elle doit rester claire malgré les bruits de cuisson. Dans la salle de bains, elle peut démarrer automatiquement avec la routine du matin. La terrasse nécessite une autre solution que la chambre à coucher. Et dans l’espace TV, les exigences sont encore différentes, car la voix, le son des films et la musique se rencontrent.
 
-C’est précisément pour cette raison que l’audio multiroom devrait être planifié tôt. Celui qui ajoute après coup des haut-parleurs, des amplificateurs, le réseau et la commande doit souvent accepter des compromis. En revanche, si l’audio est intégré dès le départ dans la planification électrique et l’automation du bâtiment, on obtient une solution techniquement propre, visuellement discrète et évolutive à long terme.
+C’est précisément pour cette raison que l’audio multiroom devrait être planifié tôt. Celui qui ajoute après coup des haut-parleurs, des amplificateurs, le réseau et la commande doit souvent accepter des compromis. En revanche, si l’audio est intégré dès le départ dans la planification électrique et l’automatisation du bâtiment, on obtient une solution techniquement propre, visuellement discrète et évolutive à long terme.
 
 ## Pourquoi Sonos est souvent choisi
 
@@ -28,9 +28,9 @@ Sonos a rendu l’audio multiroom accessible à de nombreuses personnes. L’uti
 
 Pour des appartements en location, des installations plus petites ou des solutions de rénovation flexibles, Sonos peut être une solution tout à fait pertinente. Il existe également des possibilités de combiner Sonos avec des haut-parleurs intégrés, par exemple avec un Sonos Amp.
 
-Sonos n’est donc pas une mauvaise solution. Au contraire : pour de nombreuses applications, Sonos est un bon produit.
+Sonos n’est donc pas une mauvaise solution. Au contraire : pour de nombreuses applications, Sonos est un bon produit.
 
-La question la plus importante est toutefois la suivante : Sonos est-il la meilleure solution système pour ce projet précis ?
+La question la plus importante est toutefois la suivante : Sonos est-il la meilleure solution système pour ce projet précis ?
 
 ## Pourquoi Sonos n’est pas toujours la bonne réponse
 
@@ -38,11 +38,11 @@ Dans une maison individuelle, une villa, une rénovation haut de gamme ou une no
 
 Sonos est avant tout un écosystème grand public très solide. Il est facile à utiliser et fonctionne bien dans son propre univers. Cependant, dès que plusieurs zones, des locaux techniques centralisés, KNX, Loxone, Control4, RTI, l’audio TV, la communication de porte, la commande de scènes ou une planification réseau professionnelle entrent en jeu, la solution doit être examinée plus précisément.
 
-Plus la complexité d’un projet augmente, plus des thèmes comme la commande centralisée, l’intégration dans l’automation du bâtiment, une structure technique propre dans le rack et la maintenabilité à long terme deviennent importants. Dans ces cas, il ne suffit plus de choisir simplement un produit. Ce qui compte, c’est un concept global bien pensé, qui tient compte de toutes les exigences et permet également de futures extensions.
+Plus la complexité d’un projet augmente, plus des thèmes comme la commande centralisée, l’intégration dans l’automatisation du bâtiment, une structure technique propre dans le rack et la maintenabilité à long terme deviennent importants. Dans ces cas, il ne suffit plus de choisir simplement un produit. Ce qui compte, c’est un concept global bien pensé, qui tient compte de toutes les exigences et permet également de futures extensions.
 
 ## L’avantage des haut-parleurs intégrés
 
-Les haut-parleurs intégrés ont un grand avantage : ils font partie du bâtiment et non du mobilier.
+Les haut-parleurs intégrés ont un grand avantage : ils font partie du bâtiment et non du mobilier.
 
 Ils ne traînent pas dans la pièce, ne nécessitent pas de câbles d’alimentation visibles et ne prennent pas de place. Dans les espaces de vie haut de gamme, c’est un point décisif. La technique doit fonctionner, mais elle ne doit pas dominer l’espace.
 
@@ -62,9 +62,9 @@ Un bon système multiroom supprime cette friction.
 
 ## Planifier avant de choisir les produits
 
-La recommandation la plus importante est donc la suivante : planifier d’abord, choisir les produits ensuite.
+La recommandation la plus importante est donc la suivante : planifier d’abord, choisir les produits ensuite.
 
-Un bon concept répond à l’avance aux questions suivantes :
+Un bon concept répond à l’avance aux questions suivantes :
 
 Quelles pièces doivent être sonorisées ?\
 S’agit-il de musique d’ambiance, de son TV, d’un mode fête ou d’une restitution musicale de haute qualité ?\
@@ -72,8 +72,8 @@ Quelles pièces ont besoin de zones indépendantes ?\
 Où les haut-parleurs doivent-ils être intégrés de manière invisible ?\
 Où une solution d’amplification centralisée est-elle judicieuse ?\
 Comment le système sera-t-il commandé ?\
-Comment sera-t-il intégré au réseau et à l’automation du bâtiment ?\
-Quelles sont les exigences en matière de maintenance et d’évolutivité ?
+Comment sera-t-il intégré au réseau et à l’automatisation du bâtiment ?\
+Quelles sont les exigences en matière de maintenance et d’évolutivité ?
 
 Ce n’est qu’ensuite qu’il faut décider si Sonos, un système multiroom professionnel, une combinaison avec KNX/Loxone/Control4/RTI ou une solution hybride convient le mieux.
 
@@ -83,4 +83,9 @@ L’audio n’est pas seulement un sujet pour les audiophiles. C’est un sujet 
 
 Sonos peut être un très bon système, mais ce n’est pas automatiquement la meilleure solution pour chaque projet. En particulier dans les nouvelles constructions, les rénovations et les environnements résidentiels haut de gamme, il vaut la peine de penser l’audio suffisamment tôt au lieu de le résoudre après coup avec des haut-parleurs mobiles.
 
-Vous avez des questions sur votre projet ? [Contactez-nous](mailto:getintouch@domotix.ch) – nous vous conseillons sans engagement.
+[Contactez-nous](mailto:getintouch@domotix.ch) – nous vous accompagnons de la première idée jusqu'à la solution audio terminée.
+
+## Articles connexes
+
+- [Control4 comme alternative : quand la domotique pense davantage expérience, AV et confort](/artikel/fr/control4)
+- [Pourquoi une planification précoce du smart home est si importante](/artikel/fr/planung)

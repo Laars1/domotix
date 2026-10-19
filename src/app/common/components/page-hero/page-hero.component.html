@@ -1,0 +1,11 @@
+<!-- data-hero: the navigation stays transparent until this has scrolled away;
+     "pinned" tells it the hero never scrolls away and only the top counts. -->
+<div class="page-hero" [class.page-hero--pinned]="pinned" [attr.data-hero]="pinned ? 'pinned' : ''">
+  <app-parallax-wrapper [customCss]="pinned ? 'parallax--page parallax--pinned' : 'parallax--page'" [imgSrcs]="imgSrcs" [imgSrcsMobile]="imgSrcsMobile">
+    <div class="page-hero__shade"></div>
+    <div class="page-hero__content">
+      <h1 class="page-hero__title">{{ title | translate }}</h1>
+    </div>
+    <div class="page-hero__dim" *ngIf="pinned"></div>
+  </app-parallax-wrapper>
+</div>

@@ -1,0 +1,23 @@
+<app-navigation></app-navigation>
+
+<main class="gebaeude-page">
+
+  <app-page-hero
+    title="building.pageTitle"
+    [imgSrcs]="['assets/images/Building/Hero/hero-1.webp']"
+    [imgSrcsMobile]="['assets/images/Building/Hero/hero-1-mobile.webp']"
+  ></app-page-hero>
+
+  <app-services label="" intro="building.intro" layout="line" [services]="services"></app-services>
+
+  <!-- Closing: partner logos, the references teaser and the footer form one
+       dark element, as on the home page. -->
+  <app-partner page="gebaeude" [dark]="true"></app-partner>
+
+  <app-cta-band text="references.teaser.text" [dark]="true" [centered]="true">
+    <a class="link-cta" [routerLink]="['/referenzen', lang]">{{ 'references.teaser.cta' | translate }}</a>
+  </app-cta-band>
+
+</main>
+
+<app-footer [inset]="true"></app-footer>

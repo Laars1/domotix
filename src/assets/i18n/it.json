@@ -7,6 +7,8 @@
         "home": "Home",
         "vision": "Visione",
         "about": "Chi siamo",
+        "building": "Edificio",
+        "experience": "Esperienza",
         "references": "Riferimenti",
         "partners": "Partner",
         "contact": "Contattateci"
@@ -19,8 +21,16 @@
     },
     "vision": {
         "title": "Visione",
-        "text": "Domotix è sinonimo di integrazione intelligente della tecnologia negli ambienti residenziali e commerciali per aumentare il comfort abitativo, ottimizzare l'efficienza energetica e semplificare la vita quotidiana. Ciò include l'automazione di illuminazione, riscaldamento, climatizzazione, sicurezza e altri aspetti della vita quotidiana.",
-        "contact": "Get in touch!"
+        "text": "Creiamo soluzioni su misura che arricchiscono la vita quotidiana, collegano le tecnologie in modo armonioso e aprono nuove possibilità. Uniamo funzioni intelligenti, un utilizzo intuitivo e idee innovative in un'esperienza complessiva unica.",
+        "contact": "Get in touch!",
+        "scenes": {
+            "label": "Scegli uno scenario",
+            "day": "Giorno",
+            "night": "Notte",
+            "tv": "TV",
+            "golf": "Golf",
+            "alt": "Modello in sezione di una casa con lo scenario luce «{{scene}}»"
+        }
     },
     "light": {
         "title": "Luce",
@@ -51,6 +61,34 @@
         "label": "Prestazioni",
         "more": "Scopri di più"
     },
+    "building": {
+        "pageTitle": "Edificio",
+        "intro": "Illuminazione, clima interno, ombreggiatura, multimedia, energia e sicurezza: in un buon edificio tutto funziona insieme ed è semplice da usare. Progettiamo questi sistemi da un unico interlocutore e tracciamo una linea chiara dal primo concetto alla messa in servizio.",
+        "metaDescription": "Automazione degli edifici per illuminazione, clima interno, ombreggiatura, multimedia, energia e sicurezza – progettata e realizzata da Domotix GmbH a Berna e in tutta la Svizzera."
+    },
+    "experience": {
+        "pageTitle": "Esperienza",
+        "metaDescription": "Curiosi di tecnologia, indipendenti dai produttori e onesti nella consulenza: così Domotix GmbH progetta e realizza un'automazione degli edifici che arricchisce la vita quotidiana – da Berna in tutta la Svizzera.",
+        "values": {
+            "label": "Valori",
+            "discovery": {
+                "title": "Curiosi di tecnologia",
+                "text": "Le buone soluzioni nascono dalla curiosità. Seguiamo le nuove tecnologie, testiamo personalmente i prodotti e scopriamo ciò che si dimostra davvero valido nella pratica. Portiamo le nostre esperienze e idee in ogni progetto – anche con possibilità che vanno oltre il consueto. Perché per noi la tecnologia non deve solo funzionare in modo affidabile, ma arricchire la vita quotidiana, creare nuove esperienze ed entusiasmare."
+            },
+            "independence": {
+                "title": "Indipendenti dai produttori",
+                "text": "Per noi al centro non c'è il produttore, ma la soluzione migliore per il suo progetto. Conosciamo diverse tecnologie, ne comprendiamo i punti di forza e sappiamo come combinarle in modo sensato. Così sviluppiamo soluzioni su misura per le sue esigenze, che tengono conto dei sistemi esistenti e lasciano spazio a futuri ampliamenti."
+            },
+            "honesty": {
+                "title": "Consulenza onesta",
+                "text": "Diamo valore a una comunicazione aperta, offerte trasparenti e promesse realistiche. Diciamo onestamente cosa è sensato e realizzabile, mostriamo le possibilità e parliamo apertamente anche dei limiti. Non consigliamo la soluzione più complessa, ma quella adatta al suo progetto. Così creiamo fiducia, aspettative chiare e una collaborazione su cui può contare anche dopo la realizzazione."
+            }
+        },
+        "contact": {
+            "text": "Desidera saperne di più? Ci racconti il suo progetto – la ricontatteremo.",
+            "cta": "Contattateci"
+        }
+    },
     "security": {
         "title": "Sicurezza",
         "tagline": "Accesso sicuro, gestione locale dei dati, senza dipendenza dal cloud.",
@@ -61,7 +99,7 @@
     },
     "about": {
         "title": "Chi siamo",
-        "contact": "Offriamo una progettazione professionale specializzata per l'automazione degli edifici, in particolare per privati e PMI. Il nostro team progetta e programma sistemi di gestione degli edifici su misura, perfettamente adattati alle vostre esigenze individuali. Dalla consulenza iniziale fino all'implementazione, vi supportiamo con competenza tecnica e impegno personale, per un controllo intelligente, efficiente e conveniente dei vostri edifici. Siete invitati a contattarci per un'offerta non vincolante."
+        "contact": "Dietro Domotix ci sono persone con la passione per la tecnica e le idee innovative, con l'ambizione di trovare la soluzione giusta per ogni sfida. Uniamo una lunga esperienza a know-how tecnico e sensibilità per le esigenze individuali. Dalla prima idea alla progettazione fino alla realizzazione, accompagniamo i nostri clienti in modo personale, semplice e con grande impegno. Diamo grande importanza alla qualità, a soluzioni ben ponderate e a una collaborazione duratura."
     },
     "contact": {
         "title": "Contattateci"

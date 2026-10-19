@@ -6,12 +6,15 @@ Domotix bietet professionelle, spezialisierte Planung für Gebäudeautomation �
 
 ## Hauptseiten
 
-- [Startseite](https://www.domotix.ch/): Übersicht über Vision, Leistungen, Team und Referenzen von Domotix GmbH.
+- [Startseite](https://www.domotix.ch/): Vision von Domotix GmbH (Lichtszenen am Hausmodell), Team und Kontakt.
+- [Gebäude](https://www.domotix.ch/gebaeude/de): Leistungen der Gebäudeautomation – Licht, Raumklima, Beschattung, Multimedia, Energie und Sicherheit – sowie die Partner-Marken (Loxone, KNX, Control4, Gira, Meljac, Bowers & Wilkins, Bluesound).
+- [Experience](https://www.domotix.ch/experience/de): Wofür Domotix steht – Neugier auf Technik, herstellerunabhängige Lösungen und ehrliche Beratung.
 - [Wissen / Artikel](https://www.domotix.ch/artikel/de): Fachartikel rund um Gebäudeautomation, Smart Home und Energieeffizienz.
 - [Referenzen](https://www.domotix.ch/referenzen/de): Umgesetzte Projekte mit Ausgangslage, Lösung und Bildern.
 
 ## Referenzen
 
+- [Mehrfamilienhaus](https://www.domotix.ch/referenzen/de/mehrfamilienhaus): Loxone-Gebäudeautomation mit integrierten Porzellantastern, massgefertigten Temperatursensoren und individueller Messingklingel, abgestimmt auf eine klassische Innenarchitektur (Bern, 2026).
 - [Tennis Club Neufeld](https://www.domotix.ch/referenzen/de/tennis-club-neufeld): Anbindung der Sportplatzbeleuchtung an das GotCourts-Reservierungssystem (KNX und Loxone, Bern, 2024).
 - [Modernes Einfamilienhaus](https://www.domotix.ch/referenzen/de/einfamilienhaus): KNX-Gebäudeautomation mit JUNG-Tastern, DALI-Beleuchtung, Gira-X1-Visualisierung und integrierter Gira-Türkommunikation (Bern, 2026).
 - [Golfsimulator Systemupdate](https://www.domotix.ch/referenzen/de/golfsimulator-systemupdate): Modernisierung einer bestehenden Golfsimulator-Anlage inklusive Elektronik, Leinwand und Baukoordination (Bern, 2025).

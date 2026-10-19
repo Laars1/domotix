@@ -7,24 +7,34 @@
         "home": "Home",
         "vision": "Vision",
         "about": "About us",
-        "references": "References",
+        "building": "Building",
+        "experience": "Experience",
+        "references": "Projects",
         "partners": "Partners",
         "contact": "Contact"
     },
     "hero": {
         "headline": "Intelligent buildings.",
-        "headline2": "Precisely realised.",
+        "headline2": "Consistently delivered.",
         "subheadline": "Building automation for homes and SMEs – in Bern, Solothurn, and across Switzerland.",
         "cta": "Get in touch"
     },
     "vision": {
         "title": "Vision",
         "heading": "Your Smart Home",
-        "text": "Domotix stands for the intelligent integration of technology in residential and commercial environments to increase living comfort, optimise energy efficiency and simplify everyday life. This includes the automation of lighting, heating, air conditioning, security and other aspects of everyday life.",
-        "contact": "Get in touch!"
+        "text": "We create tailor-made solutions that enrich everyday life, connect technologies seamlessly and open up new possibilities. In doing so, we combine intelligent functions, intuitive operation and innovative ideas into a unique overall experience.",
+        "contact": "Get in touch!",
+        "scenes": {
+            "label": "Choose a light scene",
+            "day": "Day",
+            "night": "Night",
+            "tv": "TV",
+            "golf": "Golf",
+            "alt": "Cut-away model of a house with the “{{scene}}” light scene"
+        }
     },
     "light": {
-        "title": "Light",
+        "title": "Lighting",
         "tagline": "Custom lighting scenes, automatically adjusted.",
         "text": "Lighting shapes spaces, creates atmosphere and influences wellbeing, focus and relaxation. Modern lighting design combines architecture, usage, time of day and individual needs with intelligent control. The light automatically adapts to presence, ambient brightness and personal habits. It supports the natural rhythm of the day, from waking up to working and relaxing in the evening. With general, accent and functional lighting, flexible scenes can be created and controlled with ease. The result is an intuitive lighting environment that does more than react, it actively shapes the room."
     },
@@ -52,6 +62,34 @@
         "label": "Services",
         "more": "Learn more"
     },
+    "building": {
+        "pageTitle": "Building",
+        "intro": "Lighting, indoor climate, shading, multimedia, energy and security: in a good building everything works together and is easy to use. We plan all of these systems as a single partner and draw a clear line from the first concept to commissioning.",
+        "metaDescription": "Building automation for lighting, indoor climate, shading, multimedia, energy and security – planned and delivered by Domotix GmbH in Bern and across Switzerland."
+    },
+    "experience": {
+        "pageTitle": "Experience",
+        "metaDescription": "Curious about technology, manufacturer-independent and honest in our advice: this is how Domotix GmbH plans and delivers building automation that enriches everyday life – from Bern across Switzerland.",
+        "values": {
+            "label": "Values",
+            "discovery": {
+                "title": "Curious about technology",
+                "text": "Good solutions grow out of curiosity. We follow new technologies, test products ourselves and find out what really works in practice. We bring our experience and ideas into every project – including possibilities that go beyond the usual. For us, technology should not only work reliably but also enrich everyday life, create new experiences and inspire."
+            },
+            "independence": {
+                "title": "Manufacturer-independent",
+                "text": "For us, the focus is not on the manufacturer but on the best solution for your project. We know a wide range of technologies, understand their strengths and know how to combine them sensibly. This allows us to develop solutions that are tailored to your needs, take existing systems into account and leave room for future expansion."
+            },
+            "honesty": {
+                "title": "Honest advice",
+                "text": "We value open communication, transparent quotes and realistic promises. We tell you honestly what makes sense and is feasible, point out possibilities and are open about limitations. Rather than the most elaborate solution, we recommend the one that suits your project. This builds trust, clear expectations and a partnership you can rely on long after implementation."
+            }
+        },
+        "contact": {
+            "text": "Would you like to know more? Tell us about your project – we will get back to you.",
+            "cta": "Get in touch"
+        }
+    },
     "security": {
         "title": "Security",
         "tagline": "Secure access, local data management, no cloud dependency.",
@@ -63,7 +101,7 @@
     "about": {
         "title": "About us",
         "heading": "The Team",
-        "contact": "We offer professional specialised planning for building automation, especially for private individuals and SMEs. Our team plans and programmes customised building management systems that are perfectly tailored to your individual needs. From the initial consultation through to implementation, we support you with technical expertise and personal commitment - for intelligent, efficient and convenient control of your buildings. You are welcome to contact us for a non-binding offer."
+        "contact": "Behind Domotix are people with a passion for technology and innovative ideas, driven by the ambition to find the right solution for every challenge. We combine many years of experience with technical know-how and a feel for individual needs. From the first idea through planning to implementation, we support our clients personally, straightforwardly and with great commitment. We place great importance on quality, well-thought-out solutions and long-term partnerships."
     },
     "contact": {
         "title": "Contact"
@@ -72,7 +110,7 @@
         "title": "References",
         "cta": "View project",
         "modal": {
-            "responsibilities": "Responsibilities"
+            "responsibilities": "Scope of work"
         },
         "pageTitle": "Projects",
         "metaDescription": "Selected projects by Domotix GmbH: building automation with KNX, Loxone and Control4 for homes, clubs and SMEs in Bern and across Switzerland.",

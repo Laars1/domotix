@@ -9,15 +9,16 @@
     tabindex="0"
     role="button"
   >
-    <img src="assets/images/logo.svg" alt="Domotix" class="topbar__logo-img" />
+    <img src="assets/images/Logo/logo.svg" alt="Domotix" class="topbar__logo-img" />
   </a>
 
-  <!-- Desktop nav links (hidden ≤900px) -->
+  <!-- Desktop nav links (hidden ≤1080px) -->
   <nav class="topbar__links" aria-label="Main navigation">
     <a (click)="scrollToSection('home')" (keydown.enter)="scrollToSection('home')" (keydown.space)="scrollToSection('home')" tabindex="0" role="button">{{ 'navigation.home' | translate }}</a>
     <a (click)="scrollToSection('vision')" (keydown.enter)="scrollToSection('vision')" (keydown.space)="scrollToSection('vision')" tabindex="0" role="button">{{ 'navigation.vision' | translate }}</a>
     <a (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" tabindex="0" role="button">{{ 'navigation.about' | translate }}</a>
-    <a (click)="scrollToSection('services')" (keydown.enter)="scrollToSection('services')" (keydown.space)="scrollToSection('services')" tabindex="0" role="button">{{ 'services.label' | translate }}</a>
+    <a [routerLink]="['/gebaeude', currentLanguage]">{{ 'navigation.building' | translate }}</a>
+    <a [routerLink]="['/experience', currentLanguage]">{{ 'navigation.experience' | translate }}</a>
     <a [routerLink]="['/referenzen', currentLanguage]">{{ 'navigation.references' | translate }}</a>
     <a [routerLink]="['/artikel', currentLanguage]">{{ 'artikel.nav' | translate }}</a>
   </nav>
@@ -50,7 +51,8 @@
     <a (click)="scrollToSection('home')" (keydown.enter)="scrollToSection('home')" (keydown.space)="scrollToSection('home')" tabindex="0" role="button">{{ 'navigation.home' | translate }}</a>
     <a (click)="scrollToSection('vision')" (keydown.enter)="scrollToSection('vision')" (keydown.space)="scrollToSection('vision')" tabindex="0" role="button">{{ 'navigation.vision' | translate }}</a>
     <a (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" tabindex="0" role="button">{{ 'navigation.about' | translate }}</a>
-    <a (click)="scrollToSection('services')" (keydown.enter)="scrollToSection('services')" (keydown.space)="scrollToSection('services')" tabindex="0" role="button">{{ 'services.label' | translate }}</a>
+    <a [routerLink]="['/gebaeude', currentLanguage]" (click)="mobileOpen = false">{{ 'navigation.building' | translate }}</a>
+    <a [routerLink]="['/experience', currentLanguage]" (click)="mobileOpen = false">{{ 'navigation.experience' | translate }}</a>
     <a [routerLink]="['/referenzen', currentLanguage]" (click)="mobileOpen = false">{{ 'navigation.references' | translate }}</a>
     <a [routerLink]="['/artikel', currentLanguage]" (click)="mobileOpen = false">{{ 'artikel.nav' | translate }}</a>
   </nav>

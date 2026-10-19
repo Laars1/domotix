@@ -1,4 +1,4 @@
-import { Component, HostListener, OnDestroy, inject } from '@angular/core';
+import { Component, HostBinding, HostListener, Input, OnDestroy, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule } from '@ngx-translate/core';
@@ -17,6 +17,12 @@ import { LanguageProviderService } from '../../services/languageProvider.service
 export class FooterComponent implements OnDestroy {
   private http = inject(HttpClient);
   private langProvider = inject(LanguageProviderService);
+
+  /**
+   * Closes a dark element above it (About on the home page, the closing block
+   * on the building page), so it takes the same side inset.
+   */
+  @Input() @HostBinding('class.footer--inset') inset = false;
 
   modalOpen = false;
   activeTab: 'privacy' | 'imprint' = 'privacy';

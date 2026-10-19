@@ -1,21 +1,63 @@
-<section class="vision-section">
+<section class="vision-section" [style.--scene-count]="scenes.length">
 
-  <!-- Full-viewport-width grid — image bleeds to right edge on desktop -->
-  <div class="vision-grid">
+  <!-- Scrolling through the section steps through the scenes: on wide screens the
+       whole grid stays pinned while the wide spacer scrolls by; on stacked layouts
+       the text scrolls away and only the mockup stays, above the stacked spacer.
+       The overlap keeps it pinned one screen longer, while the next section
+       slides over it, so leaving the section has no jolt. -->
+  <div class="vision-track">
 
-    <div class="vision-text-col">
-      <span class="section-label">{{ 'vision.title' | translate }}</span>
-      <p class="vision-body">{{ 'vision.text' | translate }}</p>
+    <div class="vision-grid">
+
+      <div class="vision-text-col">
+        <span class="section-label">{{ 'vision.title' | translate }}</span>
+        <p class="vision-body">{{ 'vision.text' | translate }}</p>
+      </div>
+
+      <!-- The house with its scene links right beside it -->
+      <div class="vision-mockup">
+
+        <div class="vision-stage">
+          <img
+            *ngFor="let scene of scenes"
+            [src]="scene.img"
+            [alt]="'vision.scenes.alt' | translate: { scene: ('vision.scenes.' + scene.id | translate) }"
+            [attr.aria-hidden]="scene.id !== activeScene"
+            class="vision-scene"
+            [class.is-active]="scene.id === activeScene"
+            [class.is-previous]="scene.id === previousScene"
+            (transitionend)="onFadeEnd(scene.id)"
+            width="1024"
+            height="1400"
+            loading="lazy"
+          />
+        </div>
+
+        <div
+          class="scene-links"
+          role="group"
+          [attr.aria-label]="'vision.scenes.label' | translate"
+          [style.--active-index]="activeIndex"
+        >
+          <button
+            *ngFor="let scene of scenes"
+            type="button"
+            class="scene-link"
+            [class.is-active]="scene.id === activeScene"
+            [attr.aria-pressed]="scene.id === activeScene"
+            (click)="select(scene.id)"
+          >{{ 'vision.scenes.' + scene.id | translate }}</button>
+        </div>
+
+      </div>
+
+      <div class="vision-spacer vision-spacer--stacked" #spacer aria-hidden="true"></div>
+      <div class="vision-overlap vision-overlap--stacked" aria-hidden="true"></div>
+
     </div>
 
-    <div class="vision-image-col">
-      <img
-        src="assets/images/vision.png"
-        alt="Modernes Wohnzimmer mit Domotix Gebäudeautomation"
-        class="vision-image"
-        loading="lazy"
-      />
-    </div>
+    <div class="vision-spacer vision-spacer--wide" #spacer aria-hidden="true"></div>
+    <div class="vision-overlap vision-overlap--wide" aria-hidden="true"></div>
 
   </div>
 

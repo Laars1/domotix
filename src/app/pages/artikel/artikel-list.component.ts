@@ -63,10 +63,11 @@ export class ArtikelListComponent implements OnInit, OnDestroy {
       this.metaService.updateTag({ property: 'og:description', content: description });
       this.metaService.updateTag({ property: 'og:url', content: url });
       this.metaService.updateTag({ property: 'og:type', content: 'website' });
-      this.metaService.updateTag({ property: 'og:image', content: `${SITE_URL}/assets/images/hero-1.webp` });
+      this.metaService.updateTag({ property: 'og:image', content: `${SITE_URL}/assets/images/Landing/og-image.jpg` });
       this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
       this.metaService.updateTag({ name: 'twitter:title', content: title });
       this.metaService.updateTag({ name: 'twitter:description', content: description });
+      this.metaService.updateTag({ name: 'twitter:image', content: `${SITE_URL}/assets/images/Landing/og-image.jpg` });
     });
     this.artikelService.getAll(this.lang).subscribe(data => {
       this.artikel = data.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

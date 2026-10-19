@@ -90,7 +90,7 @@ export class ArtikelDetailComponent implements OnInit, OnDestroy {
             inLanguage: this.lang,
             mainEntityOfPage: url,
             author: { '@type': 'Organization', name: 'Domotix GmbH' },
-            publisher: { '@type': 'Organization', name: 'Domotix GmbH', logo: { '@type': 'ImageObject', url: `${SITE_URL}/assets/images/logo.svg` } },
+            publisher: { '@type': 'Organization', name: 'Domotix GmbH', logo: { '@type': 'ImageObject', url: `${SITE_URL}/assets/images/Logo/logo.svg` } },
           });
           this.translate.get(['navigation.home', 'artikel.nav']).subscribe(t => {
             this.seo.setJsonLd('ld-breadcrumb', {
